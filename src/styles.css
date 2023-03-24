@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --fm-primary-color: #4b7fbc;
+  --fm-primary-color-light: #e7e5f3;
+  --fm-primary-color-contrast: #173760;
+  --fm-accent-color: #ed1c24;
+  --fm-toolbar-color: #e7e5f3;
+  --fm-background-color: rgb(250, 250, 250);
+  --fm-color-contrast: black;
+  --fm-icon-color-contrast: white;
+}
+
+body {
+  background-color: var(--fm-background-color);
+}
+
+h1, h2, h3, h4, h5, h6, label, button {
+  font-family: 'Jost', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fm-left-sidebar {
+  background-color: var(--fm-background-color);
+}
