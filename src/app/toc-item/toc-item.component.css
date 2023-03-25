@@ -1,0 +1,17 @@
+.fm-toc-item {
+  background-color: var(--fm-toc-background-color);
+  min-height: var(--fm-item-height);
+}
+
+summary {
+  list-style: none;
+}
+
+i {
+  font-size: 16px;
+}
+
+.fm-toc-item-number {
+  border: 2px solid var(--fm-primary-color-contrast);
+  padding: 2px 8px;
+}

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeftSidebarComponent } from './left-sidebar.component';
+import { TocComponent } from './toc.component';
 
-describe('LeftSidebarComponent', () => {
-  let component: LeftSidebarComponent;
-  let fixture: ComponentFixture<LeftSidebarComponent>;
+describe('TocComponent', () => {
+  let component: TocComponent;
+  let fixture: ComponentFixture<TocComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LeftSidebarComponent ]
+      declarations: [ TocComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LeftSidebarComponent);
+    fixture = TestBed.createComponent(TocComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,1 +1,16 @@
-<p>toc-item works!</p>
+<div class="container-fluid p-0">
+  <div class="row g-0 align-items-center fm-toc-item">
+    <div class="col-2 text-center">
+      <span class="text-center fm-toc-item-number">{{ tocItemIndex }}</span>
+    </div>
+    <div class="col-8">
+      <details>
+        <summary><span>{{ tocItem[0] }}</span></summary>
+        <p *ngFor="let subheading of subheadings">{{ subheading }}</p>
+      </details>
+    </div>
+    <div class="col-2 text-center">
+      <i class="bi bi-caret-right-fill"></i>
+    </div>
+  </div>
+</div>

@@ -7,6 +7,8 @@
   --fm-background-color: rgb(250, 250, 250);
   --fm-color-contrast: black;
   --fm-icon-color-contrast: white;
+  --fm-toc-background-color: rgb(243, 244, 244);
+  --fm-item-height: 64px;
 }
 
 body {
@@ -20,10 +22,17 @@ h1, h2, h3, h4, h5, h6, label, button {
 
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+i {
+  width: 1em;
+  height: 1em;
 }
 
 .fm-left-sidebar {
