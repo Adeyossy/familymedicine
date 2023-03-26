@@ -1,16 +1,24 @@
-<div class="container-fluid p-0">
-  <div class="row g-0 align-items-center fm-toc-item">
-    <div class="col-2 text-center">
-      <span class="text-center fm-toc-item-number">{{ tocItemIndex }}</span>
+<details>
+  <summary>
+    <div class="container-fluid p-0">
+      <div class="row g-0 fm-toc-item align-items-center">
+        <div class="col-2 text-center">
+          <span class="text-center fm-toc-item-number">{{ tocItemIndex }}</span>
+        </div>
+        <div class="col-8">{{ tocItem[0] }}</div>
+        <div class="col-2 text-center">
+          <i class="bi bi-caret-right-fill"></i>
+        </div>
+      </div>
     </div>
-    <div class="col-8">
-      <details>
-        <summary><span>{{ tocItem[0] }}</span></summary>
-        <p *ngFor="let subheading of subheadings">{{ subheading }}</p>
-      </details>
-    </div>
-    <div class="col-2 text-center">
-      <i class="bi bi-caret-right-fill"></i>
+  </summary>
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <div class="offset-2 col-8">
+        <ol *ngIf="subheadings.length">
+          <li *ngFor="let subheading of subheadings">{{ subheading }}</li>
+        </ol>
+      </div>
     </div>
   </div>
-</div>
+</details>

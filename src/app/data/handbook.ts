@@ -12,18 +12,20 @@ export const handbook = [
       },
       {
         metatype: "subheading",
-        subheading: "What is new in this 2nd edition?",
-        content: [
-          {
-            metatype: 'list',
-            items: [
-              "We decided to make it into an application that would make access to the handbook possible on our phones and PCs with the printable forms feature and easier navigation.",
-              "The handbook also reflects the updated 2023 curriculum of both postgraduate medical colleges",
-              "You will be able to access abstracts of previous dissertations to have a better feel of what was done and expand on these research studies to further develop them.",
-              "There are more pictures so that the new resident doctor can easily spot areas of training and trainers to make the transition as a new trainee easier."
-            ]
-          }
-        ]
+        items: {
+          subheading: "What is new in this 2nd edition?",
+          content: [
+            {
+              metatype: 'list',
+              items: [
+                "We decided to make it into an application that would make access to the handbook possible on our phones and PCs with the printable forms feature and easier navigation.",
+                "The handbook also reflects the updated 2023 curriculum of both postgraduate medical colleges",
+                "You will be able to access abstracts of previous dissertations to have a better feel of what was done and expand on these research studies to further develop them.",
+                "There are more pictures so that the new resident doctor can easily spot areas of training and trainers to make the transition as a new trainee easier."
+              ]
+            }
+          ]
+        }
       },
       {
         metatype: "paragraph",
@@ -59,7 +61,8 @@ export const handbook = [
     content: []
   },
   {
-    heading: "Table of Content"
+    heading: "Table of Content",
+    content: []
   },
   {
     heading: "History of the Department of Family Medicine, UCH Ibadan",

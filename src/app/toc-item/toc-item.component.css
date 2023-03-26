@@ -1,10 +1,24 @@
-.fm-toc-item {
+details {
   background-color: var(--fm-toc-background-color);
-  min-height: var(--fm-item-height);
 }
 
 summary {
+  min-height: var(--fm-item-height);
+}
+
+summary > .container-fluid, summary .row {
+  min-height: inherit;
+}
+
+summary, li {
   list-style: none;
+  /* height: 48px;
+  line-height: 48px; */
+  vertical-align: middle;
+}
+
+li {
+  padding: var(--fm-default-padding);
 }
 
 i {

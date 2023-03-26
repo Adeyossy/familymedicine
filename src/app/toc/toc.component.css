@@ -1,3 +1,7 @@
 .fm-toc {
   padding: 8px;
 }
+
+.fm-toc-item {
+  margin: 8px;
+}

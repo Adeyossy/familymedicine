@@ -9,6 +9,10 @@
   --fm-icon-color-contrast: white;
   --fm-toc-background-color: rgb(243, 244, 244);
   --fm-item-height: 64px;
+  --fm-small-padding: 13.5px;
+  --fm-default-padding: 27px;
+  --fm-large-padding: 54px;
+  --fm-xl-padding: 108px;
 }
 
 body {

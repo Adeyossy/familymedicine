@@ -11,11 +11,14 @@ export class AppComponent implements OnInit {
   
   ngOnInit(): void {
     this.tableOfContent = handbook.map(item => {
-      let subheadings = [];
+      let subheadings: string[] = [];
       if(item.content) {
-        let content = item.content as any;
-        subheadings = content.filter((sub: { metatype: string }) => sub.metatype !== 'subheading')
-        .map((sub: { subheading: any; }) => sub.subheading);
+        let content = item.content;
+        let content_with_subheadings = content.filter((sub) => sub.metatype === 'subheading');
+        subheadings = content_with_subheadings.map(sub => {
+          if(Array.isArray(sub.items)) return '';
+          return sub.items.subheading;
+        });
       }
       return [item.heading, subheadings];
     });
