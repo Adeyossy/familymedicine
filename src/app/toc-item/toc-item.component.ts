@@ -9,6 +9,8 @@ export class TocItemComponent implements OnInit {
   @Input() tocItem: Array<string | string[]> = [];
   @Input() tocItemIndex: number = 0;
   subheadings: string[] = this.tocItem[1] as string[];
+  subheading_numbering = ['I.', 'II.', 'III.', 'IV.', 'V.', 'VI.', 'VII.',
+    'VIII.', 'IX.', 'X.', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI'];
 
   constructor() { }
 

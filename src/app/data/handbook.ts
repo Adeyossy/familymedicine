@@ -117,5 +117,9 @@ export const handbook = [
         ]
       }
     ]
+  },
+  {
+    heading: "Welcome to the Family Medicine Programme in UCH Ibadan.",
+    content: []
   }
 ]

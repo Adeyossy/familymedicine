@@ -1,9 +1,25 @@
 details {
   background-color: var(--fm-toc-background-color);
+  border: 1px solid transparent;
+}
+
+details > * {
+  border: 1px solid transparent;
+}
+
+details[open] {
+  background-color: var(--fm-toc-item-selected-background-color);
+  transition: background-color 200ms ease-in;
+}
+
+details[open], details[open] > * {
+  border: 1px solid var(--fm-primary-color-contrast);
+  transition: border 500ms linear, height 200ms linear;
 }
 
 summary {
   min-height: var(--fm-item-height);
+  border: 1px solid transparent;
 }
 
 summary > .container-fluid, summary .row {
@@ -17,8 +33,8 @@ summary, li {
   vertical-align: middle;
 }
 
-li {
-  padding: var(--fm-default-padding);
+p {
+  padding: var(--fm-default-padding) 0px;
 }
 
 i {
@@ -26,6 +42,6 @@ i {
 }
 
 .fm-toc-item-number {
-  border: 2px solid var(--fm-primary-color-contrast);
+  border: 1px solid var(--fm-primary-color-contrast);
   padding: 2px 8px;
 }

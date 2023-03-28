@@ -1,0 +1,7 @@
+.fm-toc-container {
+  background: linear-gradient(to bottom, var(--fm-background-color), var(--fm-background-color)),
+    url('../assets/bg1.jpg');
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-size: cover;
+}

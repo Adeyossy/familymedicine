@@ -1,4 +1,14 @@
 <div class="fm-toc">
+  <div class="container-fluid fm-toc-header">
+    <div class="row g-0 align-items-center">
+      <div class="col-1">
+        <img src="../../assets/logo.png" alt="Department of Family Medicine logo" class="img-fluid">
+      </div>
+      <div class="col-11">
+        <h1 class="fm-header px-3">Table of Content</h1>
+      </div>
+    </div>
+  </div>
   <div class="fm-toc-items">
     <div class="fm-toc-item" *ngFor="let tocItem of toc, index as i">
       <app-toc-item [tocItem]="tocItem" [tocItemIndex]="i + 1"></app-toc-item>

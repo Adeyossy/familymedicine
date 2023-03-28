@@ -12,12 +12,13 @@
       </div>
     </div>
   </summary>
-  <div class="container-fluid p-0">
+  <div class="container-fluid p-0" *ngFor="let subheading of subheadings, index as i">
     <div class="row g-0">
-      <div class="offset-2 col-8">
-        <ol *ngIf="subheadings.length">
-          <li *ngFor="let subheading of subheadings">{{ subheading }}</li>
-        </ol>
+      <div class="col-2 text-center">
+        <p class="text-center">{{ subheading_numbering[i] }}</p>
+      </div>
+      <div class="col-10">
+        <p>{{ subheading }}</p>
       </div>
     </div>
   </div>

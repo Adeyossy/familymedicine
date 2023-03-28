@@ -1,7 +1,28 @@
 .fm-toc {
   padding: 8px;
+  height: 75vh;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  overflow-y: auto;
+}
+
+.fm-toc-header {
+  padding: var(--fm-small-padding);
+  padding-top: var(--fm-default-padding);
+}
+
+.fm-toc-items {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  font-size: 12.5px;
 }
 
 .fm-toc-item {
   margin: 8px;
+}
+
+@media only screen and (min-width: 992px) {
+  .fm-toc {
+    height: 100vh;
+  }
 }

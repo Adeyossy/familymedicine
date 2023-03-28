@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TocItemComponent } from './toc-item/toc-item.component';
 import { TocComponent } from './toc/toc.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TocItemComponent,
-    TocComponent
+    TocComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
