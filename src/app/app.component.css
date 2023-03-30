@@ -1,7 +1,19 @@
 .fm-toc-container {
+  position: fixed;
+  left: 0; top: 0;
+}
+
+.fm-toc-group {
   background: linear-gradient(to bottom, var(--fm-background-color), var(--fm-background-color)),
     url('../assets/bg1.jpg');
   background-blend-mode: soft-light;
   background-position: center;
   background-size: cover;
+}
+
+.fm-details-container {
+  z-index: 0;
+}
+
+@media only screen and (min-width: 992px) {
 }

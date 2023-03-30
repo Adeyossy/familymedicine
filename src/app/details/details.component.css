@@ -1,0 +1,18 @@
+.fm-details {
+  padding: var(--fm-small-padding);
+}
+
+.fm-body {
+  margin-top: var(--fm-default-padding);
+}
+
+p.fm-body-text {
+  white-space: pre-line;
+  margin-bottom: var(--fm-default-padding);
+}
+
+@media only screen and (min-width: 768px) {
+  .fm-details {
+    padding: var(--fm-large-padding);
+  }
+}
