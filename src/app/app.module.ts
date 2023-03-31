@@ -8,6 +8,7 @@ import { TocComponent } from './toc/toc.component';
 import { DetailsComponent } from './details/details.component';
 import { ParagraphComponent } from './widgets/paragraph/paragraph.component';
 import { MetatypeComponent } from './metatype/metatype.component';
+import { SplashComponent } from './widgets/splash/splash.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MetatypeComponent } from './metatype/metatype.component';
     TocComponent,
     DetailsComponent,
     ParagraphComponent,
-    MetatypeComponent
+    MetatypeComponent,
+    SplashComponent
   ],
   imports: [
     BrowserModule,

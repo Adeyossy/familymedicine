@@ -5,14 +5,14 @@
         <div class="col-2 text-center">
           <span class="text-center fm-toc-item-number">{{ tocItemIndex }}</span>
         </div>
-        <div class="col-8">{{ tocItem[0] }}</div>
+        <div class="col-8">{{ tocItem.title }}</div>
         <div class="col-2 text-center">
           <i class="bi bi-caret-right-fill"></i>
         </div>
       </div>
     </div>
   </summary>
-  <div class="container-fluid p-0" *ngFor="let subheading of subheadings, index as i">
+  <div class="container-fluid p-0" *ngFor="let subheading of tocItem.sections, index as i">
     <div class="row g-0">
       <div class="col-2 text-center">
         <p class="text-center">{{ subheading_numbering[i] }}</p>

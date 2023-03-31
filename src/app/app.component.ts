@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { handbook } from './data/handbook';
-import { SectionItem } from './types/handbook_types';
+import { SectionItem, TableOfContent } from './types/handbook_types';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { SectionItem } from './types/handbook_types';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  tableOfContent: Array<Array<string | string[]>> = [];
+  tableOfContent: Array<TableOfContent> = [];
 
   ngOnInit(): void {
     this.tableOfContent = handbook.map(item => {
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
         });
       }
 
-      return [item.heading, subheadings];
+      return { title: item.heading, sections: subheadings}
     });
   }
 

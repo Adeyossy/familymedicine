@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TableOfContent } from '../types/handbook_types';
 
 @Component({
   selector: 'app-toc-item',
@@ -6,16 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./toc-item.component.css']
 })
 export class TocItemComponent implements OnInit {
-  @Input() tocItem: Array<string | string[]> = [];
+  @Input() tocItem: TableOfContent = { title: "", sections: [] };
   @Input() tocItemIndex: number = 0;
-  subheadings: string[] = this.tocItem[1] as string[];
+  subheadings: string[] = this.tocItem.sections;
   subheading_numbering = ['I.', 'II.', 'III.', 'IV.', 'V.', 'VI.', 'VII.',
     'VIII.', 'IX.', 'X.', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI'];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.subheadings = this.tocItem[1] as string[];
+    this.subheadings = this.tocItem.sections;
   }
 
 }
