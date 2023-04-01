@@ -12,6 +12,7 @@
 }
 
 .fm-details-container {
+  /* position: relative; */
   z-index: 0;
 }
 

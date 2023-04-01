@@ -25,10 +25,19 @@ export const handbook = [
           {
             metatype: 'list',
             content: [
-              "We decided to make it into an application that would make access to the handbook possible on our phones and PCs with the printable forms feature and easier navigation.",
-              "The handbook also reflects the updated 2023 curriculum of both postgraduate medical colleges",
-              "You will be able to access abstracts of previous dissertations to have a better feel of what was done and expand on these research studies to further develop them.",
-              "There are more pictures so that the new resident doctor can easily spot areas of training and trainers to make the transition as a new trainee easier."
+              {
+                metatype: "leading",
+                content: []
+              },
+              {
+                metatype: "ul",
+                content: [
+                  "We decided to make it into an application that would make access to the handbook possible on our phones and PCs with the printable forms feature and easier navigation.",
+                  "The handbook also reflects the updated 2023 curriculum of both postgraduate medical colleges",
+                  "You will be able to access abstracts of previous dissertations to have a better feel of what was done and expand on these research studies to further develop them.",
+                  "There are more pictures so that the new resident doctor can easily spot areas of training and trainers to make the transition as a new trainee easier."
+                ]
+              }
             ]
           }
         ]
@@ -89,12 +98,21 @@ export const handbook = [
     heading: "Family Medicine Training Objectives",
     content: [
       {
-        metatype: "ordered_list",
+        metatype: "list",
         content: [
-          "To provide trainees with academic and professional exposures which are relevant to the acquisition of knowledge, skills and attitudes central to the principles and practice of Family Medicine.",
-          "To foster goal-oriented trainer-trainee, trainee-trainee and patient/client-trainee interactions and collaborations for achievement of continuing professional development and individual aspirations.",
-          "To support respectable partnership between trainees and other professionals/allied health workers for the provision of comprehensive, integrated and accessible medical service for patient care, teaching and research.",
-          "To produce competent college-certified Family Physicians who are committed to the promotion of the biopsychosocial model of care, and to the advancement of Family Medicine as a specialty."
+          {
+            metatype: "leading",
+            content: []
+          },
+          {
+            metatype: "ol",
+            content: [
+              "To provide trainees with academic and professional exposures which are relevant to the acquisition of knowledge, skills and attitudes central to the principles and practice of Family Medicine.",
+              "To foster goal-oriented trainer-trainee, trainee-trainee and patient/client-trainee interactions and collaborations for achievement of continuing professional development and individual aspirations.",
+              "To support respectable partnership between trainees and other professionals/allied health workers for the provision of comprehensive, integrated and accessible medical service for patient care, teaching and research.",
+              "To produce competent college-certified Family Physicians who are committed to the promotion of the biopsychosocial model of care, and to the advancement of Family Medicine as a specialty."
+            ]
+          }
         ]
       },
       {
@@ -307,29 +325,34 @@ export const handbook = [
         metatype: "section",
         content: [
           {
-            metatype: "paragraph",
-            content: [
-              "You should achieve competence in the diagnosis and management of a wide range of conditions presenting with emphasis in the following areas:"
-            ]
-          },
-          {
             metatype: "list",
             content: [
-              "Family Practice",
-              "Adult Medicine (including dermatology)",
-              "Maternal/Women's Health",
-              "Mental Health",
-              "Laboratory Medicine",
-              "Community Health",
-              "General Surgery, including orthopaedics and urology",
-              "Child Health",
-              "Anaesthesia",
-              "Accident & Emergencies",
-              "Ear, Nose & Throat (ENT)",
-              "Ophthalmology",
-              "Oral Health",
-              "Radiology and Medical Imaging",
-              "District Rotation for Family Practice especially for trainees in centers where integrated patient care (e.g., concurrent care of patients with medical, surgical and obstetric conditions) is not practicable."
+              {
+                metatype: "leading",
+                content: [
+                  "You should achieve competence in the diagnosis and management of a wide range of conditions presenting with emphasis in the following areas:"
+                ]
+              },
+              {
+                metatype: "ul",
+                content: [
+                  "Family Practice",
+                  "Adult Medicine (including dermatology)",
+                  "Maternal/Women's Health",
+                  "Mental Health",
+                  "Laboratory Medicine",
+                  "Community Health",
+                  "General Surgery, including orthopaedics and urology",
+                  "Child Health",
+                  "Anaesthesia",
+                  "Accident & Emergencies",
+                  "Ear, Nose & Throat (ENT)",
+                  "Ophthalmology",
+                  "Oral Health",
+                  "Radiology and Medical Imaging",
+                  "District Rotation for Family Practice especially for trainees in centers where integrated patient care (e.g., concurrent care of patients with medical, surgical and obstetric conditions) is not practicable."
+                ]
+              }
             ]
           }
         ]
@@ -575,7 +598,7 @@ export const handbook = [
           {
             metatype: "level",
             content: [
-              "CME Coordinator", 
+              "CME Coordinator",
               "Residency Training Coordinator",
               "Family Medicine Consultants & Trainers"
             ]

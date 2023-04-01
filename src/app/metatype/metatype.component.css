@@ -1,0 +1,7 @@
+p.fm-body-text {
+  margin-bottom: var(--fm-default-padding);
+}
+
+.fm-section-container {
+  background-color: var(--fm-primary-color-light);
+}

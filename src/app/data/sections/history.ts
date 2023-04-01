@@ -4,14 +4,25 @@ export const history = {
     {
       metatype: "paragraph",
       content: [
-        "This department has been in existence since the establishment of the hospital in 1957. It was then known as the General Practice Clinic and was manned by Hospital Medical Officers. This was the major service area of the Hospital and it had a dual function."
+        "This department has been in existence since the establishment of the hospital in 1957. It was then known as the General Practice Clinic and was manned by Hospital Medical Officers."
       ]
     },
     {
       metatype: "list",
       content: [
-        "To regulate admissions within the hospital and attendance at any of the specialty clinics",
-        "To provide the condition upon which the patients may be so admitted or attended to."
+        {
+          metatype: "leading",
+          content: [
+            "This was the major service area of the Hospital and it had a dual function:"
+          ]
+        },
+        {
+          metatype: "ul",
+          content: [
+            "To regulate admissions within the hospital and attendance at any of the specialty clinics",
+            "To provide the condition upon which the patients may be so admitted or attended to."
+          ]
+        }
       ]
     },
     {
@@ -68,16 +79,26 @@ export const history = {
             "It is this general out-patient clinic which the Board of Management on the recommendation of the Medical Advisory Committee has made into the Department of General Practice and it does, of course, provide an ideal opportunity for teaching the type of medicine which most of the graduates will be practicing when they leave hospital.",
             "The new teaching hospital of over 500 beds is now almost completed, the various departments are being fitted out, and it's expected to start functioning at the beginning of April. In its African setting it is almost fantastically modern both in building and equipment; and from kitchens, automatic telephone exchange, and lifts, towards, theatres and laboratories, has the most up-to-date fittings.",
             "The Department of General Practice occupies the first of a series of blocks along the out-patient corridor. It is next to the pharmacy, where all prescriptions will be dispensed, and to the out-patient X-ray department and casualty department are adjacent.",
-            "The lay-out of the department itself is not ideal and experience may show the necessity for some changes, but it does in effect form a 'health centre' with accommodation for six doctors. The medical equipment is all that could be desired and there is a staff or nurses, with a sister in charge and clerks, porters, etc. There is a clinical side-room fully equipped, and direct access to all laboratory and X. ray facilities. A system of record-keeping has been worked out with a method of obtaining statistics of diseases, attendances, and other factors. It will be (as indeed it should be in a teaching hospital) practice under almost ideal conditions, provided that the number of the medical staff is adequate to cope with the numbers of patients without undue pressure. It is to be hoped that training under these conditions will stimulate medical officers to try to attain similar conditions in their future work, in other less well equipped hospitals in the country.",
-            "The medical staff of the department will be of three grades"
+            "The lay-out of the department itself is not ideal and experience may show the necessity for some changes, but it does in effect form a 'health centre' with accommodation for six doctors. The medical equipment is all that could be desired and there is a staff or nurses, with a sister in charge and clerks, porters, etc. There is a clinical side-room fully equipped, and direct access to all laboratory and X. ray facilities. A system of record-keeping has been worked out with a method of obtaining statistics of diseases, attendances, and other factors. It will be (as indeed it should be in a teaching hospital) practice under almost ideal conditions, provided that the number of the medical staff is adequate to cope with the numbers of patients without undue pressure. It is to be hoped that training under these conditions will stimulate medical officers to try to attain similar conditions in their future work, in other less well equipped hospitals in the country."
           ]
         },
         {
           metatype: "list",
           content: [
-            "Two S.H.M.O.'s, experience in general practitioners work, who will be responsible for the organization (and incidentally also for the hospital staff medical services) and who will supervise, advise and teach the junior staff",
-            "Two LH.M.O's or senior house officers who will work in the department for possibly a year to gain further general experience, and",
-            "House physicians."
+            {
+              metatype: "leading",
+              content: [
+                "The medical staff of the department will be of three grades"
+              ]
+            },
+            {
+              metatype: "ul",
+              content: [
+                "Two S.H.M.O.'s, experience in general practitioners work, who will be responsible for the organization (and incidentally also for the hospital staff medical services) and who will supervise, advise and teach the junior staff",
+                "Two LH.M.O's or senior house officers who will work in the department for possibly a year to gain further general experience, and",
+                "House physicians."
+              ]
+            }
           ]
         },
         {
@@ -121,7 +142,18 @@ export const history = {
             {
               metatype: "image",
               content: [
-                "../assets/cobban.jpg"
+                {
+                  metatype: "src",
+                  content: [
+                    "../assets/cobban.jpg"
+                  ]
+                },
+                {
+                  metatype: "caption",
+                  content: [
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -140,7 +172,18 @@ export const history = {
             {
               metatype: "image",
               content: [
-                "../assets/reddy.jpg"
+                {
+                  metatype: "src",
+                  content: [
+                    "../assets/reddy.jpg"
+                  ]
+                },
+                {
+                  metatype: "caption",
+                  content: [
+                    ""
+                  ]
+                }
               ]
             }
           ]
@@ -151,7 +194,16 @@ export const history = {
             {
               metatype: "image",
               content: [
-                "../assets/ball.jpg"
+                {
+                  metatype: "src",
+                  content: [
+                    "../assets/ball.jpg"
+                  ]
+                },
+                {
+                  metatype: "caption",
+                  content: []
+                }
               ]
             },
             {
@@ -204,8 +256,17 @@ export const history = {
             {
               metatype: "image",
               content: [
-                "../assets/kalejaiye_1.jpg",
-                "../assets/kalejaiye_2.jpg"
+                {
+                  metatype: "src",
+                  content: [
+                    "../assets/kalejaiye_1.jpg",
+                    "../assets/kalejaiye_2.jpg"
+                  ]
+                },
+                {
+                  metatype: "caption",
+                  content: []
+                }
               ]
             },
             {

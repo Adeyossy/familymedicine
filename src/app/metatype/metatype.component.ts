@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { SectionItem } from '../types/handbook_types';
+import { Component, OnInit, Input } from '@angular/core';
+import { Paragraph, SectionItem } from '../types/handbook_types';
 
 @Component({
   selector: 'app-metatype',
@@ -9,11 +9,18 @@ import { SectionItem } from '../types/handbook_types';
 export class MetatypeComponent implements OnInit {
 
   metatype: string = "";
-  item: SectionItem = { metatype: "", content: [] };
+  @Input() item: SectionItem = { metatype: "", content: [] };
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  itemAsStrings(): string[] {
+    return this.item.content as string[];
+  }
+
+  itemAsSectionItems(): SectionItem[] {
+    return this.item.content as SectionItem[];
+  }
 }

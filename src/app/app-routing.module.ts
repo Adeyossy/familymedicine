@@ -5,7 +5,7 @@ import { SplashComponent } from './widgets/splash/splash.component';
 
 const routes: Routes = [
   { path: "", component:  SplashComponent },
-  { path: "content/:contentId", component: DetailsComponent }
+  { path: "content/:id/:contentId", component: DetailsComponent }
 ];
 
 @NgModule({

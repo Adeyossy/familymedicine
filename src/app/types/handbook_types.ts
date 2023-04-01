@@ -7,3 +7,8 @@ export type TableOfContent = {
   title: string;
   sections: string[];
 }
+
+export type Paragraph = {
+  metatype: string;
+  content: string[];
+}

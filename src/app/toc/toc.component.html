@@ -11,7 +11,7 @@
   </div>
   <div class="fm-toc-items">
     <div class="fm-toc-item" *ngFor="let tocItem of toc, index as i">
-      <a routerLink="/content/{{ tocLinks[i].title }}">
+      <a routerLink="/content/{{i}}/{{ tocLinks[i].title }}">
         <app-toc-item [tocItem]="tocItem" [tocItemIndex]="i + 1"></app-toc-item>
       </a>
     </div>
