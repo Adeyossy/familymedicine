@@ -1,7 +1,12 @@
-p.fm-body-text {
+p.fm-body-text, ol, ul {
   margin-bottom: var(--fm-default-padding);
 }
 
-.fm-section-container {
-  background-color: var(--fm-primary-color-light);
+hr {
+  margin: var(--fm-large-padding) 0px;
+  color: var(--fm-primary-color);
+}
+
+li {
+  margin: 8px;
 }

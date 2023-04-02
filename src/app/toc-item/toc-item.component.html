@@ -3,11 +3,17 @@
     <div class="container-fluid p-0">
       <div class="row g-0 fm-toc-item align-items-center">
         <div class="col-2 text-center">
-          <span class="text-center fm-toc-item-number">{{ tocItemIndex }}</span>
+          <span class="text-center fm-toc-item-number">{{ tocItemIndex + 1 }}</span>
         </div>
-        <div class="col-8">{{ tocItem.title }}</div>
+        <div class="col-8">
+          <a routerLink="/content/{{tocItemIndex}}/{{ tocLink.title }}">
+            <div>
+              <p>{{ tocItem.title }}</p>
+            </div>
+          </a>
+        </div>
         <div class="col-2 text-center">
-          <i class="bi bi-caret-right-fill"></i>
+          <i class="bi bi-caret-right-fill" *ngIf="tocLink.sections.length"></i>
         </div>
       </div>
     </div>
@@ -17,7 +23,7 @@
       <div class="col-2 text-center">
         <p class="text-center">{{ subheading_numbering[i] }}</p>
       </div>
-      <div class="col-10">
+      <div class="col-9">
         <p>{{ subheading }}</p>
       </div>
     </div>

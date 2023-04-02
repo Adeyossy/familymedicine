@@ -9,6 +9,7 @@ import { TableOfContent } from '../types/handbook_types';
 export class TocItemComponent implements OnInit {
   @Input() tocItem: TableOfContent = { title: "", sections: [] };
   @Input() tocItemIndex: number = 0;
+  @Input() tocLink: TableOfContent = { title: "", sections: [] };
   subheadings: string[] = this.tocItem.sections;
   subheading_numbering = ['I.', 'II.', 'III.', 'IV.', 'V.', 'VI.', 'VII.',
     'VIII.', 'IX.', 'X.', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI'];

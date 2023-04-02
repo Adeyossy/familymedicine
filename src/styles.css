@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6, label, button {
   margin: 0;
 }
 
-p {
+p, li {
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 0;
   margin: 0;
@@ -93,7 +93,7 @@ p.fm-subtitle {
     font-size: 30px;
   }
 
-  p, .fm-subtitle {
+  p, .fm-subtitle, li {
     font-size: 21px
   }
 

@@ -23,4 +23,8 @@ export class MetatypeComponent implements OnInit {
   itemAsSectionItems(): SectionItem[] {
     return this.item.content as SectionItem[];
   }
+
+  imageItemAsStrings(index: number): string[] {
+    return (this.item.content[index] as SectionItem).content as string[];
+  }
 }
