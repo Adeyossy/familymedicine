@@ -11,7 +11,9 @@
   </div>
   <div class="fm-toc-items">
     <div class="fm-toc-item" *ngFor="let tocItem of toc, index as i">
-      <app-toc-item [tocItem]="tocItem" [tocItemIndex]="i" [tocLink]="tocLinks[i]"></app-toc-item>
+      <app-toc-item [isOpen]="itemsOpenState[i]" [isSelected]="itemsSelectionState[i]"
+       [tocItem]="tocItem" [tocItemIndex]="i" [tocLink]="tocLinks[i]"
+       (propagateStateChange)="changeState($event)"></app-toc-item>
     </div>
   </div>
 </div>

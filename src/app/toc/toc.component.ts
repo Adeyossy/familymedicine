@@ -8,6 +8,8 @@ import { TableOfContent } from '../types/handbook_types';
 })
 export class TocComponent implements OnInit {
   @Input() toc: Array<TableOfContent> = [];
+  itemsSelectionState: boolean[] = [];
+  itemsOpenState: boolean[] = [];
   tocLinks: TableOfContent[] = [];
 
   constructor() { }
@@ -21,6 +23,18 @@ export class TocComponent implements OnInit {
 
       return item;
     });
+
+    this.itemsSelectionState = new Array(this.toc.length);
+    this.itemsSelectionState = this.itemsSelectionState.fill(false);
+    this.itemsOpenState = Array.from(this.itemsSelectionState);
+  }
+
+  changeState(index: number): void {
+    const oldState = this.itemsSelectionState[index];
+    this.itemsSelectionState = this.itemsSelectionState.fill(false);
+    this.itemsOpenState = this.itemsOpenState.fill(false);
+    this.itemsSelectionState[index] = !oldState;
+    this.itemsOpenState[index] = !oldState;
   }
 
 }

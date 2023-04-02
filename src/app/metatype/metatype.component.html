@@ -10,9 +10,19 @@
 <div class="fm-metatype fm-leading-container" *ngIf="item.metatype === 'leading'">
   <p class="fm-list-leading" *ngFor="let leading of itemAsStrings()">{{ leading }}</p>
 </div>
-<div class="fm-metatype fm-image-container" *ngIf="item.metatype === 'image'">
-  <div *ngFor="let img of imageItemAsStrings(0), index as i">
-    <img src="{{img}}" alt="{{imageItemAsStrings(1)[i]}}">
+<div class="fm-metatype fm-image-container" *ngIf="item.metatype === 'image'" [ngStyle]='{ "background": "url({{ `../..${imageItemAsStrings(0)[0]}` }})" }'>
+  <!-- {{imageItemAsStrings(0)[0]}} -->
+  <div class="container-fluid p-0">
+    <div class="row justify-content-center">
+      <div *ngFor="let img of imageItemAsStrings(0), index as i" class="col-lg-6 mb-3 fm-image-bg">
+        <div class="text-center fm-image-group">
+          <img src="../..{{img}}" alt="{{imageItemAsStrings(1)[0]}}">
+          <div class="fm-caption-container">
+            <p class="fm-caption">{{ imageItemAsStrings(1)[0] }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <ul class="fm-metatype fm-list-items-container" *ngIf="item.metatype === 'ul'">

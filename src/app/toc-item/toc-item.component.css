@@ -1,6 +1,6 @@
 details {
   background-color: var(--fm-toc-background-color);
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 details > * {
@@ -13,8 +13,19 @@ details[open] {
 }
 
 details[open], details[open] > * {
-  border: 1px solid var(--fm-primary-color-contrast);
+  border: 2px solid var(--fm-primary-color-contrast);
   transition: border 500ms linear, height 200ms linear;
+}
+
+details:hover {
+  background-color: var(--fm-primary-color-light);
+  border: 2px solid var(--fm-primary-color-contrast);
+}
+
+details:active, details.active {
+  background-color: var(--fm-primary-color-contrast);
+  color: white;
+  border-color: var(--fm-accent-color);
 }
 
 summary {
@@ -40,6 +51,10 @@ p {
 
 i {
   font-size: 16px;
+}
+
+details.active .fm-toc-item-number {
+  border-color: var(--fm-accent-color);
 }
 
 .fm-toc-item-number {

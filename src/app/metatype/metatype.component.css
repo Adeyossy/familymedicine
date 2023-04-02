@@ -10,3 +10,31 @@ hr {
 li {
   margin: 8px;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.fm-image-container {
+  margin: var(--fm-large-padding) 0px;
+  background-size: cover;
+}
+
+.fm-image-bg {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.fm-image-group {
+  /* width: 60%; */
+  border: 2px solid var(--fm-primary-color);
+  background-color: var(--fm-primary-color-light);
+}
+
+.fm-caption {
+  padding: var(--fm-default-padding);
+  text-align: left;
+  font-size: 16px;
+}

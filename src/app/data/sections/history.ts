@@ -145,13 +145,13 @@ export const history = {
                 {
                   metatype: "src",
                   content: [
-                    "../assets/cobban.jpg"
+                    "/assets/cobban.jpg"
                   ]
                 },
                 {
                   metatype: "caption",
                   content: [
-                    ""
+                    "Dr Kenneth Mclean Cobban (MB, ChB – 1927 (Uni Liverpool), MD (1930), MB, BS (1938 - Uni London)"
                   ]
                 }
               ]
@@ -164,7 +164,7 @@ export const history = {
             {
               metatype: "paragraph_link",
               content: [
-                `Our 2nd  Head of Department (HoD) was Dr Shun Reddy 1965 - 1971, A South African Indian who eventually who was an Associate Lecturer in the Department of Medicine of the University of Ibadan and later became a Professor of Community Medicine in the Ahmadu Bello University Zaria, Nigeria. 
+                `Our 2nd Head of Department (HoD) was Dr Shun Reddy 1965 - 1971, A South African Indian who eventually who was an Associate Lecturer in the Department of Medicine of the University of Ibadan and later became a Professor of Community Medicine in the Ahmadu Bello University Zaria, Nigeria. 
                 https://www.bmj.com/content/281/6253/1502
                 `
               ]
@@ -175,13 +175,13 @@ export const history = {
                 {
                   metatype: "src",
                   content: [
-                    "../assets/reddy.jpg"
+                    "/assets/reddy.jpg"
                   ]
                 },
                 {
                   metatype: "caption",
                   content: [
-                    ""
+                    "2nd Head of Department (HoD): Dr Shun Reddy 1965 - 1971"
                   ]
                 }
               ]
@@ -197,19 +197,21 @@ export const history = {
                 {
                   metatype: "src",
                   content: [
-                    "../assets/ball.jpg"
+                    "/assets/ball.jpg"
                   ]
                 },
                 {
                   metatype: "caption",
-                  content: []
+                  content: [
+                    "3rd HoD: Dr Angela Rosamund Cook, later Mrs Ball (1971 - 1983)"
+                  ]
                 }
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Our 3rd HoD was Dr Angela Rosamund Cook latter Mrs Ball. She was Head between 1971 - 1983 and also Associate Lecturer in the Department of Medicine of the University of Ibadan (BMJ Volume 312, 18 May,1996pg 1296 (no longer accessible).",
+                "Our 3rd HoD was Dr Angela Rosamund Cook later Mrs Ball. She was Head between 1971 - 1983 and also Associate Lecturer in the Department of Medicine of the University of Ibadan (BMJ Volume 312, 18 May,1996pg 1296 (no longer accessible).",
                 "Angela Rosamund Cookee (Mrs Ball), formerly head of the General Outpatients Department and Staff Clinic, University College Hospital, Ibadan, Nigeria. She worked in Ibadan for 20 years, leaving Nigeria to accompany her husband to the Sudan, where she worked in the staff and student clinic of Khartoum University and Learned Arabic. She retired when her husband was transferred to Rome and soon learnt Italian and studied the city's ancient Renaissance monuments often surprising her Italian friends with the depth of her knowledge. She was a lover of animals and a keen sportswoman, being All Nigerian Ladies tennis champion, a low handicap golfer, and a good horsewoman. She was playing tennis until shorty before her death. She died of acute liver failure on 5 January 1996. (She leaves a husband. J. Ball)",
                 "As we transition from the expatriates to Nigerian indigenes in positions of leadership, the editor's note of the 1st edition of the residency handbook provides further historical perspective."
               ]
@@ -259,13 +261,15 @@ export const history = {
                 {
                   metatype: "src",
                   content: [
-                    "../assets/kalejaiye_1.jpg",
-                    "../assets/kalejaiye_2.jpg"
+                    "/assets/kalejaiye_1.jpg",
+                    "/assets/kalejaiye_2.jpg"
                   ]
                 },
                 {
                   metatype: "caption",
-                  content: []
+                  content: [
+                    "The 4th HoD and the 1st Nigerian one was Dr Alaba Kalejaiye MBBS (Glasgow), Dip. Soc. Med (Edin), FMCGP (Nig), FWACP-FM"
+                  ]
                 }
               ]
             },
@@ -275,6 +279,210 @@ export const history = {
                 "Dr. Kalejaiye's headship tenure spanned 13 years (1983-1996). During this time the Postgraduate training programme became well grounded and well recognized within the hospital by the Nigerian and West African Postgraduate Medical Colleges.",
                 "Dr Kalejaiye fought to create acceptance of the new specialisation of General Medical Practice. With the name of the specialisation, this was a tough call. She used her excellence to impress her colleagues in other specialities, s that the training might go on in all the departments that participate in the training of family physicians. She was also associate lecturer for the Department of Medicine, carrying on the precedence set, so that she impacted on all medical students. Dr Kalejaiye worked on increasing the number of residency slots and number of consultants positions in the department. She was known for personally prodding and guiding of resident doctors to succeed, investing her time with bed-side teachings lasting up to 2hours even as head of department.  ",
                 "Dr. Kalejaiye was also Chief Examiner for the Faculty Medical Practice/Family Medicine of the West Africa of Physicians from 1993 to 1996. She was later appointed into the esteemed position as Deputy Registrar, National Postgraduate Medical Nigeria, ljanikin, Lagos from 1997 to 2008. She retired fron the civil service. She is currently a member Board of Lagos University Teaching Hospital(LUTH)."
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "section",
+          content: [
+            {
+              metatype: "subheading",
+              content: [
+                "The 5th HoD was Dr. Modupe Ladipo MBBS (lb) FMCGP (Nig) FWACP"
+              ]
+            },
+            {
+              metatype: "image",
+              content: [
+                {
+                  metatype: "src",
+                  content: [
+                    "/assets/ladipo_1.jpg",
+                    "/assets/ladipo_2.jpg"
+                  ]
+                },
+                {
+                  metatype: "caption",
+                  content: [
+                    "The 5th HoD was Dr. Modupe Ladipo MBBS (lb) FMCGP (Nig) FWACP"
+                  ]
+                }
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Consultant Family Physician, who was the pioneer Family Medicine Resident in U.C.H, was the Head of the from 1996 to 2011. She was a Member of the Faculty Board of General Practice/Family Medicine Faculty of National Postgraduate Medical College of Nigeria and was elected as the Secretary and Chief Exarminer of that Faculty from 1996 to 2004. Dr. Ladipo was elected as the Chief Examiner of the West African College of Physicians from 2005 to 2008. She is the second Fellow by Examination who has been a Chief Examiner for that Faculty. She is an active member of the World Organization of Farnily Physicians (WONCA).",
+                "She was an Associate lecturer in Department of Surgery, College of Medicine, University of Ibadan. This post initiated the Saturday surgery teaching session. Patients with “short-case” pathologies were pooled on Saturdays, for a quick consult and booking for surgery while affording resident doctors in family medicine, surgery and medical students the opportunity of seeing ‘fresh” surgery patients. The postgraduate family medicine curriculun for the UCH was initiated by Dr. Ladipo and the documentation of this curriculum started during her tenure. She became the 1st Senior Lecturer of undergraduate Family Medicine of the University of Ibadan just before her retirement in the University College Hospital, Ibadan. She stayed to guide young consultants even working pro bono for 2 years before her retirement from the College of Medicine in 2022. Dr Ladipo had always been very aware of social ties between the multidisciplinary team and is responsible for engineering an atmosphere of family by creating a system of visiting staff at important family occasions with a departmental gift, having a yearly festive gathering to thank staff, recognise excellence while we feast and are merry. This was funded by the doctors and hence consolidated a sense of benefactory leadership which has served the department through the years. New staff always say “the Department of Family Medicine is truly a family”. This is largely due to Dr Modupe Ladipo. Dr Ladipo accepted the partnership proposed by the CMD, Prof A Illesanmi with the Agbeke Mercy Medical Centre, covered by NYSC doctors - a precursor to great things!"
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "section",
+          content: [
+            {
+              metatype: "subheading",
+              content: [
+                "The 6th HoD, Dr. E. Achiaka Irabor MBBS (lb), FWACP-FM, MSc Develop Psych (Ib) - 1st of April 2011 to 31st of March 2014."
+              ]
+            },
+            {
+              metatype: "image",
+              content: [
+                {
+                  metatype: "src",
+                  content: [
+                    "/assets/achiaka.jpg"
+                  ]
+                },
+                {
+                  metatype: "caption",
+                  content: [
+                    "he 6th HoD, Dr. E. Achiaka Irabor MBBS (lb), FWACP-FM, MSc Develop Psych (Ib) - 1st of April 2011 to 31st of March 2014."
+                  ]
+                }
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "She was associate lecturer in the Department of Paediatrics, University of lbadan from 2002 to 2015 and Clinical Coordinator of the University College Hospital, AlDS Prevention Initiative of Nigeria (APIN)-plus clinic from 2006 to 2015. Dr Irabor has worked on the integrated curriculum review which integrates Family Medicine to the undergraduate curriculum for the first time in the history of the College of Medicine, Ibadan. She has also been guiding the post graduate Continuous Medical Education program and has worked to introduce formative assessment in the post graduate curriculum of the Family Medicine residents in UCH and in the Faculty of Family Medicine, West African College of Physicians through the Doctors as Educators program.",
+                "Dr Irabor headed the Department of Total Quality Management of the UCH Ibadan between 2015 -2019, was Training Coordinator of the WACP Faculty of Family Medicine between 2015 – 2018 and Quality Assurance Representative for the Faculty of Family Medicine of the WACP between 2019 - 2022. During her tenure, the department adopted a shared leadership structure, with weekly consultants’ meeting that go through training, service and research issues.",
+                ". The Department also received a facelift with its unique colour scheme, children play areas, increased illumination in the sorting hall (windows were created), block-glass children sorting area, nurses bay and High Dependency Unit equipped with multi-parameter monitors and oxygen concentrators culled from the APIN-plus project. She also turned the coverage of the Agbeke Mercy Medical Centre to a training posting, thereby opening the great influence of resident doctors on the clinic and vice versa."
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "section",
+          content: [
+            {
+              metatype: "subheading",
+              content: [
+                "The 7th HoD Dr J Adetola M Ogunbode MBBS (Ib), DTM7H (Liverpool), FWACP-FM, MSc (Epid), MD (Ib). 1st of April 2014 - 31st of March 2017."
+              ]
+            },
+            {
+              metatype: "image",
+              content: [
+                {
+                  metatype: "src",
+                  content: [
+                    "/assets/ogunbode.jpg"
+                  ]
+                },
+                {
+                  metatype: "caption",
+                  content: [
+                    "The 7th HoD Dr J Adetola M Ogunbode MBBS (Ib), DTM7H (Liverpool), FWACP-FM, MSc (Epid), MD (Ib). 1st of April 2014 - 31st of March 2017."
+                  ]
+                }
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Dr Ogunbode worked with the team of consultants and other health workers to ensure the proper running of the department, in terms of teaching, research and service."
+              ]
+            },
+            {
+              metatype: "list",
+              content: [
+                {
+                  metatype: "leading",
+                  content: [
+                    "Innovations as Head of Department included:"
+                  ]
+                },
+                {
+                  metatype: "ol",
+                  content: [
+                    "Re-establishing regular monthly clinic rounds with the Assistant Director of Nursing (ADN) and the Service officer, interacting with the staff, identifying problem areas (on a proforma) and then meeting afterwards in the departmental office to assign duties with continuous monitoring and evaluation also carried out. Checking and maintenance of clinic equipment were done during the clinic rounds.",
+                    "Provision of alternate power supply- an inverter, through donations.",
+                    "Designed and helped in provision of a wooden modified crash cart/cupboard in the observation bay which contained drugs and equipment to help during emergencies.",
+                    "Provision of regular domestic handwashing soap using the imprest."
+                  ]
+                }
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Involved in coordinating the organization of several workshops on Work attitude, and Health and Safety. Attended management committee meetings, advisory committees, tendering and procurement meetings."
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "section",
+          content: [
+            {
+              metatype: "subheading",
+              content: [
+                "The 8th HoD Dr. Olushola A. Mosuro MB;ChB (Ile-Ife) FWACP (FM), MNIM, MMP (UI) - 1st April 2017 to 31st March 2020."
+              ]
+            },
+            {
+              metatype: "image",
+              content: [
+                {
+                  metatype: "src",
+                  content: [
+                    "/assets/mosuro.jpg"
+                  ]
+                },
+                {
+                  metatype: "caption",
+                  content: [
+                    "The 8th HoD Dr. Olushola A. Mosuro MB;ChB (Ile-Ife) FWACP (FM), MNIM, MMP (UI) - 1st April 2017 to 31st March 2020."
+                  ]
+                }
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Dr. Mosuro is an examiner of the West African College of Physicians. Her special interest area is Palliative Medicine, Skin Diseases in Primary Care, Cancer prevention, HIV Medicine, Women’s health, and Life-style Medicine.",
+                "Under her leadership, the department constructed the Residency Clinical Skills Laboratory and equipped it several mannequins, more consultants’ offices and a staff lounge. There was also modification of the clinic structure to include a treatment room, and VIA/PAP/Vaginal examination room to accommodate the new innovations/services. The Family Medicine Consultants’ guide was compiled to guide the newly created unit of undergraduate Family Medicine on tasks and responsibilities to promote equity for all. During this period the Clinical Psychologist unit gained independence as a stand-alone department."
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "section",
+          content: [
+            {
+              metatype: "subheading",
+              content: [
+                "The 9th HoD Dr Adedotun A Adetunji MBChB, MSCI (Northwestern), FWACP (FM). 1st April 2020 till date"
+              ]
+            },
+            {
+              metatype: "image",
+              content: [
+                {
+                  metatype: "src",
+                  content: [
+                    "/assets/adetunji.jpg"
+                  ]
+                },
+                {
+                  metatype: "caption",
+                  content: [
+                    "The 9th HoD Dr Adedotun A Adetunji MBChB, MSCI (Northwestern), FWACP (FM). 1st April 2020 till date"
+                  ]
+                }
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Dr. A.A. Adetunji steered the Department of Family Medicine & Private Suites through a critical period marked by the COVID-19 pandemic with its attendant upheavals of routine and threat to frontline health workers. With the support of UCH Management (and strategic partnerships with other departments), staff members under the department responded with historic courage, innovation and cohesion, and maintained service operations throughout the crisis periods without casualty or complications.",
+                "During this 3-year period, the department’s residency training program showed remarkable resilience by breaking her own record with the graduation of 16 senior registrars as fellows of either the WACP or the NPMCN or both, while maintaining one of the highest trainee retention rates among all residency training programs in UCH. Several of these fresh fellows impressively staked new ground by securing Post Part 2 fellow appointments at the invitation of UCH Management, and by extending the department’s reach to Infectious Disease (critical care), plus expanding her frontiers to out of state comprehensive care facilities in Okuku (Osun state) and Ijebu-Ode (Ogun state).",
+                "With several Family Medicine consultants and trainers holding sway in seven (7) UI/UCH departments (Department of Family Medicine & Private Suites; Staff Medical Services Department; Chief Tony Anenih Geriatric Centre; Health Insurance Department; Department of Community Medicine; Department of Epidemiology and Medical Statistics, and Department of Human Nutrition & Dietetics), an extensive and virile network of family physicians within UCH came into its own in July 2022. By the collective resolve of 64 graduates (at home and abroad) of UCH Family Medicine residency training program (spanning 1994 to 2021), Department of Family Medicine UCH under the leadership of Dr. A.A. Adetunji endowed at the College of Medicine, University of Ibadan (COMUI) a 2.5 million Naira prize for the “Dr. Modupe Ladipo prize for Best Clerkship in Family Medicine” to run in perpetuity in her honour.",
+                "Consistent with a bridge strategy of relevance to the next generation of Family Medicine torch bearers, Dr. Adetunji also serves as an Associate Lecturer in the Department of Community Medicine (Undergraduate Family Medicine unit), COMUI, and as an NIH supported clinician researcher."
               ]
             }
           ]
