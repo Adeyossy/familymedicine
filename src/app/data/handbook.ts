@@ -1,4 +1,7 @@
+import { affilitatedFacilities } from "./sections/affiliated_facilities";
+import { consultants } from "./sections/consultants";
 import { history } from "./sections/history";
+import { senior } from "./sections/senior";
 import { welcome } from "./sections/welcome";
 
 export const handbook = [
@@ -631,49 +634,7 @@ export const handbook = [
     heading: "Routine Departmental Meetings",
     content: []
   },
-  {
-    heading: "The Senior/Part II/Fellowship Training Programme",
-    content: [
-      {
-        metatype: "paragraph",
-        content: [
-          "The aim of the fellowship training is to produce a specialist that is equipped with knowledge, competence and attitudes needed to function independently as a consultant in the field of Family Medicine in the aspects of practice, teaching, research and leadership."
-        ]
-      },
-      {
-        metatype: "subheading",
-        content: [
-          "Requirements for Fellowship Training:"
-        ]
-      },
-      {
-        metatype: "paragraph",
-        content: [
-          "The total length of training is 30 months.  Each trainee who has passed the Family Medicine Part I/membership examination needs to consolidate on the knowledge and skills obtained Pre Part 1/Membership training period.",
-          "The following areas of training are to be covered during the duration of Fellowship training."
-        ]
-      },
-      {
-        metatype: "list",
-        content: [
-          {
-            metatype: "leading",
-            content: [
-              "A: Rotations in Fellowship Training with durations"
-            ]
-          },
-          {
-            metatype: "ol",
-            content: [
-              "Senior Surgery Posting - 2 months",
-              "Senior Women's Health Posting - 2 months",
-              "Integrated Family Medicine posting in an urban community - 2 months",
-              "Geriatrics Posting - 1 months",
-              "Private Practice Tutelage - 3 months: Fellowship Training will include a tutelage in an accredited hospital practice (or other suitable centres) offering a comprehensive service under a qualified Medical Director usually with the supervision of a resident consultant family physicians, to assist the senior doctor to acquire skills in private practice management and or public general medical practice."
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  senior,
+  affilitatedFacilities,
+  consultants
 ]
