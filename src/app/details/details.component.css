@@ -1,5 +1,7 @@
 .fm-details-shadow {
   box-shadow: -8px 0 4px 0px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .fm-details {

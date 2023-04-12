@@ -1,7 +1,10 @@
 import { affilitatedFacilities } from "./sections/affiliated_facilities";
 import { consultants } from "./sections/consultants";
 import { history } from "./sections/history";
+import { otherDepartments } from "./sections/other_departments";
 import { senior } from "./sections/senior";
+import { serviceFunction } from "./sections/service_function";
+import { tasks } from "./sections/tasks";
 import { welcome } from "./sections/welcome";
 
 export const handbook = [
@@ -636,5 +639,8 @@ export const handbook = [
   },
   senior,
   affilitatedFacilities,
-  consultants
+  consultants,
+  otherDepartments,
+  serviceFunction,
+  tasks
 ]
