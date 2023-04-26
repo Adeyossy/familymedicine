@@ -22,7 +22,7 @@ details:hover {
   border: 2px solid var(--fm-primary-color-contrast);
 }
 
-details:active, details.active {
+summary.active {
   background-color: var(--fm-primary-color-contrast);
   color: white;
   border-color: var(--fm-accent-color);
@@ -60,4 +60,5 @@ details.active .fm-toc-item-number {
 .fm-toc-item-number {
   border: 1px solid var(--fm-primary-color-contrast);
   padding: 2px 8px;
+  font-family: 'Jost', sans-serif;
 }

@@ -1,0 +1,7 @@
+.fm-metatext-link {
+  color: var(--fm-accent-color);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  text-decoration: underline;
+}

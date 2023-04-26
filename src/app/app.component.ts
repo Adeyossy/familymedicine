@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { handbook } from './data/handbook';
-import { SectionItem, TableOfContent } from './types/handbook_types';
+import { SectionContent, SectionItem, TableOfContent, Chapter, Section, Paragraph } from './types/handbook_types';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +9,15 @@ import { SectionItem, TableOfContent } from './types/handbook_types';
 })
 export class AppComponent implements OnInit {
   tableOfContent: Array<TableOfContent> = [];
+  index = -1;
 
   ngOnInit(): void {
     this.tableOfContent = handbook.map(item => {
       let subheadings: string[] = [];
       
       if (item.content) {
-        let content = item.content;
-        let content_with_sections = content.filter((sub) => sub.metatype === 'section');
+        let content = item.content as Chapter[];
+        let content_with_sections = content.filter((sub) => sub.metatype === 'section') as Section[];
         let content_with_subheadings = content_with_sections
           .filter((sub) => sub.metatype === 'subheading');
 
@@ -28,14 +29,16 @@ export class AppComponent implements OnInit {
           }).filter(subheading => subheading.metatype)
         });
 
-        subheadings = content_with_sections.flatMap(section => {
-          return section.content.flatMap(_sectionContent => {
-            const sectionContent = _sectionContent as SectionItem;
-            if (sectionContent.metatype === 'subheading') return sectionContent.content[0];
-            if (sectionContent.metatype === 'section') 
-              return this.findSubheading(sectionContent.content as SectionItem[]);
-            return [];
+        subheadings = content_with_sections.flatMap((section) => {
+          const sectionAsStrings = section.content.flatMap(_sectionContent => {
+            const sectionContent = _sectionContent as Paragraph;
+            if (sectionContent.metatype === 'subheading') return sectionContent.content;
+            // if (sectionContent.metatype === 'section') 
+            //   return this.findSubheading(sectionContent.content as SectionItem[]);
+            return [] as string[];
           });
+
+          return sectionAsStrings;
         });
       }
 
@@ -48,8 +51,16 @@ export class AppComponent implements OnInit {
     return sectionContent.flatMap(_sectionContent => {
       const sectionContent = _sectionContent as SectionItem;
       if (sectionContent.metatype === 'subheading') return sectionContent.content[0];
-      if (sectionContent.metatype === 'section') return;
+      if (sectionContent.metatype === 'section') return [];
       return [];
     });
+  }
+
+  attachTest(index: any): void {
+    console.log("attach event");
+  }
+
+  setIndex(index: any): void {
+    this.index = index.index;
   }
 }

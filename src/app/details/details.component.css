@@ -1,5 +1,5 @@
 .fm-details-shadow {
-  box-shadow: -8px 0 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px 0 1px 0px rgba(0, 0, 0, 0.01);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -14,6 +14,14 @@
 
 p.fm-body-text {
   margin-bottom: var(--fm-default-padding);
+}
+
+.fm-justify-self-end {
+  justify-self: end;
+}
+
+.fm-details-nav {
+  margin-top: var(--fm-large-padding);
 }
 
 @media only screen and (min-width: 768px) {

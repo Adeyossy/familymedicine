@@ -1,5 +1,5 @@
-<details [ngClass]="isSelected ? 'active' : ''" [open]="isOpen">
-  <summary (click)="changeSelectionState()">
+<details [open]="isOpen">
+  <summary (click)="changeSelectionState()" [ngClass]="isSelected ? 'active' : ''">
     <div class="container-fluid p-0">
       <div class="row g-0 fm-toc-item align-items-center">
         <div class="col-2 text-center">

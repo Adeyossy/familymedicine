@@ -1,6 +1,11 @@
 export type SectionItem = {
   metatype: string;
-  content: SectionItem[] | string[]
+  content: Paragraph[] | string[];
+}
+
+export type SectionContent = {
+  metatype: string,
+  content: SectionContent[]
 }
 
 export type TableOfContent = {
@@ -11,4 +16,19 @@ export type TableOfContent = {
 export type Paragraph = {
   metatype: string;
   content: string[];
+}
+
+export type MetaType = {
+  metatype: string;
+  content: Paragraph[];
+}
+
+export type Section = {
+  metatype: string;
+  content: Paragraph[] | MetaType[];
+}
+
+export type Chapter = {
+  metatype: string;
+  content: Paragraph[] | MetaType[] | Section[];
 }

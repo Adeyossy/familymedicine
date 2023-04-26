@@ -38,3 +38,7 @@ img {
   text-align: left;
   font-size: 16px;
 }
+
+.fm-header {
+  margin-top: var(--fm-large-padding);
+}

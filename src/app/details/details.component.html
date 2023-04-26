@@ -23,5 +23,18 @@
         <app-metatype [item]="itemContent"></app-metatype>
       </div>
     </div>
+    <div class="fm-details-nav">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-md-3">
+            <button class="w-100" [disabled]="index === 0" (click)="switchSection(index - 1)">Previous</button>
+          </div>
+          <div class="offset-md-6 col-md-3 fm-justify-self-end">
+            <button class="w-100" [disabled]="index >= handbook.length - 1"
+              (click)="switchSection(index + 1)">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

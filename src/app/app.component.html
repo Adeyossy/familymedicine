@@ -2,14 +2,14 @@
   <div class="container-fluid p-0 fm-toc-container d-none d-lg-block">
     <div class="row g-0">
       <div class="col-lg-3 fm-toc-group">
-        <app-toc [toc]="tableOfContent"></app-toc>
+        <app-toc [toc]="tableOfContent" [navIndex]="index"></app-toc>
       </div>
     </div>
   </div>
   <div class="container-fluid p-0 fm-details-container">
     <div class="row g-0">
       <div class="offset-lg-3 col-lg-8 fm-details-group">
-        <router-outlet></router-outlet>
+        <router-outlet (activate)="setIndex($event)"></router-outlet>
       </div>
       <div class="col-lg-1"></div>
     </div>

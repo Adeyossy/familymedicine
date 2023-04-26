@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, DoCheck } from '@angular/core';
 import { TableOfContent } from '../types/handbook_types';
 
 @Component({
@@ -6,8 +6,9 @@ import { TableOfContent } from '../types/handbook_types';
   templateUrl: './toc.component.html',
   styleUrls: ['./toc.component.css']
 })
-export class TocComponent implements OnInit {
+export class TocComponent implements OnInit, DoCheck {
   @Input() toc: Array<TableOfContent> = [];
+  @Input() navIndex: number = -1;
   itemsSelectionState: boolean[] = [];
   itemsOpenState: boolean[] = [];
   tocLinks: TableOfContent[] = [];
@@ -19,7 +20,7 @@ export class TocComponent implements OnInit {
       item = Object.create(item);
       item.title = item.title.replace(/[^\w\s]/g, '').replace(/\s/g, "-").toLowerCase();
       item.sections = item.sections
-      .map(sectionTitle => sectionTitle.replace(/[^\w\s]/g, '').replace(/\s/g, "-").toLowerCase());
+        .map(sectionTitle => sectionTitle.replace(/[^\w\s]/g, '').replace(/\s/g, "-").toLowerCase());
 
       return item;
     });
@@ -29,11 +30,18 @@ export class TocComponent implements OnInit {
     this.itemsOpenState = Array.from(this.itemsSelectionState);
   }
 
+  ngDoCheck(): void {
+    if (this.navIndex > -1) {
+      this.itemsSelectionState[this.navIndex] = true;
+      this.navIndex = -1;
+    }
+  }
+
   changeState(index: number): void {
     const oldState = this.itemsSelectionState[index];
     this.itemsSelectionState = this.itemsSelectionState.fill(false);
     this.itemsOpenState = this.itemsOpenState.fill(false);
-    this.itemsSelectionState[index] = !oldState;
+    this.itemsSelectionState[index] = true;
     this.itemsOpenState[index] = !oldState;
   }
 

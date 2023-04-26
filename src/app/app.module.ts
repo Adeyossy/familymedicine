@@ -9,6 +9,7 @@ import { DetailsComponent } from './details/details.component';
 import { ParagraphComponent } from './widgets/paragraph/paragraph.component';
 import { MetatypeComponent } from './metatype/metatype.component';
 import { SplashComponent } from './widgets/splash/splash.component';
+import { MetatextComponent } from './metatext/metatext.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SplashComponent } from './widgets/splash/splash.component';
     DetailsComponent,
     ParagraphComponent,
     MetatypeComponent,
-    SplashComponent
+    SplashComponent,
+    MetatextComponent
   ],
   imports: [
     BrowserModule,

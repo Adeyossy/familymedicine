@@ -1,5 +1,7 @@
 import { affilitatedFacilities } from "./sections/affiliated_facilities";
+import { affiliatedServices } from "./sections/affiliated_services";
 import { consultants } from "./sections/consultants";
+import { dissertations } from "./sections/dissertations";
 import { history } from "./sections/history";
 import { otherDepartments } from "./sections/other_departments";
 import { senior } from "./sections/senior";
@@ -642,5 +644,7 @@ export const handbook = [
   consultants,
   otherDepartments,
   serviceFunction,
-  tasks
+  tasks,
+  affiliatedServices,
+  dissertations
 ]

@@ -1,5 +1,7 @@
 <div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'paragraph'">
-  <p *ngFor="let text of itemAsStrings()" class="fm-body-text">{{ text }}</p>
+  <p *ngFor="let text of itemAsStrings()" class="fm-body-text">
+    <app-metatext [paragraph]="text"></app-metatext>
+  </p>
 </div>
 <div class="fm-metatype fm-subheading-container" *ngIf="item.metatype === 'subheading'">
   <h2 class="fm-header" *ngFor="let subheading of itemAsStrings()">{{subheading}}</h2>
