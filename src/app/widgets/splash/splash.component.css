@@ -1,0 +1,4 @@
+img.fm-splash-image {
+  filter: blur(3px);
+  -webkit-filter: blur(3px) grayscale(0.5);
+}

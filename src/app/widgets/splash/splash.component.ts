@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SplashComponent implements OnInit {
 
+  images = ["abodunde.jpg", "achiaka.jpg", "adetunji.jpg", "adigun.jpg", "awoonidanla.jpg",
+            "ayeni.jpg", "mosuro.jpg", "muyibi.jpg", "ogunbode.jpg", "olalemi.jpg", 
+            "olawuyi.jpg", "salam.jpg", "solanke.jpg"]
+
   constructor() { }
 
   ngOnInit(): void {

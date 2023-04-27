@@ -10,6 +10,7 @@ import { SectionContent, SectionItem, TableOfContent, Chapter, Section, Paragrap
 export class AppComponent implements OnInit {
   tableOfContent: Array<TableOfContent> = [];
   index = -1;
+  showOnMobile = false;
 
   ngOnInit(): void {
     this.tableOfContent = handbook.map(item => {
@@ -62,5 +63,9 @@ export class AppComponent implements OnInit {
 
   setIndex(index: any): void {
     this.index = index.index;
+  }
+
+  showToc(): void {
+    this.showOnMobile = !this.showOnMobile;
   }
 }
