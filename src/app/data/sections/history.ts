@@ -302,7 +302,7 @@ export const history = {
             {
               metatype: "src",
               content: [
-                "/assets/ladipo_1.jpg",
+                "/assets/ladipo.jpg",
                 "/assets/ladipo_2.jpg"
               ]
             },

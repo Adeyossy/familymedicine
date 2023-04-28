@@ -215,7 +215,7 @@ export const handbook = [
               {
                 metatype: "tr",
                 content: [
-                  "Dr.O.O.Olowookere",
+                  "Dr. O.O.Olowookere",
                   "Evidenced-based Medicine (3 session)"
                 ]
               },
@@ -243,7 +243,7 @@ export const handbook = [
               {
                 metatype: "tr",
                 content: [
-                  "Dr ‘Tope Ilori",
+                  "Dr 'Tope Ilori",
                   "Basic Communication skills"
                 ]
               },
@@ -278,7 +278,7 @@ export const handbook = [
               {
                 metatype: "tr",
                 content: [
-                  "Dr O.Abimbola Obimakinde",
+                  "Dr O. Abimbola Obimakinde",
                   "Undergraduate Family Medicine: An overview"
                 ]
               },
@@ -529,11 +529,11 @@ export const handbook = [
       {
         metatype: "paragraph",
         content: [
-          "The National Postgraduate Medical College of Nigeria organises two(2) workshop per year of which the resident doctor is expected to attend 50 % of these during the duration of the part 1 training(i.e., 2 of the 4 courses if the training lasted 2 years; 3 of 6 courses if the training lasted 3 years).The College also organises yearly revision courses and the Advanced Life Support for Obstetrics(ALSO).Certificates for these courses must be submitted as eligibility to take the Part I examinations.",
+          "The National Postgraduate Medical College of Nigeria organises two(2) workshop per year of which the resident doctor is expected to attend 50 % of these during the duration of the part 1 training (i.e., 2 of the 4 courses if the training lasted 2 years; 3 of 6 courses if the training lasted 3 years). The College also organises yearly revision courses and the Advanced Life Support for Obstetrics (ALSO). Certificates for these courses must be submitted as eligibility to take the Part I examinations.",
           "In the UCH Ibadan, in view of our compartmentalised training occasioned by being situated in a teaching hospital, the membership/ Part I training lasts a little under 3 years. ",
-          "For the West African College of Physicians, two update courses are organised every year.The WACP expects one(1) update course and one(1) revision course, as well as one (1) Ethics course as eligibility for the Membership examinations.",
+          "For the West African College of Physicians, two update courses are organised every year. The WACP expects one(1) update course and one(1) revision course, as well as one (1) Ethics course as eligibility for the Membership examinations.",
           "These courses will be available twice a year, in January - February and July - August each year. ",
-          "Our recommended target is to access and complete these requirements within the initial 2 years of your residency, to enable you meet the prerequisite for your examinations.Your certificates from these courses will form part of your portfolio of learning."
+          "Our recommended target is to access and complete these requirements within the initial 2 years of your residency, to enable you meet the prerequisite for your examinations. Your certificates from these courses will form part of your portfolio of learning."
         ]
       },
       {

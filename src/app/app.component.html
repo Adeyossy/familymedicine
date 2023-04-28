@@ -1,7 +1,7 @@
 <main>
   <div class="container-fluid p-0 fm-toc-container" 
     [ngClass]="showOnMobile ? 'd-block fm-show-toc' : 'd-none d-lg-block'">
-    <div class="row g-0">
+    <div class="row g-0 align-items-end">
       <div class="col-lg-3 fm-toc-group">
         <app-toc [toc]="tableOfContent" [navIndex]="index"></app-toc>
       </div>
@@ -9,14 +9,14 @@
   </div>
   <div class="container-fluid p-0 fm-details-container">
     <div class="row g-0">
-      <div class="offset-lg-3 col-lg-8 fm-details-group">
+      <div class="offset-lg-3 col-lg-9 fm-details-group">
         <router-outlet (activate)="setIndex($event)"></router-outlet>
       </div>
       <div class="fm-toc-fab d-lg-none d-flex justify-content-center align-items-center"
-        (click)="showToc()">
-        <i class="bi bi-journals"></i>
+        (click)="showToc()" [ngClass]="showOnMobile ? ' shown' : '' ">
+        <i class="bi " [ngClass]="showOnMobile ? 'bi-x-circle' : 'bi-journals' "></i>
       </div>
-      <div class="col-lg-1"></div>
+      <!-- <div class="col-lg-1"></div> -->
     </div>
   </div>
 </main>

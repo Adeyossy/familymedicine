@@ -46,7 +46,7 @@ a {
 i {
   width: 1em;
   height: 1em;
-  
+
 }
 
 button {
@@ -68,7 +68,7 @@ button:hover {
 }
 
 button:active {
-  transform: scale(0.98);
+  transform: scale(0.95);
 }
 
 .fm-left-sidebar {
@@ -86,7 +86,7 @@ h1.fm-project-header {
 }
 
 h2.fm-title {
-  font-size: 21px;
+  font-size: 24px;
   color: var(--fm-primary-color-contrast);
 }
 

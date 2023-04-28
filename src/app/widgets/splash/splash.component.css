@@ -1,4 +1,15 @@
 img.fm-splash-image {
-  filter: blur(3px);
-  -webkit-filter: blur(3px) grayscale(0.5);
+  animation: animateBlur 5s linear 500ms infinite alternate;
+}
+
+@keyframes animateBlur {
+  from {
+    filter: blur(0px) grayscale(0);
+    -webkit-filter: blur(0px) grayscale(0);
+  }
+
+  to {
+    filter: blur(3px) grayscale(0.5);
+    -webkit-filter: blur(3px) grayscale(0.5);
+  }
 }
