@@ -3,16 +3,23 @@
     <app-metatext [paragraph]="text"></app-metatext>
   </p>
 </div>
+<div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'author'">
+  <hr />
+  <p *ngFor="let text of itemAsStrings()" class="fm-body-text">
+    {{ text }}
+  </p>
+</div>
 <div class="fm-metatype fm-subheading-container" *ngIf="item.metatype === 'subheading'">
   <h2 class="fm-header" *ngFor="let subheading of itemAsStrings()">{{subheading}}</h2>
 </div>
-<div class="fm-metatype fm-h3-container" *ngIf="item.metatype === 'h3'">
+<div class="fm-metatype fm-h3-container" *ngIf="item.metatype === 'h3' || item.metatype === 'title'">
   <h3 class="fm-header" *ngFor="let h3 of itemAsStrings()">{{h3}}</h3>
 </div>
 <div class="fm-metatype fm-leading-container" *ngIf="item.metatype === 'leading'">
   <p class="fm-list-leading" *ngFor="let leading of itemAsStrings()">{{ leading }}</p>
 </div>
-<div class="fm-metatype fm-image-container" *ngIf="item.metatype === 'image'" [ngStyle]='{ "background": "url({{ `../..${imageItemAsStrings(0)[0]}` }})" }'>
+<div class="fm-metatype fm-image-container" *ngIf="item.metatype === 'image'"
+  [ngStyle]='{ "background": "url({{ `../..${imageItemAsStrings(0)[0]}` }})" }'>
   <!-- {{imageItemAsStrings(0)[0]}} -->
   <div class="container-fluid p-0">
     <div class="row justify-content-center">
@@ -35,6 +42,20 @@
 </ol>
 <div class="fm-metatype fm-list-container" *ngIf="item.metatype === 'list'">
   <app-metatype *ngFor="let itemContent of itemAsSectionItems()" [item]="itemContent"></app-metatype>
+</div>
+<div class="fm-metatype fm-metatype-project" *ngIf="item.metatype === 'project'">
+  <app-metatype *ngFor="let itemContent of itemAsSectionItems()" [item]="itemContent"></app-metatype>
+  <!-- <hr /> -->
+  <!-- <p></p> -->
+</div>
+<div class="fm-metatype fm-section-container container-fluid p-0" *ngIf="item.metatype === 'projects'">
+  <!-- <hr /> -->
+  <div class="row">
+    <div class="col-md-6 col-xl-4" *ngFor="let sectionItem of itemAsSectionItems()">
+      <app-metatype [item]="sectionItem"></app-metatype>
+    </div>
+  </div>
+  <!-- <hr /> -->
 </div>
 <div class="fm-metatype fm-section-container" *ngIf="item.metatype === 'section'">
   <hr />

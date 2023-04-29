@@ -36,9 +36,16 @@ img {
 .fm-caption {
   padding: var(--fm-default-padding);
   text-align: left;
-  font-size: 16px;
+  font-size: 13px;
 }
 
-.fm-header {
+.fm-subheading-container > .fm-header {
   margin-top: var(--fm-large-padding);
+}
+
+.fm-metatype-project {
+  min-height: 25vh;
+  padding: var(--fm-default-padding);
+  margin: var(--fm-default-padding) 0px;
+  background-color: var(--fm-primary-color-light);
 }
