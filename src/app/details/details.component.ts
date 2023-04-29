@@ -21,10 +21,8 @@ export class DetailsComponent implements OnInit, OnDestroy, OnChanges {
     private router: Router) {
       this.routeSubscription = this.route.paramMap.subscribe({
         next: (params: ParamMap) => {
-          console.log("paramMap => ", params.get('id'));
           this.index = parseInt(params.get('id') as string);
           this.item = handbook[this.index];
-          // this.activate.emit(this.index);
         },
         complete: () => {
           // this.activate.emit(this.index);

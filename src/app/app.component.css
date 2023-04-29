@@ -34,7 +34,8 @@
   width: 64px;
   height: 64px;
   position: fixed;
-  right: 16px; bottom: 112px;
+  right: 0; bottom: 8px; left: 0;
+  margin: auto;
   background-color: var(--fm-primary-color-contrast);
   border-radius: 50%;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);

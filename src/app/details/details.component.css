@@ -1,6 +1,7 @@
 .fm-details-shadow {
   /* box-shadow: -2px 0 1px 0px rgba(0, 0, 0, 0.01); */
   position: relative;
+  margin-bottom: 80px;
 }
 
 .fm-details {
@@ -17,7 +18,7 @@ p.fm-body-text {
 
 .fm-details-nav {
   /* margin-top: var(--fm-large-padding); */
-  padding: var(--fm-default-padding);
+  padding: var(--fm-small-padding);
   z-index: 2;
   background-color: white;
   position: fixed;
