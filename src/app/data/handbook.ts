@@ -633,7 +633,243 @@ export const handbook = [
   },
   {
     heading: "Consultative Clinics in Department of Family Medicine, UCH",
-    content: []
+    content: [
+      {
+        metatype: "groups",
+        content: [
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Sorting Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "All Consultants"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Monday - Saturday"
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "GOP Follow-up Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "All Consultants"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Monday - Saturday"
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Nutrition Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Drs. 'Tola Ogunbode/ Yemisi Folasire"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Tuesdays & Thursdays"
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Cope Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Dr. A Adetunji/ Achiaka Irabor"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Thursdays"
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Couples Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Drs. M. Olawuyi (men)/ Achiaka Irabor (women)"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Friday afternoon"
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "GOP NHIS Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Dr. S A Muyibi/O Abodunde"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Monday - Saturday"
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Private Suites Outpatient Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Dr S  Adebayo"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Monday - Sunday"
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "LIFE"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Dr Olushola A Mosuro"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Wednesdays"
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Lifestyle Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Dr E Achiaka Irabor"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Tuesdays & Thursdays"
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Adolescent Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Dr 'Bimbo Olorunshola"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Fridays"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     heading: "Routine Departmental Meetings",

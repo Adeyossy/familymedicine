@@ -2,6 +2,10 @@ p.fm-body-text, ol, ul {
   margin-bottom: var(--fm-default-padding);
 }
 
+.fm-paragraph-container {
+  padding-bottom: var(--fm-default-padding);
+}
+
 hr {
   margin: var(--fm-large-padding) 0px;
   color: var(--fm-primary-color);
@@ -48,4 +52,20 @@ img {
   padding: var(--fm-default-padding);
   margin: var(--fm-default-padding) 0px;
   background-color: var(--fm-primary-color-light);
+  border: 1px solid var(--fm-primary-color);
+}
+
+.fm-metatype-project * {
+  padding: 4px 0;
+  margin: 4px 0;
+}
+
+.fm-metatype-project p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.fm-metatype-project h3 {
+  color: var(--fm-primary-color-contrast);
 }

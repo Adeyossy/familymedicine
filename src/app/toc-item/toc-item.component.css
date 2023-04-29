@@ -47,6 +47,7 @@ summary, li {
 p {
   padding: var(--fm-default-padding) 0px;
   font-size: inherit;
+  color: inherit;
 }
 
 i {

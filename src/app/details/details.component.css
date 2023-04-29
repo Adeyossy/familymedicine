@@ -36,6 +36,12 @@ p.fm-body-text {
 
 @media only screen and (min-width: 992px) {
   .fm-details-nav {
+    width: 66.7%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .fm-details-nav {
     width: 75%;
   }
 }

@@ -43,12 +43,10 @@
 <div class="fm-metatype fm-list-container" *ngIf="item.metatype === 'list'">
   <app-metatype *ngFor="let itemContent of itemAsSectionItems()" [item]="itemContent"></app-metatype>
 </div>
-<div class="fm-metatype fm-metatype-project" *ngIf="item.metatype === 'project'">
+<div class="fm-metatype fm-metatype-project" *ngIf="item.metatype === 'project' || item.metatype === 'group'">
   <app-metatype *ngFor="let itemContent of itemAsSectionItems()" [item]="itemContent"></app-metatype>
-  <!-- <hr /> -->
-  <!-- <p></p> -->
 </div>
-<div class="fm-metatype fm-section-container container-fluid p-0" *ngIf="item.metatype === 'projects'">
+<div class="fm-metatype fm-section-container container-fluid p-0" *ngIf="item.metatype === 'projects' || item.metatype === 'groups'">
   <!-- <hr /> -->
   <div class="row">
     <div class="col-md-6 col-xl-4" *ngFor="let sectionItem of itemAsSectionItems()">

@@ -1,5 +1,5 @@
 export const dissertations = {
-  "heading": "Past Dissertations",
+  "heading": "Past Dissertation Arranged according to approved Area of Special Interest",
   content: [
     {
       metatype: "section",
