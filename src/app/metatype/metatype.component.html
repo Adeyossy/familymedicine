@@ -4,7 +4,6 @@
   </p>
 </div>
 <div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'author'">
-  <hr />
   <p *ngFor="let text of itemAsStrings()" class="fm-body-text">
     {{ text }}
   </p>
@@ -44,7 +43,10 @@
   <app-metatype *ngFor="let itemContent of itemAsSectionItems()" [item]="itemContent"></app-metatype>
 </div>
 <div class="fm-metatype fm-metatype-project" *ngIf="item.metatype === 'project' || item.metatype === 'group'">
-  <app-metatype *ngFor="let itemContent of itemAsSectionItems()" [item]="itemContent"></app-metatype>
+  <div *ngFor="let itemContent of itemAsSectionItems(), index as i">
+    <app-metatype [item]="itemContent"></app-metatype>
+    <div class="fm-heading-divider" *ngIf="i == 0"></div>
+  </div>
 </div>
 <div class="fm-metatype fm-section-container container-fluid p-0" *ngIf="item.metatype === 'projects' || item.metatype === 'groups'">
   <!-- <hr /> -->

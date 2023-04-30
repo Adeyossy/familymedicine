@@ -1,5 +1,6 @@
 import { affilitatedFacilities } from "./sections/affiliated_facilities";
 import { affiliatedServices } from "./sections/affiliated_services";
+import { collaborative } from "./sections/collaborative";
 import { consultants } from "./sections/consultants";
 import { dissertations } from "./sections/dissertations";
 import { history } from "./sections/history";
@@ -81,10 +82,6 @@ export const handbook = [
   },
   {
     heading: "Message from the Chief Medical Director",
-    content: []
-  },
-  {
-    heading: "Table of Content",
     content: []
   },
   history,
@@ -627,10 +624,7 @@ export const handbook = [
       }
     ]
   },
-  {
-    heading: "Collaborating Units in The Department of Family Medicine, UCH",
-    content: []
-  },
+  collaborative,
   {
     heading: "Consultative Clinics in Department of Family Medicine, UCH",
     content: [
