@@ -9,7 +9,8 @@
   </p>
 </div>
 <div class="fm-metatype fm-subheading-container" *ngIf="item.metatype === 'subheading'">
-  <h2 class="fm-header" *ngFor="let subheading of itemAsStrings()">{{subheading}}</h2>
+  <h2 class="fm-header" *ngFor="let subheading of itemAsStrings()" id="{{getSubheadingId(subheading)}}">{{subheading}}
+  </h2>
 </div>
 <div class="fm-metatype fm-h3-container" *ngIf="item.metatype === 'h3' || item.metatype === 'title'">
   <h3 class="fm-header" *ngFor="let h3 of itemAsStrings()">{{h3}}</h3>
@@ -48,7 +49,8 @@
     <div class="fm-heading-divider" *ngIf="i == 0"></div>
   </div>
 </div>
-<div class="fm-metatype fm-section-container container-fluid p-0" *ngIf="item.metatype === 'projects' || item.metatype === 'groups'">
+<div class="fm-metatype fm-section-container container-fluid p-0"
+  *ngIf="item.metatype === 'projects' || item.metatype === 'groups'">
   <!-- <hr /> -->
   <div class="row">
     <div class="col-md-6 col-xl-4" *ngFor="let sectionItem of itemAsSectionItems()">
@@ -61,4 +63,21 @@
   <hr />
   <app-metatype *ngFor="let sectionItem of itemAsSectionItems()" [item]="sectionItem"></app-metatype>
   <!-- <hr /> -->
+</div>
+<div class="fm-metatype fm-avatar-container" *ngIf="item.metatype === 'avatar'">
+  <img src="../..{{item.content[0]}}" alt="{{item.content[1]}}" class="img-fluid">
+  <div class="fm-metatype fm-avatar-details">
+    <h3 class="fm-header fm-avatar-header">{{item.content[1]}}</h3>
+    <a href="tel:+234{{item.content[2]}}" class="fm-avatar-details-phonenumber d-block">{{item.content[2]}}</a>
+    <a href="mailto:{{item.content[3]}}" class="fm-avatar-details-email d-block">{{item.content[3]}}</a>
+  </div>
+</div>
+<div class="fm-metatype fm-avatars-container" *ngIf="item.metatype === 'avatars'">
+  <div class="container-fluid p-0">
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-xl-4 fm-avatar-col" *ngFor="let avatar of itemAsSectionItems()">
+        <app-metatype [item]="avatar"></app-metatype>
+      </div>
+    </div>
+  </div>
 </div>

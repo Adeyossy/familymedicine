@@ -126,7 +126,7 @@ export const consultants = {
             {
               metatype: "tr",
               content: [
-                "/assets/aoonidanla.jpg",
+                "/assets/awoonidanla.jpg",
                 "Dr. Kemi T. Awoonidanla MBBS, FWACP",
                 "08020679327",
                 "ktawoonidanla@gmail.com"

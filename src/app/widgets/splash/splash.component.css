@@ -1,5 +1,24 @@
 img.fm-splash-image {
-  animation: animateBlur 5s linear 500ms infinite alternate;
+  /* animation: animateBlur 5s linear 500ms infinite alternate; */
+    filter: blur(3px) grayscale(0.5);
+    -webkit-filter: blur(3px) grayscale(0.5);
+}
+
+.fm-splash {
+  position: relative;
+}
+
+.fm-splash-hero {
+  position: absolute;
+  /* height: 50vmax; */
+  top: 200px; right: 0; left: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.fm-splash-icon {
+  background-color: var(--fm-primary-color-light);
+  box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes animateBlur {

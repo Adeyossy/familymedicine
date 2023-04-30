@@ -37,8 +37,12 @@ export class DetailsComponent implements OnInit, OnDestroy, OnChanges {
       // this.attach.emit()
   }
 
+  getLink(index: number): string {
+    return handbook[index].heading.replace(/[^\w\s]/g, '')
+    .replace(/\s/g, "-").toLowerCase();
+  }
+
   switchSection(index: number): void {
-    console.log("function called");
     const link = handbook[index].heading.replace(/[^\w\s]/g, '')
       .replace(/\s/g, "-").toLowerCase();
     this.router.navigateByUrl(`/content/${index}/${link}`);

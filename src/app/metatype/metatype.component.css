@@ -48,7 +48,7 @@ img {
 }
 
 .fm-metatype-project {
-  min-height: 25vh;
+  height: max-content;
   padding: var(--fm-default-padding);
   margin: var(--fm-default-padding) 0px;
   background-color: var(--fm-primary-color-light);
@@ -75,4 +75,22 @@ img {
   height: 2px;
   padding: 0;
   margin: 0;
+}
+
+.fm-avatar-container {
+  margin: var(--fm-default-padding) 0;
+  background-color: var(--fm-primary-color-light);
+  border: 2px solid var(--fm-primary-color);
+}
+
+.fm-avatar-details {
+  padding: var(--fm-default-padding)
+}
+
+.fm-avatar-header {
+  font-size: 21px;
+}
+
+a {
+  word-wrap: break-word;
 }

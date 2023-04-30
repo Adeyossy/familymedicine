@@ -344,7 +344,7 @@ export const history = {
             {
               metatype: "caption",
               content: [
-                "he 6th HoD, Dr. E. Achiaka Irabor MBBS (lb), FWACP-FM, MSc Develop Psych (Ib) - 1st of April 2011 to 31st of March 2014."
+                "The 6th HoD, Dr. E. Achiaka Irabor MBBS (lb), FWACP-FM, MSc Develop Psych (Ib) - 1st of April 2011 to 31st of March 2014."
               ]
             }
           ]

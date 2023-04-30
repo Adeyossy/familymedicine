@@ -27,4 +27,8 @@ export class MetatypeComponent implements OnInit {
   imageItemAsStrings(index: number): string[] {
     return (this.item.content[index] as SectionItem).content as string[];
   }
+
+  getSubheadingId(subheading: string): string {
+    return subheading.replace(/[^\w\s]/g, '').replace(/\s/g, "-").toLowerCase();
+  }
 }

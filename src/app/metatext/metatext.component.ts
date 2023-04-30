@@ -38,6 +38,6 @@ export class MetatextComponent implements OnInit {
     this.parsedParagraph = new Array(matched ? matched.length : 0 + this.splits.length);
     // this.parsedParagraph
 
-    if(matched) console.log(this.links, this.splits);
+    // if(matched) console.log(this.links, this.splits);
   }
 }

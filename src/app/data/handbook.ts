@@ -3,10 +3,13 @@ import { affiliatedServices } from "./sections/affiliated_services";
 import { collaborative } from "./sections/collaborative";
 import { consultants } from "./sections/consultants";
 import { dissertations } from "./sections/dissertations";
+import { facilities } from "./sections/facilities";
 import { history } from "./sections/history";
 import { otherDepartments } from "./sections/other_departments";
+import { routineMeetings } from "./sections/routine_meetings";
 import { senior } from "./sections/senior";
 import { serviceFunction } from "./sections/service_function";
+import { consultants_staff } from "./sections/staff";
 import { tasks } from "./sections/tasks";
 import { welcome } from "./sections/welcome";
 
@@ -865,13 +868,10 @@ export const handbook = [
       }
     ]
   },
-  {
-    heading: "Routine Departmental Meetings",
-    content: []
-  },
+  routineMeetings,
   senior,
-  affilitatedFacilities,
-  consultants,
+  facilities,
+  consultants_staff,
   otherDepartments,
   serviceFunction,
   tasks,
