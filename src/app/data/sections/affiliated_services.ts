@@ -107,9 +107,26 @@ export const affiliatedServices = {
       ]
     },
     {
+      metatype: "image",
+      content: [
+        {
+          metatype: "src",
+          content: [
+            "/assets/cpr.jpg"
+          ]
+        },
+        {
+          metatype: "caption",
+          content: [
+            "CPR in the Clinical Skills Room: Dr. O.C Lewechi-Uke (FMCFM, 2019) with resident doctors"
+          ]
+        }
+      ]
+    },
+    {
       metatype: "subheading",
       content: [
-        "Residency Training Coordinator’s (RTC) Office:"
+        "Residency Training Coordinator's (RTC) Office:"
       ]
     },
     {

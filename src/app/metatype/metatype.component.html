@@ -3,7 +3,8 @@
     <app-metatext [paragraph]="text"></app-metatext>
   </p>
 </div>
-<div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'author'">
+<div class="fm-metatype fm-paragraph-container" 
+  *ngIf="item.metatype === 'author' || item.metatype === 'date'">
   <p *ngFor="let text of itemAsStrings()" class="fm-body-text">
     {{ text }}
   </p>
@@ -35,10 +36,10 @@
   </div>
 </div>
 <ul class="fm-metatype fm-list-items-container" *ngIf="item.metatype === 'ul'">
-  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()">{{ listItem }}</li>
+  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext></li>
 </ul>
 <ol class="fm-metatype fm-list-items-container" *ngIf="item.metatype === 'ol'">
-  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()">{{ listItem }}</li>
+  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext></li>
 </ol>
 <div class="fm-metatype fm-list-container" *ngIf="item.metatype === 'list'">
   <app-metatype *ngFor="let itemContent of itemAsSectionItems()" [item]="itemContent"></app-metatype>

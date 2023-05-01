@@ -2,6 +2,12 @@ export const dissertations = {
   heading: "Past Dissertation Arranged according to approved Area of Special Interest",
   content: [
     {
+      metatype: "paragraph",
+      content: [
+        "While an important number of research occurs in the department, largely by our fellows and some from other specialities, the titles here are what granted fellowship awards to our doctors in addition to success in other sections of the examinations."
+      ]
+    },
+    {
       metatype: "section",
       content: [
         {

@@ -1,6 +1,6 @@
 details {
   background-color: var(--fm-toc-background-color);
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
 
 details > * {
@@ -13,13 +13,13 @@ details[open] {
 }
 
 details[open], details[open] > * {
-  border: 2px solid var(--fm-primary-color-contrast);
+  border: 1px solid var(--fm-primary-color-contrast);
   transition: border 500ms linear, height 200ms linear;
 }
 
 details:hover {
   background-color: var(--fm-primary-color-light);
-  border: 2px solid var(--fm-primary-color-contrast);
+  border: 1ssssspx solid var(--fm-primary-color-contrast);
 }
 
 summary.active {

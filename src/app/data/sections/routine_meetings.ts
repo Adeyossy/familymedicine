@@ -16,7 +16,7 @@ export const routineMeetings = {
             {
               metatype: "paragraph",
               content: [
-                "Monday \u00e2\u20ac\u201c Friday (8.00-9.00 a.m)"
+                "Monday - Friday (8.00 - 9.00 a.m)"
               ]
             }
           ]
@@ -27,13 +27,13 @@ export const routineMeetings = {
             {
               metatype: "h3",
               content: [
-                "CME\tWednesday"
+                "CME"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "(2.00-4.30 p.m)"
+                "Wednesday (2.00 - 4.30 p.m)"
               ]
             }
           ]
@@ -44,24 +44,7 @@ export const routineMeetings = {
             {
               metatype: "h3",
               content: [
-                "Proposal presentation"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Quarterly"
-              ]
-            }
-          ]
-        },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
-                "Post-field defence"
+                "Proposal Presentation"
               ]
             },
             {
@@ -78,41 +61,7 @@ export const routineMeetings = {
             {
               metatype: "h3",
               content: [
-                "Mortality & Morbidity review"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Once every month"
-              ]
-            }
-          ]
-        },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
-                "Journal club"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Once every month"
-              ]
-            }
-          ]
-        },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
-                "Residents-consultants meeting"
+                "Post-Field Defence"
               ]
             },
             {
@@ -129,7 +78,7 @@ export const routineMeetings = {
             {
               metatype: "h3",
               content: [
-                "Strategy Team meeting"
+                "Mortality & Morbidity Review"
               ]
             },
             {
@@ -146,13 +95,64 @@ export const routineMeetings = {
             {
               metatype: "h3",
               content: [
-                "Consultants meeting"
+                "Journal Club"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Every other Wednesday (12.00-2.00 p.m)"
+                "Once every month"
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "Residents - Consultants Meeting"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Quarterly"
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "Strategy Team Meeting"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Once every month"
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "Consultants Meeting"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Every other Wednesday (12.00 - 2.00 p.m)"
               ]
             }
           ]
