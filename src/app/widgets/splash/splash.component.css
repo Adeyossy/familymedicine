@@ -11,7 +11,7 @@ img.fm-splash-image {
 .fm-splash-hero {
   position: absolute;
   /* height: 50vmax; */
-  top: 200px; right: 0; left: 0;
+  top: 135px; right: 0; left: 0;
   margin: auto;
   width: 100%;
 }
@@ -19,6 +19,10 @@ img.fm-splash-image {
 .fm-splash-icon {
   background-color: var(--fm-primary-color-light);
   box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+h1.fm-header {
+  font-size: 18px;
 }
 
 @keyframes animateBlur {

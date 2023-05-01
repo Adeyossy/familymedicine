@@ -77,6 +77,10 @@ img {
   margin: 0;
 }
 
+.fm-heading-divider {
+  background-color: var(--fm-accent-color);
+}
+
 .fm-avatar-container {
   margin: var(--fm-default-padding) 0;
   background-color: var(--fm-primary-color-light);
