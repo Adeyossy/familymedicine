@@ -1315,6 +1315,12 @@ export const dissertations = {
                   ]
                 },
                 {
+                  metatype: "date",
+                  content: [
+                    "October 1996"
+                  ]
+                },
+                {
                   metatype: "abstract",
                   content: [
                     {
