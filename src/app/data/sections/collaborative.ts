@@ -16,7 +16,7 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "DDN Oluyemi Tolase"
+                "Mrs. 'Mubo Olamisigbe"
               ]
             }
           ]
@@ -67,7 +67,7 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "Dr. S A Muyibi (Head, Health Insurance Department)"
+                "Dr. A.A. Adetunji (Head, Health Insurance Department)"
               ]
             }
           ]

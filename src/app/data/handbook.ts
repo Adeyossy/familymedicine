@@ -10,6 +10,7 @@ import { history } from "./sections/history";
 import { junior } from "./sections/junior_with_groups";
 import { organogramUCH } from "./sections/organogram_uch";
 import { otherDepartments } from "./sections/other_departments";
+import { rotations } from "./sections/rotation";
 import { routineMeetings } from "./sections/routine_meetings";
 import { senior } from "./sections/senior";
 import { serviceFunction } from "./sections/service_function";
@@ -169,141 +170,7 @@ export const handbook = [
           "It is expected that you will also aim at continuous exposure to clinical activities in these areas throughout the membership training period through calls in both the posting and the emergency department."
         ]
       },
-      {
-        metatype: "table",
-        content: [
-          {
-            metatype: "th",
-            content: [
-              "Rotation", "Duration"
-            ]
-          },
-          {
-            metatype: "td",
-            content: [
-              {
-                metatype: "tr",
-                content: [
-                  "Family Medicine",
-                  "6 (can be broken into 2 blocks) months"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Surgery",
-                  "3 months"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Maternal Health",
-                  "3 months"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Internal Medicine",
-                  "3 months"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Mental Health",
-                  "2 months"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Child Health",
-                  "3 months"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Accident and Emergency",
-                  "1 month"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Ophthalmology",
-                  "1 month"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Anaesthesia",
-                  "6 weeks"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Radiology and Medical Imaging",
-                  "1 month"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Community Medicine and PHC",
-                  "6 weeks"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "ENT",
-                  "1 month"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Haematology and blood transfusion",
-                  "2 weeks"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Chemical Pathology",
-                  "2 weeks"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Anatomic Pathology",
-                  "2 weeks"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Microbiology and Parasitology",
-                  "2 weeks"
-                ]
-              },
-              {
-                metatype: "tr",
-                content: [
-                  "Oral health",
-                  "1 month"
-                ]
-              }
-            ]
-          }
-        ]
-      },
+      rotations,
       {
         metatype: "paragraph",
         content: [
