@@ -60,40 +60,6 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr E. Achiaka Irabor"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Patient Centred Clinical Methods (PCCM Modules 1-3)"
-              ]
-            }
-          ]
-        },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
-                "Dr. S.A. Muyibi"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Patient Centred Clinical Methods (PCCM Modules 4-6)"
-              ]
-            }
-          ]
-        },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
                 "Dr. O.O. Olowookere"
               ]
             },
@@ -118,6 +84,40 @@ export const junior = {
               metatype: "paragraph",
               content: [
                 "Introduction to Clinical Statistics (2 session)"
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "Dr E. Achiaka Irabor"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Patient Centred Clinical Methods (PCCM Modules 1-3)"
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "Dr. S.A. Muyibi"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Patient Centred Clinical Methods (PCCM Modules 4-6)"
               ]
             }
           ]
@@ -348,9 +348,9 @@ export const junior = {
     {
       metatype: "paragraph",
       content: [
-        "The Membership/Part I training in the University College Hospital, Ibadan has a duration 30 months due to our serial structure of learning. This is due to our location in a teaching hospital which translates to seeing certain conditions only when in the appropriate department. ",
+        "The Membership/Part I training in the University College Hospital, Ibadan has a duration of 30 months due to our serial structure of learning. This is due to our location in a teaching hospital which translates to seeing certain conditions only when in the appropriate department. ",
         "In detail, you will be having a total of 26 months of rotation/posting, with concurrent 30 months of e-learning course work in 20 Domains with 35 Modules. ",
-        "Practical training also takes place in approved training hospitals where hands-on is more likely due less competition, supplemented by approved training posts in certain specialties, when necessary."
+        "Practical training also takes place in approved training hospitals where hands-on is more likely due to less competition, supplemented by approved training posts in certain specialties, when necessary."
       ]
     },
     {
