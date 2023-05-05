@@ -162,7 +162,7 @@ export const history = {
         {
           metatype: "paragraph",
           content: [
-            `Our 2nd Head of Department (HoD) was Dr Shun Reddy 1965 - 1971, A South African Indian who eventually who was an Associate Lecturer in the Department of Medicine of the University of Ibadan and later became a Professor of Community Medicine in the Ahmadu Bello University Zaria, Nigeria. 
+            `Our 2nd Head of Department (HoD) was Dr Shun Reddy 1965 - 1971, A South African Indian who was an Associate Lecturer in the Department of Medicine of the University of Ibadan and later became a Professor of Community Medicine in the Ahmadu Bello University Zaria, Nigeria. 
             https://www.bmj.com/content/281/6253/1502
             `
           ]
