@@ -26,7 +26,7 @@
     <div class="row justify-content-center">
       <div *ngFor="let img of imageItemAsStrings(0), index as i" class="col-lg-6 mb-3 fm-image-bg">
         <div class="text-center fm-image-group">
-          <img src="../..{{img}}" alt="{{imageItemAsStrings(1)[0]}}">
+          <img src="../..{{img}}" alt="{{imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0]}}">
           <div class="fm-caption-container">
             <p class="fm-caption">{{ imageItemAsStrings(1)[0] }}</p>
           </div>

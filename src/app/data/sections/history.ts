@@ -244,10 +244,11 @@ export const history = {
             {
               metatype: "caption",
               content: [
-                "The 4th HoD and the 1st Nigerian one was Dr Alaba Kalejaiye MBBS (Glasgow), Dip. Soc. Med (Edin), FMCGP (Nig), FWACP-FM"
+                "The 4th HoD and the 1st Nigerian one was Dr Alaba Kalejaiye MBBS (Glasgow), Dip. Soc. Med (Edin), FMCGP (Nig), FWACP-FM.",
+                "The 4th HoD and the 1st Nigerian one was Dr Alaba Kalejaiye MBBS (Glasgow), Dip. Soc. Med (Edin), FMCGP (Nig), FWACP-FM, flanked by Dr. Lopez-Chico on the left and Dr. Ladipo on the right."
               ]
             }
-          ]
+        ]
         },
         {
           metatype: "paragraph",
@@ -326,7 +327,7 @@ export const history = {
           content: [
             "She was associate lecturer in the Department of Paediatrics, University of lbadan from 2002 to 2015 and Clinical Coordinator of the University College Hospital, AlDS Prevention Initiative of Nigeria (APIN)-plus clinic from 2006 to 2015. Dr Irabor has worked on the integrated curriculum review which integrates Family Medicine to the undergraduate curriculum for the first time in the history of the College of Medicine, Ibadan. She has also been guiding the post graduate Continuous Medical Education program and has worked to introduce formative assessment in the post graduate curriculum of the Family Medicine residents in UCH and in the Faculty of Family Medicine, West African College of Physicians through the Doctors as Educators program.",
             "Dr Irabor headed the Department of Total Quality Management of the UCH Ibadan between 2015 -2019, was Training Coordinator of the WACP Faculty of Family Medicine between 2015 – 2018 and Quality Assurance Representative for the Faculty of Family Medicine of the WACP between 2019 - 2022. During her tenure, the department adopted a shared leadership structure, with weekly consultants’ meeting that go through training, service and research issues.",
-            ". The Department also received a facelift with its unique colour scheme, children play areas, increased illumination in the sorting hall (windows were created), block-glass children sorting area, nurses bay and High Dependency Unit equipped with multi-parameter monitors and oxygen concentrators culled from the APIN-plus project. She also turned the coverage of the Agbeke Mercy Medical Centre to a training posting, thereby opening the great influence of resident doctors on the clinic and vice versa."
+            "The Department also received a facelift with its unique colour scheme, children play areas, increased illumination in the sorting hall (windows were created), block-glass children sorting area, nurses bay and High Dependency Unit equipped with multi-parameter monitors and oxygen concentrators culled from the APIN-plus project. She also turned the coverage of the Agbeke Mercy Medical Centre to a training posting, thereby opening the great influence of resident doctors on the clinic and vice versa."
           ]
         }
       ]
