@@ -28,7 +28,7 @@
         <div class="text-center fm-image-group">
           <img src="../..{{img}}" alt="{{imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0]}}">
           <div class="fm-caption-container">
-            <p class="fm-caption">{{ imageItemAsStrings(1)[0] }}</p>
+            <p class="fm-caption">{{ imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0] }}</p>
           </div>
         </div>
       </div>
