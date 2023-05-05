@@ -5,6 +5,7 @@ import { consultants } from "./sections/consultants";
 import { dissertations } from "./sections/dissertations";
 import { examinationBodies } from "./sections/examination_bodies";
 import { facilities } from "./sections/facilities";
+import { firstEditor } from "./sections/first_editor";
 import { history } from "./sections/history";
 import { junior } from "./sections/junior_with_groups";
 import { organogramUCH } from "./sections/organogram_uch";
@@ -101,6 +102,7 @@ export const handbook = [
       }
     ]
   },
+  firstEditor,
   history,
   {
     heading: "Welcome to the Family Medicine Programme in UCH Ibadan.",
