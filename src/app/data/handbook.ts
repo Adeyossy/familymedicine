@@ -175,9 +175,8 @@ export const handbook = [
         metatype: "paragraph",
         content: [
           "On completion of outside rotations from the Department of Family Medicine Department (DoFM), you will have a three-month Family Medicine II posting before doing the Part l examinations /Membership examinations in the National Postgraduate Medical College and the West African College of Physician respectively.",
-          "The Family Medicine II posting comes with a series of lectures; tutorials and practical sessions to enable you synthesise what you learnt during your postings and prepare for the examinations.",
-          "The tutorials held during this posting are usually between January to March and July to September each year.",
-          "For National Postgraduate Medical College, requires yearly resident-doctor-in-training assessment   Objective Structured Clinical Examination (OSCE) and Multiple Choice Question – one single best option (MCQ). These must be submitted yearly for documentation that you are still in training. Please ensure you fill the certificate of completion of rotations for the National Postgraduate College which is available in the computer system in Resident Doctors' room or with the Departmental Secretary. Your copy of submitted yearly assessments are a requirement to be attached to your examinations form at the National Postgraduate Medical College."
+          "The Family Medicine II posting comes with a series of lectures; tutorials and practical sessions to enable you synthesise what you learnt during your postings and prepare for the examinations. The tutorials held during this posting are usually between January to March and July to September each year.",
+          "For National Postgraduate Medical College, requires yearly resident-doctor-in-training assessment: Objective Structured Clinical Examination (OSCE) and Multiple Choice Question - one single best option (MCQ). These must be submitted yearly for documentation that you are still in training. Please ensure you fill the certificate of completion of rotations for the National Postgraduate College which is available in the computer system in Resident Doctors' room or with the Departmental Secretary. Your copy of submitted yearly assessments are a requirement to be attached to your examinations form at the National Postgraduate Medical College."
         ]
       }
     ]
@@ -426,7 +425,7 @@ export const handbook = [
               {
                 metatype: "paragraph",
                 content: [
-                  "Dr. A Adetunji/ Achiaka Irabor"
+                  "Drs. A Adetunji/ Achiaka Irabor"
                 ]
               },
               {
@@ -472,7 +471,7 @@ export const handbook = [
               {
                 metatype: "paragraph",
                 content: [
-                  "Dr. S A Muyibi/O Abodunde"
+                  "Drs. S A Muyibi/O Abodunde"
                 ]
               },
               {
@@ -495,7 +494,7 @@ export const handbook = [
               {
                 metatype: "paragraph",
                 content: [
-                  "Dr S  Adebayo"
+                  "Dr. S. Adebayo"
                 ]
               },
               {
@@ -518,7 +517,7 @@ export const handbook = [
               {
                 metatype: "paragraph",
                 content: [
-                  "Dr Olushola A Mosuro"
+                  "Dr Olushola A. Mosuro"
                 ]
               },
               {
@@ -541,7 +540,11 @@ export const handbook = [
               {
                 metatype: "paragraph",
                 content: [
-                  "Dr E Achiaka Irabor"
+                  "Dr E. Achiaka Irabor",
+                  "Dr. O. Mosuro",
+                  "Dr. T. Ilori",
+                  "Dr. A. Obimakinde",
+                  "Dr. O. Ayeni"
                 ]
               },
               {
