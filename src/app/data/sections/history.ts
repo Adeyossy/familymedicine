@@ -143,7 +143,7 @@ export const history = {
             {
               metatype: "caption",
               content: [
-                "Dr Kenneth Mclean Cobban (MB, ChB - 1927 (Uni Liverpool), MD (1930), MB, BS (1938 - Uni London)"
+                "Above is an article contributed by Dr Kenneth Mclean Cobban (MB, ChB - 1927 (Uni Liverpool), MD (1930), MB, BS (1938 - Uni London)"
               ]
             }
           ]
