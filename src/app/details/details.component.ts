@@ -15,6 +15,8 @@ export class DetailsComponent implements OnInit, OnDestroy, OnChanges {
   handbook = handbook;
   @Output() emitIndex: EventEmitter<number> = new EventEmitter();
   @Output('activate') activate: EventEmitter<number> = new EventEmitter();
+  residents_images = ['resident_male.jpg'];
+  resident_image: string = ''
   // @Output('attach') attach: EventEmitter<number> = new EventEmitter();
 
   constructor(private route: ActivatedRoute,
@@ -31,6 +33,10 @@ export class DetailsComponent implements OnInit, OnDestroy, OnChanges {
     }
 
   ngOnInit(): void {
+    const rand = Math.random() * (this.residents_images.length - 1);
+    const randInteger = Math.floor(rand);
+
+    this.resident_image = this.residents_images[randInteger];
   }
 
   ngOnChanges(changes: SimpleChanges): void {

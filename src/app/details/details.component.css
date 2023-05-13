@@ -2,6 +2,21 @@
   /* box-shadow: -2px 0 1px 0px rgba(0, 0, 0, 0.01); */
   position: relative;
   margin-bottom: 80px;
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.fm-details-content {
+  backdrop-filter: blur(30px);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9))
+}
+
+.fm-details-narrow {
+  background-size: auto 100vh;
+  background-position-x: center;
+  box-shadow: -24px 0px 24px 0px rgba(0, 0, 0, 0.3);
+  border-left: 4px solid var(--fm-primary-color);
 }
 
 .fm-details {
