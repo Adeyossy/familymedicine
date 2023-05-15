@@ -152,7 +152,7 @@ export const handbook = [
           {
             metatype: "caption",
             content: [
-              "Dr. S.O Martins (Senior Registrar in 2016) Examining a Patient"
+              "Family Medicine Residents in Clinic"
             ]
           }
         ]

@@ -1,5 +1,5 @@
-<div class="fm-details-shadow" [ngStyle]="{'background-image': 'url(../../assets/consultant.jpg)'}">
-  <div class="container-fluid p-0 fm-details-container">
+<div class="fm-details-shadow" [ngStyle]="{'background-image': resident_image }">
+  <div class="container-fluid p-0 fm-details-container" [ngClass]="animate ? 'd-none': 'd-block'">
     <div class="row g-0">
       <div class="col-lg-12 fm-details-content">
         <div class="container-fluid p-0 fm-details-content-letterhead" routerLink="/">
