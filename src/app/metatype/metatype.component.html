@@ -35,6 +35,14 @@
     </div>
   </div>
 </div>
+<div class="fm-metatype fm-banner" *ngIf="item.metatype === 'banner'">
+  <div class="text-center fm-image-group">
+    <img src="../..{{itemAsSectionItems()[0].content[0]}}" alt="{{itemAsSectionItems()[1].content[0]}}">
+    <div class="fm-caption-container">
+      <p class="fm-caption">{{ itemAsSectionItems()[1].content[0] }}</p>
+    </div>
+  </div>
+</div>
 <ul class="fm-metatype fm-list-items-container" *ngIf="item.metatype === 'ul'">
   <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext></li>
 </ul>
@@ -54,7 +62,7 @@
   *ngIf="item.metatype === 'projects' || item.metatype === 'groups'">
   <!-- <hr /> -->
   <div class="row">
-    <div class="col-md-6 col-xl-4" *ngFor="let sectionItem of itemAsSectionItems()">
+    <div class="col-md-6 col-xl-4 fm-projects-container" *ngFor="let sectionItem of itemAsSectionItems()">
       <app-metatype [item]="sectionItem"></app-metatype>
     </div>
   </div>

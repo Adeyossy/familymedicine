@@ -9,7 +9,11 @@
 
 .fm-details-content {
   backdrop-filter: blur(30px);
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9))
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.99))
+}
+
+.fm-details-content-letterhead:hover {
+  cursor: pointer;
 }
 
 .fm-details-narrow {
@@ -20,7 +24,10 @@
 }
 
 .fm-details {
+  min-height: 100vh;
   padding: var(--fm-default-padding);
+  opacity: 0;
+  animation: transitionIn 200ms ease-in 50ms 1 forwards;
 }
 
 .fm-body {
@@ -31,16 +38,16 @@ p.fm-body-text {
   margin-bottom: var(--fm-default-padding);
 }
 
-.fm-details-nav {
-  /* margin-top: var(--fm-large-padding); */
-  padding: var(--fm-small-padding);
-  z-index: 2;
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  margin: auto;
-  bottom: 0; right: 0;
-  box-shadow: 0px -4px 3px 0px rgba(0, 0, 0, 0.05);
+@keyframes transitionIn {
+  from{
+    opacity: 0.5;
+    transform: scaleX(0.95) scaleY(0.98)
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -50,13 +57,4 @@ p.fm-body-text {
 }
 
 @media only screen and (min-width: 992px) {
-  .fm-details-nav {
-    width: 66.7%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .fm-details-nav {
-    width: 75%;
-  }
 }

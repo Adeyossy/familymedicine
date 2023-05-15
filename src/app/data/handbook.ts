@@ -141,12 +141,12 @@ export const handbook = [
         ]
       },
       {
-        metatype: "image",
+        metatype: "banner",
         content: [
           {
             metatype: "src",
             content: [
-              "/assets/examination.jpg"
+              "/assets/residents/residents_consulting.jpeg"
             ]
           },
           {

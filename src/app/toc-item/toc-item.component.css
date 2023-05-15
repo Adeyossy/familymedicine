@@ -19,7 +19,7 @@ details[open], details[open] > * {
 
 details:hover {
   background-color: var(--fm-primary-color-light);
-  border: 1ssssspx solid var(--fm-primary-color-contrast);
+  border: 1px solid var(--fm-primary-color-contrast);
 }
 
 summary.active {

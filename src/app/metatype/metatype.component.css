@@ -48,11 +48,14 @@ img {
 }
 
 .fm-metatype-project {
-  height: max-content;
+  height: 100%;
   padding: var(--fm-default-padding);
-  margin: var(--fm-default-padding) 0px;
   background-color: var(--fm-primary-color-light);
   border: 1px solid var(--fm-primary-color);
+}
+
+.fm-projects-container {
+  margin: var(--fm-default-padding) 0px;
 }
 
 .fm-metatype-project div.fm-metatype {

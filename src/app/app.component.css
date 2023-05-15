@@ -53,6 +53,18 @@ i {
   color: white;
 }
 
+.fm-details-nav {
+  /* margin-top: var(--fm-large-padding); */
+  padding: var(--fm-small-padding);
+  z-index: 2;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  bottom: 0; right: 0;
+  box-shadow: 0px -4px 3px 0px rgba(0, 0, 0, 0.05);
+}
+
 @keyframes fmSlideUp {
   from {
     transform: translateY(30%);
@@ -74,5 +86,15 @@ i {
     z-index: initial;
     left: 0; top: 0;
     height: auto;
+  }
+
+  .fm-details-nav {
+    width: 66.7%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .fm-details-nav {
+    width: 75%;
   }
 }
