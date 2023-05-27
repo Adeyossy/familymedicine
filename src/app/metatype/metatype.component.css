@@ -33,8 +33,14 @@ img {
 
 .fm-image-group {
   /* width: 60%; */
+  height: 100%;
   border: 2px solid var(--fm-primary-color);
   background-color: var(--fm-primary-color-light);
+}
+
+.fm-image-item {
+  height: 30vh;
+  overflow: hidden;
 }
 
 .fm-caption {
@@ -86,9 +92,13 @@ img {
 }
 
 .fm-avatar-container {
-  margin: var(--fm-default-padding) 0;
+  height: 100%;
   background-color: var(--fm-primary-color-light);
   border: 2px solid var(--fm-primary-color);
+}
+
+.fm-avatar-col {
+  margin: var(--fm-default-padding) 0;
 }
 
 .fm-avatar-details {

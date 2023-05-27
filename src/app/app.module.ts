@@ -10,6 +10,9 @@ import { ParagraphComponent } from './widgets/paragraph/paragraph.component';
 import { MetatypeComponent } from './metatype/metatype.component';
 import { SplashComponent } from './widgets/splash/splash.component';
 import { MetatextComponent } from './metatext/metatext.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { MetatextComponent } from './metatext/metatext.component';
     ParagraphComponent,
     MetatypeComponent,
     SplashComponent,
-    MetatextComponent
+    MetatextComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,8 +3,7 @@
     <app-metatext [paragraph]="text"></app-metatext>
   </p>
 </div>
-<div class="fm-metatype fm-paragraph-container" 
-  *ngIf="item.metatype === 'author' || item.metatype === 'date'">
+<div class="fm-metatype fm-paragraph-container" *ngIf="item.metatype === 'author' || item.metatype === 'date'">
   <p *ngFor="let text of itemAsStrings()" class="fm-body-text">
     {{ text }}
   </p>
@@ -17,7 +16,9 @@
   <h3 class="fm-header" *ngFor="let h3 of itemAsStrings()">{{h3}}</h3>
 </div>
 <div class="fm-metatype fm-leading-container" *ngIf="item.metatype === 'leading'">
-  <p class="fm-list-leading" *ngFor="let leading of itemAsStrings()">{{ leading }}</p>
+  <p class="fm-list-leading" *ngFor="let leading of itemAsStrings()">
+    <app-metatext [paragraph]="leading"></app-metatext>
+  </p>
 </div>
 <div class="fm-metatype fm-image-container" *ngIf="item.metatype === 'image'"
   [ngStyle]='{ "background": "url({{ `../..${imageItemAsStrings(0)[0]}` }})" }'>
@@ -26,9 +27,32 @@
     <div class="row justify-content-center">
       <div *ngFor="let img of imageItemAsStrings(0), index as i" class="col-lg-6 mb-3 fm-image-bg">
         <div class="text-center fm-image-group">
-          <img src="../..{{img}}" alt="{{imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0]}}">
+          <img src="../..{{img}}"
+            alt="{{imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0]}}">
           <div class="fm-caption-container">
             <p class="fm-caption">{{ imageItemAsStrings(1)[i] ? imageItemAsStrings(1)[i] : imageItemAsStrings(1)[0] }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fm-metatype fm-image-container" *ngIf="item.metatype === 'appendices'"
+  [ngStyle]='{ "background": "url({{ `../..${imageItemAsStrings(0)[0]}` }})" }'>
+  <!-- {{imageItemAsStrings(0)[0]}} -->
+  <div class="container-fluid p-0">
+    <div class="row justify-content-center">
+      <div *ngFor="let appendix of itemAsMetatype(), index as i" class="col-md-6 col-lg-4 mb-3 fm-image-bg">
+        <div class="text-center fm-image-group" *ngFor="let img of appendixImageAsStrings(appendix, 0)">
+          <div class="fm-image-item">
+            <img src="../..{{img}}"
+            alt="{{appendixImageAsStrings(appendix, 1)[i] ? appendixImageAsStrings(appendix, 1)[i] : appendixImageAsStrings(appendix, 1)[0]}}">
+          </div>
+          <div class="fm-caption-container">
+            <a href="../..{{appendixImageAsStrings(appendix, 2)}}" target="_blank">
+              <p class="fm-caption">{{ appendixImageAsStrings(appendix, 1)[i] ? appendixImageAsStrings(appendix, 1)[i] : appendixImageAsStrings(appendix, 1)[0] }}
+              </p>
+            </a>
           </div>
         </div>
       </div>
@@ -48,10 +72,12 @@
   </div>
 </div>
 <ul class="fm-metatype fm-list-items-container" *ngIf="item.metatype === 'ul'">
-  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext></li>
+  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext>
+  </li>
 </ul>
 <ol class="fm-metatype fm-list-items-container" *ngIf="item.metatype === 'ol'">
-  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext></li>
+  <li class="fm-list-li" *ngFor="let listItem of itemAsStrings()"><app-metatext [paragraph]="listItem"></app-metatext>
+  </li>
 </ol>
 <div class="fm-metatype fm-list-container" *ngIf="item.metatype === 'list'">
   <app-metatype *ngFor="let itemContent of itemAsSectionItems()" [item]="itemContent"></app-metatype>

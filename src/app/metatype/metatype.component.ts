@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Paragraph, SectionItem } from '../types/handbook_types';
+import { MetaType, Paragraph, Section, SectionItem } from '../types/handbook_types';
 
 @Component({
   selector: 'app-metatype',
@@ -24,8 +24,16 @@ export class MetatypeComponent implements OnInit {
     return this.item.content as SectionItem[];
   }
 
+  itemAsMetatype(): MetaType[] {
+    return (this.item as Section).content as MetaType[];
+  }
+
   imageItemAsStrings(index: number): string[] {
     return (this.item.content[index] as SectionItem).content as string[];
+  }
+
+  appendixImageAsStrings(appendix: MetaType, index: number): string[] {
+    return appendix.content[index].content;
   }
 
   getSubheadingId(subheading: string): string {
