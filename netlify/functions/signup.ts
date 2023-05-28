@@ -1,10 +1,11 @@
 import type { Handler, HandlerEvent, HandlerContext, HandlerCallback } from "@netlify/functions";
 import type { Response } from "@netlify/functions/dist/function/response";
 import { initializeApp } from 'firebase/app';
-import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
+import { AuthError, createUserWithEmailAndPassword, getAuth } from 'firebase/auth';
 import middy from "@middy/core";
 import urlEncodeBodyParser from "@middy/http-urlencode-body-parser";
 import httpHeaderNormalizer from '@middy/http-header-normalizer';
+import cors from "@middy/http-cors";
 
 const firebaseConfig = {
   apiKey: process.env['API_KEY'],
@@ -17,25 +18,25 @@ const firebaseConfig = {
 
 const firebase = initializeApp(firebaseConfig);
 
-const auth = getAuth(firebase);
+// const auth = getAuth(firebase);
 
 const baseHandler = async (event: HandlerEvent, context: HandlerContext): Promise<Response> => {
   // your server-side functionality
-  const auth = getAuth();
+  const auth = getAuth(firebase);
   console.log(event.body);
 
-  const body = event.body as unknown as { email: string, password: string };
+  const body = JSON.parse(event.body ? event.body : '') as unknown as { email: string, password: string };
 
   let email = '';
   let password = '';
 
   if (body) {
     if (body.hasOwnProperty('email')) {
-      email = body.email;
+      email = body['email'];
     }
 
     if (body.hasOwnProperty('password')) {
-      password = body.password;
+      password = body['password'];
     }
   }
 
@@ -44,24 +45,31 @@ const baseHandler = async (event: HandlerEvent, context: HandlerContext): Promis
       // Signed in 
       const user = userCredential.user;
       console.log("user => ", user);
+      const { displayName, email, phoneNumber, photoURL, uid } = user;
+      const userDetails = { displayName, email, phoneNumber, photoURL, uid };
       // ...
 
       return {
         statusCode: 200,
-        body: JSON.stringify(user)
+        body: JSON.stringify(userDetails)
       };
-    })
-    .catch((error) => {
+    }).catch((error: AuthError) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       // ..
+      
+      const errorDetails = {
+        errorCode,
+        errorMessage
+      }
       return {
         statusCode: 500,
-        body: JSON.stringify(error)
+        body: JSON.stringify(errorDetails)
       };
     });
 };
 
-const handler = middy(baseHandler).use(httpHeaderNormalizer()).use(urlEncodeBodyParser());
+const handler = middy(baseHandler).use(httpHeaderNormalizer())
+  .use(urlEncodeBodyParser()).use(cors());
 
 export { handler };

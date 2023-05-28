@@ -8,10 +8,10 @@ export class AuthService {
 
   constructor(private httpClient: HttpClient) {}
 
-  backend_url = "http://localhost:9999/.netlify/functions";
+  backend_url = "/.netlify/functions";
 
   signup(email: string, password: string) {
     const body = { email, password}
-    return this.httpClient.post<string>(`${this.backend_url}/index`, body);
+    return this.httpClient.post<string>(`${this.backend_url}/signup`, body);
   }
 }

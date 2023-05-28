@@ -5964,7 +5964,7 @@ var require_lib3 = __commonJS({
     var whatwgUrl = _interopDefault(require_public_api());
     var https = _interopDefault(require("https"));
     var zlib = _interopDefault(require("zlib"));
-    var Readable = Stream.Readable;
+    var Readable2 = Stream.Readable;
     var BUFFER = Symbol("buffer");
     var TYPE = Symbol("type");
     var Blob = class {
@@ -6016,7 +6016,7 @@ var require_lib3 = __commonJS({
         return Promise.resolve(ab);
       }
       stream() {
-        const readable = new Readable();
+        const readable = new Readable2();
         readable._read = function() {
         };
         readable.push(this[BUFFER]);
@@ -7019,6 +7019,429 @@ var require_lib3 = __commonJS({
     exports.Request = Request;
     exports.Response = Response2;
     exports.FetchError = FetchError;
+  }
+});
+
+// node_modules/@middy/http-urlencode-body-parser/node_modules/qs/lib/formats.js
+var require_formats = __commonJS({
+  "node_modules/@middy/http-urlencode-body-parser/node_modules/qs/lib/formats.js"(exports, module2) {
+    "use strict";
+    var replace = String.prototype.replace;
+    var percentTwenties = /%20/g;
+    var Format = {
+      RFC1738: "RFC1738",
+      RFC3986: "RFC3986"
+    };
+    module2.exports = {
+      "default": Format.RFC3986,
+      formatters: {
+        RFC1738: function(value) {
+          return replace.call(value, percentTwenties, "+");
+        },
+        RFC3986: function(value) {
+          return String(value);
+        }
+      },
+      RFC1738: Format.RFC1738,
+      RFC3986: Format.RFC3986
+    };
+  }
+});
+
+// node_modules/@middy/http-urlencode-body-parser/node_modules/qs/lib/utils.js
+var require_utils2 = __commonJS({
+  "node_modules/@middy/http-urlencode-body-parser/node_modules/qs/lib/utils.js"(exports, module2) {
+    "use strict";
+    var formats = require_formats();
+    var has = Object.prototype.hasOwnProperty;
+    var isArray = Array.isArray;
+    var hexTable = function() {
+      var array = [];
+      for (var i = 0; i < 256; ++i) {
+        array.push("%" + ((i < 16 ? "0" : "") + i.toString(16)).toUpperCase());
+      }
+      return array;
+    }();
+    var compactQueue = function compactQueue2(queue) {
+      while (queue.length > 1) {
+        var item = queue.pop();
+        var obj = item.obj[item.prop];
+        if (isArray(obj)) {
+          var compacted = [];
+          for (var j = 0; j < obj.length; ++j) {
+            if (typeof obj[j] !== "undefined") {
+              compacted.push(obj[j]);
+            }
+          }
+          item.obj[item.prop] = compacted;
+        }
+      }
+    };
+    var arrayToObject = function arrayToObject2(source, options) {
+      var obj = options && options.plainObjects ? /* @__PURE__ */ Object.create(null) : {};
+      for (var i = 0; i < source.length; ++i) {
+        if (typeof source[i] !== "undefined") {
+          obj[i] = source[i];
+        }
+      }
+      return obj;
+    };
+    var merge = function merge2(target, source, options) {
+      if (!source) {
+        return target;
+      }
+      if (typeof source !== "object") {
+        if (isArray(target)) {
+          target.push(source);
+        } else if (target && typeof target === "object") {
+          if (options && (options.plainObjects || options.allowPrototypes) || !has.call(Object.prototype, source)) {
+            target[source] = true;
+          }
+        } else {
+          return [target, source];
+        }
+        return target;
+      }
+      if (!target || typeof target !== "object") {
+        return [target].concat(source);
+      }
+      var mergeTarget = target;
+      if (isArray(target) && !isArray(source)) {
+        mergeTarget = arrayToObject(target, options);
+      }
+      if (isArray(target) && isArray(source)) {
+        source.forEach(function(item, i) {
+          if (has.call(target, i)) {
+            var targetItem = target[i];
+            if (targetItem && typeof targetItem === "object" && item && typeof item === "object") {
+              target[i] = merge2(targetItem, item, options);
+            } else {
+              target.push(item);
+            }
+          } else {
+            target[i] = item;
+          }
+        });
+        return target;
+      }
+      return Object.keys(source).reduce(function(acc, key) {
+        var value = source[key];
+        if (has.call(acc, key)) {
+          acc[key] = merge2(acc[key], value, options);
+        } else {
+          acc[key] = value;
+        }
+        return acc;
+      }, mergeTarget);
+    };
+    var assign = function assignSingleSource(target, source) {
+      return Object.keys(source).reduce(function(acc, key) {
+        acc[key] = source[key];
+        return acc;
+      }, target);
+    };
+    var decode = function(str, decoder, charset) {
+      var strWithoutPlus = str.replace(/\+/g, " ");
+      if (charset === "iso-8859-1") {
+        return strWithoutPlus.replace(/%[0-9a-f]{2}/gi, unescape);
+      }
+      try {
+        return decodeURIComponent(strWithoutPlus);
+      } catch (e) {
+        return strWithoutPlus;
+      }
+    };
+    var encode = function encode2(str, defaultEncoder, charset, kind, format) {
+      if (str.length === 0) {
+        return str;
+      }
+      var string = str;
+      if (typeof str === "symbol") {
+        string = Symbol.prototype.toString.call(str);
+      } else if (typeof str !== "string") {
+        string = String(str);
+      }
+      if (charset === "iso-8859-1") {
+        return escape(string).replace(/%u[0-9a-f]{4}/gi, function($0) {
+          return "%26%23" + parseInt($0.slice(2), 16) + "%3B";
+        });
+      }
+      var out = "";
+      for (var i = 0; i < string.length; ++i) {
+        var c = string.charCodeAt(i);
+        if (c === 45 || c === 46 || c === 95 || c === 126 || c >= 48 && c <= 57 || c >= 65 && c <= 90 || c >= 97 && c <= 122 || format === formats.RFC1738 && (c === 40 || c === 41)) {
+          out += string.charAt(i);
+          continue;
+        }
+        if (c < 128) {
+          out = out + hexTable[c];
+          continue;
+        }
+        if (c < 2048) {
+          out = out + (hexTable[192 | c >> 6] + hexTable[128 | c & 63]);
+          continue;
+        }
+        if (c < 55296 || c >= 57344) {
+          out = out + (hexTable[224 | c >> 12] + hexTable[128 | c >> 6 & 63] + hexTable[128 | c & 63]);
+          continue;
+        }
+        i += 1;
+        c = 65536 + ((c & 1023) << 10 | string.charCodeAt(i) & 1023);
+        out += hexTable[240 | c >> 18] + hexTable[128 | c >> 12 & 63] + hexTable[128 | c >> 6 & 63] + hexTable[128 | c & 63];
+      }
+      return out;
+    };
+    var compact = function compact2(value) {
+      var queue = [{ obj: { o: value }, prop: "o" }];
+      var refs = [];
+      for (var i = 0; i < queue.length; ++i) {
+        var item = queue[i];
+        var obj = item.obj[item.prop];
+        var keys = Object.keys(obj);
+        for (var j = 0; j < keys.length; ++j) {
+          var key = keys[j];
+          var val = obj[key];
+          if (typeof val === "object" && val !== null && refs.indexOf(val) === -1) {
+            queue.push({ obj, prop: key });
+            refs.push(val);
+          }
+        }
+      }
+      compactQueue(queue);
+      return value;
+    };
+    var isRegExp = function isRegExp2(obj) {
+      return Object.prototype.toString.call(obj) === "[object RegExp]";
+    };
+    var isBuffer = function isBuffer2(obj) {
+      if (!obj || typeof obj !== "object") {
+        return false;
+      }
+      return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));
+    };
+    var combine = function combine2(a, b) {
+      return [].concat(a, b);
+    };
+    var maybeMap = function maybeMap2(val, fn) {
+      if (isArray(val)) {
+        var mapped = [];
+        for (var i = 0; i < val.length; i += 1) {
+          mapped.push(fn(val[i]));
+        }
+        return mapped;
+      }
+      return fn(val);
+    };
+    module2.exports = {
+      arrayToObject,
+      assign,
+      combine,
+      compact,
+      decode,
+      encode,
+      isBuffer,
+      isRegExp,
+      maybeMap,
+      merge
+    };
+  }
+});
+
+// node_modules/@middy/http-urlencode-body-parser/node_modules/qs/lib/parse.js
+var require_parse = __commonJS({
+  "node_modules/@middy/http-urlencode-body-parser/node_modules/qs/lib/parse.js"(exports, module2) {
+    "use strict";
+    var utils = require_utils2();
+    var has = Object.prototype.hasOwnProperty;
+    var isArray = Array.isArray;
+    var defaults3 = {
+      allowDots: false,
+      allowPrototypes: false,
+      allowSparse: false,
+      arrayLimit: 20,
+      charset: "utf-8",
+      charsetSentinel: false,
+      comma: false,
+      decoder: utils.decode,
+      delimiter: "&",
+      depth: 5,
+      ignoreQueryPrefix: false,
+      interpretNumericEntities: false,
+      parameterLimit: 1e3,
+      parseArrays: true,
+      plainObjects: false,
+      strictNullHandling: false
+    };
+    var interpretNumericEntities = function(str) {
+      return str.replace(/&#(\d+);/g, function($0, numberStr) {
+        return String.fromCharCode(parseInt(numberStr, 10));
+      });
+    };
+    var parseArrayValue = function(val, options) {
+      if (val && typeof val === "string" && options.comma && val.indexOf(",") > -1) {
+        return val.split(",");
+      }
+      return val;
+    };
+    var isoSentinel = "utf8=%26%2310003%3B";
+    var charsetSentinel = "utf8=%E2%9C%93";
+    var parseValues = function parseQueryStringValues(str, options) {
+      var obj = { __proto__: null };
+      var cleanStr = options.ignoreQueryPrefix ? str.replace(/^\?/, "") : str;
+      var limit = options.parameterLimit === Infinity ? void 0 : options.parameterLimit;
+      var parts = cleanStr.split(options.delimiter, limit);
+      var skipIndex = -1;
+      var i;
+      var charset = options.charset;
+      if (options.charsetSentinel) {
+        for (i = 0; i < parts.length; ++i) {
+          if (parts[i].indexOf("utf8=") === 0) {
+            if (parts[i] === charsetSentinel) {
+              charset = "utf-8";
+            } else if (parts[i] === isoSentinel) {
+              charset = "iso-8859-1";
+            }
+            skipIndex = i;
+            i = parts.length;
+          }
+        }
+      }
+      for (i = 0; i < parts.length; ++i) {
+        if (i === skipIndex) {
+          continue;
+        }
+        var part = parts[i];
+        var bracketEqualsPos = part.indexOf("]=");
+        var pos = bracketEqualsPos === -1 ? part.indexOf("=") : bracketEqualsPos + 1;
+        var key, val;
+        if (pos === -1) {
+          key = options.decoder(part, defaults3.decoder, charset, "key");
+          val = options.strictNullHandling ? null : "";
+        } else {
+          key = options.decoder(part.slice(0, pos), defaults3.decoder, charset, "key");
+          val = utils.maybeMap(parseArrayValue(part.slice(pos + 1), options), function(encodedVal) {
+            return options.decoder(encodedVal, defaults3.decoder, charset, "value");
+          });
+        }
+        if (val && options.interpretNumericEntities && charset === "iso-8859-1") {
+          val = interpretNumericEntities(val);
+        }
+        if (part.indexOf("[]=") > -1) {
+          val = isArray(val) ? [val] : val;
+        }
+        if (has.call(obj, key)) {
+          obj[key] = utils.combine(obj[key], val);
+        } else {
+          obj[key] = val;
+        }
+      }
+      return obj;
+    };
+    var parseObject = function(chain, val, options, valuesParsed) {
+      var leaf = valuesParsed ? val : parseArrayValue(val, options);
+      for (var i = chain.length - 1; i >= 0; --i) {
+        var obj;
+        var root = chain[i];
+        if (root === "[]" && options.parseArrays) {
+          obj = [].concat(leaf);
+        } else {
+          obj = options.plainObjects ? /* @__PURE__ */ Object.create(null) : {};
+          var cleanRoot = root.charAt(0) === "[" && root.charAt(root.length - 1) === "]" ? root.slice(1, -1) : root;
+          var index = parseInt(cleanRoot, 10);
+          if (!options.parseArrays && cleanRoot === "") {
+            obj = { 0: leaf };
+          } else if (!isNaN(index) && root !== cleanRoot && String(index) === cleanRoot && index >= 0 && (options.parseArrays && index <= options.arrayLimit)) {
+            obj = [];
+            obj[index] = leaf;
+          } else if (cleanRoot !== "__proto__") {
+            obj[cleanRoot] = leaf;
+          }
+        }
+        leaf = obj;
+      }
+      return leaf;
+    };
+    var parseKeys = function parseQueryStringKeys(givenKey, val, options, valuesParsed) {
+      if (!givenKey) {
+        return;
+      }
+      var key = options.allowDots ? givenKey.replace(/\.([^.[]+)/g, "[$1]") : givenKey;
+      var brackets = /(\[[^[\]]*])/;
+      var child = /(\[[^[\]]*])/g;
+      var segment = options.depth > 0 && brackets.exec(key);
+      var parent = segment ? key.slice(0, segment.index) : key;
+      var keys = [];
+      if (parent) {
+        if (!options.plainObjects && has.call(Object.prototype, parent)) {
+          if (!options.allowPrototypes) {
+            return;
+          }
+        }
+        keys.push(parent);
+      }
+      var i = 0;
+      while (options.depth > 0 && (segment = child.exec(key)) !== null && i < options.depth) {
+        i += 1;
+        if (!options.plainObjects && has.call(Object.prototype, segment[1].slice(1, -1))) {
+          if (!options.allowPrototypes) {
+            return;
+          }
+        }
+        keys.push(segment[1]);
+      }
+      if (segment) {
+        keys.push("[" + key.slice(segment.index) + "]");
+      }
+      return parseObject(keys, val, options, valuesParsed);
+    };
+    var normalizeParseOptions = function normalizeParseOptions2(opts) {
+      if (!opts) {
+        return defaults3;
+      }
+      if (opts.decoder !== null && opts.decoder !== void 0 && typeof opts.decoder !== "function") {
+        throw new TypeError("Decoder has to be a function.");
+      }
+      if (typeof opts.charset !== "undefined" && opts.charset !== "utf-8" && opts.charset !== "iso-8859-1") {
+        throw new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");
+      }
+      var charset = typeof opts.charset === "undefined" ? defaults3.charset : opts.charset;
+      return {
+        allowDots: typeof opts.allowDots === "undefined" ? defaults3.allowDots : !!opts.allowDots,
+        allowPrototypes: typeof opts.allowPrototypes === "boolean" ? opts.allowPrototypes : defaults3.allowPrototypes,
+        allowSparse: typeof opts.allowSparse === "boolean" ? opts.allowSparse : defaults3.allowSparse,
+        arrayLimit: typeof opts.arrayLimit === "number" ? opts.arrayLimit : defaults3.arrayLimit,
+        charset,
+        charsetSentinel: typeof opts.charsetSentinel === "boolean" ? opts.charsetSentinel : defaults3.charsetSentinel,
+        comma: typeof opts.comma === "boolean" ? opts.comma : defaults3.comma,
+        decoder: typeof opts.decoder === "function" ? opts.decoder : defaults3.decoder,
+        delimiter: typeof opts.delimiter === "string" || utils.isRegExp(opts.delimiter) ? opts.delimiter : defaults3.delimiter,
+        depth: typeof opts.depth === "number" || opts.depth === false ? +opts.depth : defaults3.depth,
+        ignoreQueryPrefix: opts.ignoreQueryPrefix === true,
+        interpretNumericEntities: typeof opts.interpretNumericEntities === "boolean" ? opts.interpretNumericEntities : defaults3.interpretNumericEntities,
+        parameterLimit: typeof opts.parameterLimit === "number" ? opts.parameterLimit : defaults3.parameterLimit,
+        parseArrays: opts.parseArrays !== false,
+        plainObjects: typeof opts.plainObjects === "boolean" ? opts.plainObjects : defaults3.plainObjects,
+        strictNullHandling: typeof opts.strictNullHandling === "boolean" ? opts.strictNullHandling : defaults3.strictNullHandling
+      };
+    };
+    module2.exports = function(str, opts) {
+      var options = normalizeParseOptions(opts);
+      if (str === "" || str === null || typeof str === "undefined") {
+        return options.plainObjects ? /* @__PURE__ */ Object.create(null) : {};
+      }
+      var tempObj = typeof str === "string" ? parseValues(str, options) : str;
+      var obj = options.plainObjects ? /* @__PURE__ */ Object.create(null) : {};
+      var keys = Object.keys(tempObj);
+      for (var i = 0; i < keys.length; ++i) {
+        var key = keys[i];
+        var newObj = parseKeys(key, tempObj[key], options, typeof str === "string");
+        obj = utils.merge(obj, newObj, options);
+      }
+      if (options.allowSparse === true) {
+        return obj;
+      }
+      return utils.compact(obj);
+    };
   }
 });
 
@@ -10706,6 +11129,78 @@ var TwitterAuthProvider = class extends BaseOAuthProvider {
 };
 TwitterAuthProvider.TWITTER_SIGN_IN_METHOD = "twitter.com";
 TwitterAuthProvider.PROVIDER_ID = "twitter.com";
+async function signUp(auth2, request) {
+  return _performSignInRequest(auth2, "POST", "/v1/accounts:signUp", _addTidIfNecessary(auth2, request));
+}
+var UserCredentialImpl = class {
+  constructor(params) {
+    this.user = params.user;
+    this.providerId = params.providerId;
+    this._tokenResponse = params._tokenResponse;
+    this.operationType = params.operationType;
+  }
+  static async _fromIdTokenResponse(auth2, operationType, idTokenResponse, isAnonymous = false) {
+    const user = await UserImpl._fromIdTokenResponse(auth2, idTokenResponse, isAnonymous);
+    const providerId = providerIdForResponse(idTokenResponse);
+    const userCred = new UserCredentialImpl({
+      user,
+      providerId,
+      _tokenResponse: idTokenResponse,
+      operationType
+    });
+    return userCred;
+  }
+  static async _forOperation(user, operationType, response) {
+    await user._updateTokensIfNecessary(response, true);
+    const providerId = providerIdForResponse(response);
+    return new UserCredentialImpl({
+      user,
+      providerId,
+      _tokenResponse: response,
+      operationType
+    });
+  }
+};
+function providerIdForResponse(response) {
+  if (response.providerId) {
+    return response.providerId;
+  }
+  if ("phoneNumber" in response) {
+    return "phone";
+  }
+  return null;
+}
+async function createUserWithEmailAndPassword(auth2, email, password) {
+  var _a;
+  const authInternal = _castAuth(auth2);
+  const request = {
+    returnSecureToken: true,
+    email,
+    password,
+    clientType: "CLIENT_TYPE_WEB"
+  };
+  let signUpResponse;
+  if ((_a = authInternal._getRecaptchaConfig()) === null || _a === void 0 ? void 0 : _a.emailPasswordEnabled) {
+    const requestWithRecaptcha = await injectRecaptchaFields(authInternal, request, "signUpPassword");
+    signUpResponse = signUp(authInternal, requestWithRecaptcha);
+  } else {
+    signUpResponse = signUp(authInternal, request).catch(async (error) => {
+      if (error.code === `auth/${"missing-recaptcha-token"}`) {
+        console.log("Sign-up is protected by reCAPTCHA for this project. Automatically triggering the reCAPTCHA flow and restarting the sign-up flow.");
+        const requestWithRecaptcha = await injectRecaptchaFields(authInternal, request, "signUpPassword");
+        return signUp(authInternal, requestWithRecaptcha);
+      } else {
+        return Promise.reject(error);
+      }
+    });
+  }
+  const response = await signUpResponse.catch((error) => {
+    return Promise.reject(error);
+  });
+  const userCredential = await UserCredentialImpl._fromIdTokenResponse(authInternal, "signIn", response);
+  await authInternal._updateCurrentUser(userCredential.user);
+  return userCredential;
+}
 function startEnrollTotpMfa(auth2, request) {
   return _performApiRequest(auth2, "POST", "/v2/accounts/mfaEnrollment:start", _addTidIfNecessary(auth2, request));
 }
@@ -10933,6 +11428,372 @@ function _isEmptyString(input) {
 // node_modules/@firebase/auth/dist/node-esm/index.js
 var import_node_fetch = __toESM(require_lib3(), 1);
 
+// node_modules/@middy/core/index.js
+var import_node_stream = require("stream");
+var import_promises = require("stream/promises");
+var import_promises2 = require("timers/promises");
+var defaultLambdaHandler = () => {
+};
+var defaultPlugin = {
+  timeoutEarlyInMillis: 5,
+  timeoutEarlyResponse: () => {
+    throw new Error("Timeout");
+  },
+  streamifyResponse: false
+};
+var middy = (lambdaHandler = defaultLambdaHandler, plugin = {}) => {
+  var _a;
+  if (typeof lambdaHandler !== "function") {
+    plugin = lambdaHandler;
+    lambdaHandler = defaultLambdaHandler;
+  }
+  plugin = __spreadValues(__spreadValues({}, defaultPlugin), plugin);
+  plugin.timeoutEarly = plugin.timeoutEarlyInMillis > 0;
+  (_a = plugin.beforePrefetch) == null ? void 0 : _a.call(plugin);
+  const beforeMiddlewares = [];
+  const afterMiddlewares = [];
+  const onErrorMiddlewares = [];
+  const middyHandler = (event = {}, context = {}) => {
+    var _a2;
+    (_a2 = plugin.requestStart) == null ? void 0 : _a2.call(plugin);
+    const request = {
+      event,
+      context,
+      response: void 0,
+      error: void 0,
+      internal: plugin.internal ?? {}
+    };
+    return runRequest(request, [
+      ...beforeMiddlewares
+    ], lambdaHandler, [
+      ...afterMiddlewares
+    ], [
+      ...onErrorMiddlewares
+    ], plugin);
+  };
+  const middy2 = plugin.streamifyResponse ? awslambda.streamifyResponse(async (event, responseStream, context) => {
+    const handlerResponse = await middyHandler(event, context);
+    let handlerBody = handlerResponse;
+    if (handlerResponse.statusCode) {
+      handlerBody = handlerResponse.body ?? "";
+      responseStream = awslambda.HttpResponseStream.from(responseStream, handlerResponse);
+    }
+    let handlerStream;
+    if (handlerBody._readableState) {
+      handlerStream = handlerBody;
+    } else if (typeof handlerBody === "string") {
+      function* iterator(input) {
+        const size = 16384;
+        let position = 0;
+        const length = input.length;
+        while (position < length) {
+          yield input.substring(position, position + size);
+          position += size;
+        }
+      }
+      handlerStream = import_node_stream.Readable.from(iterator(handlerBody));
+    }
+    if (!handlerStream) {
+      throw new Error("handler response not a ReadableStream");
+    }
+    await (0, import_promises.pipeline)(handlerStream, responseStream);
+  }) : middyHandler;
+  middy2.use = (middlewares) => {
+    if (!Array.isArray(middlewares)) {
+      middlewares = [
+        middlewares
+      ];
+    }
+    for (const middleware of middlewares) {
+      const { before, after, onError } = middleware;
+      if (!before && !after && !onError) {
+        throw new Error('Middleware must be an object containing at least one key among "before", "after", "onError"');
+      }
+      if (before)
+        middy2.before(before);
+      if (after)
+        middy2.after(after);
+      if (onError)
+        middy2.onError(onError);
+    }
+    return middy2;
+  };
+  middy2.before = (beforeMiddleware) => {
+    beforeMiddlewares.push(beforeMiddleware);
+    return middy2;
+  };
+  middy2.after = (afterMiddleware) => {
+    afterMiddlewares.unshift(afterMiddleware);
+    return middy2;
+  };
+  middy2.onError = (onErrorMiddleware) => {
+    onErrorMiddlewares.unshift(onErrorMiddleware);
+    return middy2;
+  };
+  middy2.handler = (replaceLambdaHandler) => {
+    lambdaHandler = replaceLambdaHandler;
+    return middy2;
+  };
+  return middy2;
+};
+var runRequest = async (request, beforeMiddlewares, lambdaHandler, afterMiddlewares, onErrorMiddlewares, plugin) => {
+  var _a, _b, _c;
+  let timeoutAbort;
+  const timeoutEarly = plugin.timeoutEarly && request.context.getRemainingTimeInMillis;
+  try {
+    await runMiddlewares(request, beforeMiddlewares, plugin);
+    if (typeof request.response === "undefined") {
+      (_a = plugin.beforeHandler) == null ? void 0 : _a.call(plugin);
+      const handlerAbort = new AbortController();
+      if (timeoutEarly)
+        timeoutAbort = new AbortController();
+      request.response = await Promise.race([
+        lambdaHandler(request.event, request.context, {
+          signal: handlerAbort.signal
+        }),
+        timeoutEarly ? (0, import_promises2.setTimeout)(request.context.getRemainingTimeInMillis() - plugin.timeoutEarlyInMillis, void 0, {
+          signal: timeoutAbort.signal
+        }).then(() => {
+          handlerAbort.abort();
+          return plugin.timeoutEarlyResponse();
+        }) : Promise.race([])
+      ]);
+      timeoutAbort == null ? void 0 : timeoutAbort.abort();
+      (_b = plugin.afterHandler) == null ? void 0 : _b.call(plugin);
+      await runMiddlewares(request, afterMiddlewares, plugin);
+    }
+  } catch (e) {
+    timeoutAbort == null ? void 0 : timeoutAbort.abort();
+    request.response = void 0;
+    request.error = e;
+    try {
+      await runMiddlewares(request, onErrorMiddlewares, plugin);
+    } catch (e2) {
+      e2.originalError = request.error;
+      request.error = e2;
+      throw request.error;
+    }
+    if (typeof request.response === "undefined")
+      throw request.error;
+  } finally {
+    await ((_c = plugin.requestEnd) == null ? void 0 : _c.call(plugin, request));
+  }
+  return request.response;
+};
+var runMiddlewares = async (request, middlewares, plugin) => {
+  var _a, _b;
+  for (const nextMiddleware of middlewares) {
+    (_a = plugin.beforeMiddleware) == null ? void 0 : _a.call(plugin, nextMiddleware.name);
+    const res = await nextMiddleware(request);
+    (_b = plugin.afterMiddleware) == null ? void 0 : _b.call(plugin, nextMiddleware.name);
+    if (typeof res !== "undefined") {
+      request.response = res;
+      return;
+    }
+  }
+};
+var core_default = middy;
+
+// node_modules/@middy/util/index.js
+var createErrorRegexp = /[^a-zA-Z]/g;
+var HttpError = class extends Error {
+  constructor(code, message, options = {}) {
+    if (message && typeof message !== "string") {
+      options = message;
+      message = void 0;
+    }
+    message ??= httpErrorCodes[code];
+    super(message, options);
+    const name4 = httpErrorCodes[code].replace(createErrorRegexp, "");
+    this.name = name4.substr(-5) !== "Error" ? name4 + "Error" : name4;
+    this.status = this.statusCode = code;
+    this.expose = options.expose ?? code < 500;
+  }
+};
+var createError = (code, message, properties = {}) => {
+  return new HttpError(code, message, properties);
+};
+var httpErrorCodes = {
+  100: "Continue",
+  101: "Switching Protocols",
+  102: "Processing",
+  103: "Early Hints",
+  200: "OK",
+  201: "Created",
+  202: "Accepted",
+  203: "Non-Authoritative Information",
+  204: "No Content",
+  205: "Reset Content",
+  206: "Partial Content",
+  207: "Multi-Status",
+  208: "Already Reported",
+  226: "IM Used",
+  300: "Multiple Choices",
+  301: "Moved Permanently",
+  302: "Found",
+  303: "See Other",
+  304: "Not Modified",
+  305: "Use Proxy",
+  306: "(Unused)",
+  307: "Temporary Redirect",
+  308: "Permanent Redirect",
+  400: "Bad Request",
+  401: "Unauthorized",
+  402: "Payment Required",
+  403: "Forbidden",
+  404: "Not Found",
+  405: "Method Not Allowed",
+  406: "Not Acceptable",
+  407: "Proxy Authentication Required",
+  408: "Request Timeout",
+  409: "Conflict",
+  410: "Gone",
+  411: "Length Required",
+  412: "Precondition Failed",
+  413: "Payload Too Large",
+  414: "URI Too Long",
+  415: "Unsupported Media Type",
+  416: "Range Not Satisfiable",
+  417: "Expectation Failed",
+  418: "I'm a teapot",
+  421: "Misdirected Request",
+  422: "Unprocessable Entity",
+  423: "Locked",
+  424: "Failed Dependency",
+  425: "Unordered Collection",
+  426: "Upgrade Required",
+  428: "Precondition Required",
+  429: "Too Many Requests",
+  431: "Request Header Fields Too Large",
+  451: "Unavailable For Legal Reasons",
+  500: "Internal Server Error",
+  501: "Not Implemented",
+  502: "Bad Gateway",
+  503: "Service Unavailable",
+  504: "Gateway Timeout",
+  505: "HTTP Version Not Supported",
+  506: "Variant Also Negotiates",
+  507: "Insufficient Storage",
+  508: "Loop Detected",
+  509: "Bandwidth Limit Exceeded",
+  510: "Not Extended",
+  511: "Network Authentication Required"
+};
+
+// node_modules/@middy/http-urlencode-body-parser/index.js
+var import_parse = __toESM(require_parse(), 1);
+var mimePattern = /^application\/x-www-form-urlencoded(;.*)?$/;
+var defaults = {
+  disableContentTypeError: true
+};
+var httpUrlencodeBodyParserMiddleware = (opts = {}) => {
+  const options = __spreadValues(__spreadValues({}, defaults), opts);
+  const httpUrlencodeBodyParserMiddlewareBefore = async (request) => {
+    var _a;
+    const { headers, body } = request.event;
+    const contentType = headers["Content-Type"] ?? headers["content-type"];
+    if (!mimePattern.test(contentType)) {
+      if (options.disableContentTypeError) {
+        return;
+      }
+      throw createError(415, "Unsupported Media Type", {
+        cause: contentType
+      });
+    }
+    const data = request.event.isBase64Encoded ? Buffer.from(body, "base64").toString() : body;
+    const rawBody = body;
+    request.event.body = (0, import_parse.default)(data);
+    if (((_a = request.event.body) == null ? void 0 : _a[rawBody]) === "") {
+      throw createError(415, "Invalid or malformed URL encoded form was provided", {
+        cause: "@middy/http-urlencode-body-parser unable to parse body"
+      });
+    }
+  };
+  return {
+    before: httpUrlencodeBodyParserMiddlewareBefore
+  };
+};
+var http_urlencode_body_parser_default = httpUrlencodeBodyParserMiddleware;
+
+// node_modules/@middy/http-header-normalizer/index.js
+var exceptionsList = [
+  "ALPN",
+  "C-PEP",
+  "C-PEP-Info",
+  "CalDAV-Timezones",
+  "Content-ID",
+  "Content-MD5",
+  "DASL",
+  "DAV",
+  "DNT",
+  "ETag",
+  "GetProfile",
+  "HTTP2-Settings",
+  "Last-Event-ID",
+  "MIME-Version",
+  "Optional-WWW-Authenticate",
+  "Sec-WebSocket-Accept",
+  "Sec-WebSocket-Extensions",
+  "Sec-WebSocket-Key",
+  "Sec-WebSocket-Protocol",
+  "Sec-WebSocket-Version",
+  "SLUG",
+  "TCN",
+  "TE",
+  "TTL",
+  "WWW-Authenticate",
+  "X-ATT-DeviceId",
+  "X-DNSPrefetch-Control",
+  "X-UIDH"
+];
+var exceptions = exceptionsList.reduce((acc, curr) => {
+  acc[curr.toLowerCase()] = curr;
+  return acc;
+}, {});
+var normalizeHeaderKey = (key, canonical) => {
+  const lowerCaseKey = key.toLowerCase();
+  if (!canonical) {
+    return lowerCaseKey;
+  }
+  if (exceptions[lowerCaseKey]) {
+    return exceptions[lowerCaseKey];
+  }
+  return lowerCaseKey.split("-").map((text) => text[0].toUpperCase() + text.substr(1)).join("-");
+};
+var defaults2 = {
+  canonical: false,
+  normalizeHeaderKey
+};
+var httpHeaderNormalizerMiddleware = (opts = {}) => {
+  const options = __spreadValues(__spreadValues({}, defaults2), opts);
+  const httpHeaderNormalizerMiddlewareBefore = async (request) => {
+    if (request.event.headers) {
+      const rawHeaders = {};
+      const headers = {};
+      for (const key of Object.keys(request.event.headers)) {
+        rawHeaders[key] = request.event.headers[key];
+        headers[options.normalizeHeaderKey(key, options.canonical)] = request.event.headers[key];
+      }
+      request.event.headers = headers;
+      request.event.rawHeaders = rawHeaders;
+    }
+    if (request.event.multiValueHeaders) {
+      const rawHeaders = {};
+      const headers = {};
+      for (const key of Object.keys(request.event.multiValueHeaders)) {
+        rawHeaders[key] = request.event.multiValueHeaders[key];
+        headers[options.normalizeHeaderKey(key, options.canonical)] = request.event.multiValueHeaders[key];
+      }
+      request.event.multiValueHeaders = headers;
+      request.event.rawMultiValueHeaders = rawHeaders;
+    }
+  };
+  return {
+    before: httpHeaderNormalizerMiddlewareBefore
+  };
+};
+var http_header_normalizer_default = httpHeaderNormalizerMiddleware;
+
 // netlify/functions/index.ts
 var firebaseConfig = {
   apiKey: process.env["API_KEY"],
@@ -10944,15 +11805,37 @@ var firebaseConfig = {
 };
 var firebase = initializeApp(firebaseConfig);
 var auth = getAuth(firebase);
-var handler = async (event, context) => {
+var baseHandler = async (event, context) => {
   const auth2 = getAuth();
   console.log(event.body);
-  const body = event.body ? event.body.split("&") : "";
-  return {
-    statusCode: 200,
-    body: ""
-  };
+  const body = event.body;
+  let email = "";
+  let password = "";
+  if (body) {
+    if (body.hasOwnProperty("email")) {
+      email = body.email;
+    }
+    if (body.hasOwnProperty("password")) {
+      password = body.password;
+    }
+  }
+  return createUserWithEmailAndPassword(auth2, email, password).then((userCredential) => {
+    const user = userCredential.user;
+    console.log("user => ", user);
+    return {
+      statusCode: 200,
+      body: JSON.stringify(user)
+    };
+  }).catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    return {
+      statusCode: 500,
+      body: JSON.stringify(error)
+    };
+  });
 };
+var handler = core_default(baseHandler).use(http_header_normalizer_default()).use(http_urlencode_body_parser_default());
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   handler
