@@ -32,3 +32,12 @@ export type Chapter = {
   metatype: string;
   content: Paragraph[] | MetaType[] | Section[];
 }
+
+export type UserDetails = {
+  displayName: string | null;
+  email: string | null;
+  phoneNumber: string | null;
+  photoURL: string | null;
+  uid: string;
+  emailVerified: boolean;
+}

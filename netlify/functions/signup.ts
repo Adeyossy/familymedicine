@@ -44,14 +44,14 @@ const baseHandler = async (event: HandlerEvent, context: HandlerContext): Promis
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
-      console.log("user => ", user);
-      const { displayName, email, phoneNumber, photoURL, uid } = user;
-      const userDetails = { displayName, email, phoneNumber, photoURL, uid };
+      // console.log("user => ", user);
+      const { displayName, email, phoneNumber, photoURL, uid, emailVerified } = user;
+      const userDetails = { displayName, email, phoneNumber, photoURL, uid, emailVerified };
       // ...
 
       return {
         statusCode: 200,
-        body: JSON.stringify(userDetails)
+        body: JSON.stringify(user)
       };
     }).catch((error: AuthError) => {
       const errorCode = error.code;

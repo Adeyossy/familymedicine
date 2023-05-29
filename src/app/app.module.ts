@@ -13,6 +13,9 @@ import { MetatextComponent } from './metatext/metatext.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './auth/login/login.component';
+import { EmailPasswordComponent } from './auth/email-password/email-password.component';
+import { SlideshowComponent } from './widgets/slideshow/slideshow.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { HttpClientModule } from '@angular/common/http';
     MetatypeComponent,
     SplashComponent,
     MetatextComponent,
-    SignupComponent
+    SignupComponent,
+    LoginComponent,
+    EmailPasswordComponent,
+    SlideshowComponent
   ],
   imports: [
     BrowserModule,

@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, label, button {
   margin: 0;
 }
 
-p, li {
+p, li, input {
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 0;
   margin: 0;
@@ -71,6 +71,7 @@ button, a.fm-link-button {
 button:disabled, a.fm-link-button:disabled {
   opacity: 0.5;
   transition: opacity 200ms linear;
+  cursor: not-allowed;
 }
 
 button:hover, a.fm-link-button:hover {
@@ -81,6 +82,14 @@ button:hover, a.fm-link-button:hover {
 
 button:active, a.fm-link-button:active {
   transform: scale(0.95);
+}
+
+button.fm-auth-button {
+  padding: var(--fm-small-padding) var(--fm-large-padding);
+}
+
+.fm-auth-container {
+  padding: var(--fm-small-padding);
 }
 
 .fm-left-sidebar {
@@ -119,6 +128,10 @@ p.fm-subtitle {
   h1.fm-project-header {
     font-size: 16px;
   }
+
+  .fm-auth-container {
+    padding: var(--fm-default-padding);
+  }
 }
 
 @media only screen and (min-width: 992px) {  
@@ -137,5 +150,9 @@ p.fm-subtitle {
 
   .fm-header {
     font-size: 24px;
+  }
+  
+  .fm-auth-container {
+    padding: var(--fm-large-padding);
   }
 }

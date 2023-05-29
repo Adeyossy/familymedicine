@@ -1,0 +1,5 @@
+<div class="fm-login fm-auth-container">
+  <app-email-password (emailEmitter)="setEmail($event)" (passwordEmitter)="setPassword($event)"></app-email-password>
+  <button [disabled]="!email || !password" (click)="login()" class="fm-auth-button">Submit</button>
+  <p class="fm-notification-text">{{ notification }}</p>
+</div>

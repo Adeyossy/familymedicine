@@ -1,0 +1,17 @@
+.fm-slideshow-container {
+  height: 100vh;
+  background-size: auto 100%;
+  background-position-x: right;
+  animation: pan 50s ease-in infinite alternate;
+  background-blend-mode: hue;
+}
+
+@keyframes pan {
+  from {
+    background-position-x: right;
+  }
+
+  to {
+    background-position-x: left;
+  }
+}
