@@ -1,0 +1,9 @@
+.fm-notification-container {
+  position: fixed;
+  margin: auto;
+  padding: var(--fm-default-padding);
+  right: 0; bottom: var(--fm-item-height); left: 0;
+  background-color: var(--fm-primary-color-contrast);
+  color: var(--fm-icon-color-contrast);
+  z-index: 5;
+}

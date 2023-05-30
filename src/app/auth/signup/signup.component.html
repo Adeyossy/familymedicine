@@ -1,8 +1,10 @@
 <div class="fm-signup fm-auth-container">
     <h1 class="fm-title">Create Your Account</h1>
     <p class="fm-subtitle">Gain access to more content when you create an account.</p>
-    <div class="fm-heading-divider"></div>
+    <br><br>
     <app-email-password (emailEmitter)="setEmail($event)" (passwordEmitter)="setPassword($event)"></app-email-password>
-    <button [disabled]="!email || !password" (click)="signup()" class="fm-auth-button">Submit</button>
-    <p class="fm-notification-text">{{ notification }}</p>
+    <button [disabled]="!email || !password" (click)="createAccount()" class="fm-auth-button">Submit</button>
+    <br><br>
+    <p class="fm-subtitle">Already have an account? Login</p>
+    <app-notifications [notification]="notification" *ngIf="showNotification"></app-notifications>
 </div>

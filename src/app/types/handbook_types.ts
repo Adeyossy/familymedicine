@@ -41,3 +41,11 @@ export type UserDetails = {
   uid: string;
   emailVerified: boolean;
 }
+
+export type Notification = {
+  message: string;
+  length: string; // values: short, long, indefinite
+  actionable: boolean; // any quick action to carry out?
+  action?: object; // action to carry out
+  severity: string; // green, yellow, red
+}

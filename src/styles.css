@@ -154,5 +154,7 @@ p.fm-subtitle {
   
   .fm-auth-container {
     padding: var(--fm-large-padding);
+    height: 100%;
+    /* background-color: var(--fm-primary-color-light); */
   }
 }

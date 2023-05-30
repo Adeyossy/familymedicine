@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slideshow.component.css']
 })
 export class SlideshowComponent implements OnInit {
+  slideshow_image = `url(../../../assets/residents/cover.png`;
+
   resident_image = '';
 
   residents_images = ['children_area.jpg', 'consulting.jpeg', 'entrance.jpeg', 'lab.jpeg',

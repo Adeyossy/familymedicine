@@ -16,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './auth/login/login.component';
 import { EmailPasswordComponent } from './auth/email-password/email-password.component';
 import { SlideshowComponent } from './widgets/slideshow/slideshow.component';
+import { AuthComponent } from './auth/auth/auth.component';
+import { NotificationsComponent } from './widgets/notifications/notifications.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { SlideshowComponent } from './widgets/slideshow/slideshow.component';
     SignupComponent,
     LoginComponent,
     EmailPasswordComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    AuthComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,

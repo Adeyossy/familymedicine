@@ -38,6 +38,10 @@ img {
   background-color: var(--fm-primary-color-light);
 }
 
+.fm-banner {
+  margin: var(--fm-large-padding) 0;
+}
+
 .fm-image-item {
   height: 30vh;
   overflow: hidden;

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { handbook } from './data/handbook';
 import { SectionContent, SectionItem, TableOfContent, Chapter, Section, Paragraph } from './types/handbook_types';
 import { Router } from '@angular/router';
+import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,7 @@ export class AppComponent implements OnInit {
   itemsOpenState: boolean[] = [];
   handbook = handbook;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private authService: AuthService) {}
 
   ngOnInit(): void {
     this.tableOfContent = handbook.map(item => {
@@ -47,6 +48,8 @@ export class AppComponent implements OnInit {
     this.itemsSelectionState = new Array(handbook.length).fill(false);
     
     this.itemsOpenState = new Array(handbook.length).fill(false);
+
+    // this.authService.setFirebaseConfig().subscribe
   }
 
   // planned to be used recur
