@@ -1,5 +1,6 @@
 export const cmac = {
   heading: "Foreword by Chairman Medical Advisory Committee, and Director of Clinical Services, Training and Research, UCH Ibadan",
+  level_of_access: 1,
   content: [
     {
       metatype: "paragraph",

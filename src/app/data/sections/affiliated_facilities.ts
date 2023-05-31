@@ -1,5 +1,6 @@
 export const affilitatedFacilities = {
   heading: "Other Affiliated Facilities for Family Medicine Training outside of tutelage",
+  level_of_access: 2,
   content: [
     {
       metatype: "table",

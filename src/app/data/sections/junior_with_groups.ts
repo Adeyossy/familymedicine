@@ -1,5 +1,6 @@
 export const junior = {
   heading: "Junior Residency program/Membership training aka Pre-Part I training.",
+  level_of_access: 2,
   content: [
     {
       metatype: "h3",

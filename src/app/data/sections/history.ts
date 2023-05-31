@@ -1,5 +1,6 @@
 export const history = {
   heading: "History of the Department of Family Medicine, UCH Ibadan",
+  level_of_access: 1,
   content: [
     {
       metatype: "paragraph",

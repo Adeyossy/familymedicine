@@ -44,6 +44,7 @@ export const handbook = [
   updateCourse,
   {
     heading: "Patient Management Report Book (PMR)",
+    level_of_access: 2,
     content: [
       {
         metatype: "banner",
@@ -78,6 +79,7 @@ export const handbook = [
   },
   {
     heading: "Organogram of UCH Family Medicine Faculty and Trainees",
+    level_of_access: 2,
     content: [
       {
         metatype: "organogram",
@@ -121,6 +123,7 @@ export const handbook = [
   collaborative,
   {
     heading: "Consultative Clinics in Department of Family Medicine, UCH",
+    level_of_access: 2,
     content: [
       {
         metatype: "groups",

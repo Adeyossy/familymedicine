@@ -1,5 +1,6 @@
 export const logbook = {
   heading: "The Logbook",
+  level_of_access: 2,
   content: [
     {
       metatype: "paragraph",

@@ -1,5 +1,6 @@
 export const howToProceed = {
   heading: "How to Proceed for a Posting",
+  level_of_access: 2,
   content: [
     {
       metatype: "subheading",

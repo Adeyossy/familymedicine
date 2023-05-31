@@ -1,5 +1,6 @@
 export const organogramUCH = {
   heading: "Organogram of UCH, Ibadan",
+  level_of_access: 2,
   content: [
     {
       metatype: "image",

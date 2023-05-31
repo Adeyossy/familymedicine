@@ -1,5 +1,6 @@
 export const recognition = {
   heading: "College level Recognition for Fellows in the Department",
+  level_of_access: 2,
   content: [
     {
       metatype: "list",

@@ -1,5 +1,6 @@
 export const coordination = {
   heading: "Coordination of Residency Training Programme in the UCH Ibadan",
+  level_of_access: 2,
   content: [
     {
       metatype: "paragraph",

@@ -1,5 +1,6 @@
 export const consultants_staff = {
   heading: "The Current List of Consultant Staff",
+  level_of_access: 2,
   content: [
     {
       metatype: "avatars",

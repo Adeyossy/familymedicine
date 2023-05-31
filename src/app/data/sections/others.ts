@@ -1,5 +1,6 @@
 export const others = {
   heading: "Other Important Content",
+  level_of_access: 1,
   author: "Materials Needed for Training, Appearance and Availability, Initiative Skills and Competence etc",
   content: [
     {

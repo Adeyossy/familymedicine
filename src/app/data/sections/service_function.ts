@@ -1,5 +1,6 @@
 export const serviceFunction = {
   heading: "Service Function/Working Hours",
+  level_of_access: 2,
   content: [
     {
       metatype: "list",

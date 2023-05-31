@@ -49,3 +49,11 @@ export type Notification = {
   action?: object; // action to carry out
   severity: string; // green, yellow, red
 }
+
+export type FirestoreData = {
+  userId: string;
+  hasPaid: boolean;
+  hasPaidForAbstract: boolean;
+  levelOfAccess: number;
+  designation?: string;
+}

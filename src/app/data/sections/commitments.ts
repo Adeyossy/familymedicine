@@ -1,5 +1,6 @@
 export const commitments = {
   heading: "Departmental-Level Financial Commitments",
+  level_of_access: 1,
   content: [
     {
       metatype: "paragraph",

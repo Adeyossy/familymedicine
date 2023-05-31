@@ -1,5 +1,6 @@
 export const editorsNote = {
     heading: "Editor's Note",
+    level_of_access: 1,
     content: [
         {
             metatype: "paragraph",

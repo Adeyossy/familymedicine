@@ -1,5 +1,6 @@
 export const appendices = {
     heading: "Appendices",
+    level_of_access: 2,
     content: [
         {
             metatype: "appendices",

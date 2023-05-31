@@ -1,5 +1,6 @@
 export const otherForms = {
   heading: "Other Assessment Forms",
+  level_of_access: 2,
   content: [
     {
       metatype: "paragraph",

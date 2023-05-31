@@ -1,5 +1,6 @@
 export const examinationBodies = {
   heading: "Examination Bodies and Other Residency Training Information",
+  level_of_access: 2,
   content: [
     {
       metatype: "subheading",

@@ -1,5 +1,6 @@
 export const routineMeetings = {
   heading: "Routine Departmental Meetings",
+  level_of_access: 2,
   content: [
     {
       metatype: "groups",

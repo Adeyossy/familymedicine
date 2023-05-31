@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6, label, button {
   margin: 0;
 }
 
+label {
+  color: var(--fm-primary-color-contrast);
+}
+
 p, li, input {
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 0;
@@ -89,7 +93,7 @@ button.fm-auth-button {
 }
 
 .fm-auth-container {
-  padding: var(--fm-small-padding);
+  padding: var(--fm-large-padding) var(--fm-small-padding);
 }
 
 .fm-left-sidebar {
@@ -110,6 +114,9 @@ h1.fm-project-header {
 
 h2.fm-title {
   font-size: 24px;
+}
+
+.fm-title {
   color: var(--fm-primary-color-contrast);
 }
 
@@ -124,13 +131,19 @@ p.fm-subtitle {
   margin: 16px 0px;
 }
 
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: var(--fm-large-padding);
+}
+
 @media only screen and (min-width: 768px) {  
   h1.fm-project-header {
     font-size: 16px;
   }
 
   .fm-auth-container {
-    padding: var(--fm-default-padding);
+    padding: var(--fm-large-padding) var(--fm-default-padding);
   }
 }
 

@@ -1,5 +1,6 @@
 export const trainingObjectives = {
   heading: "Family Medicine Training Objectives",
+  level_of_access: 2,
   content: [
     {
       metatype: "list",

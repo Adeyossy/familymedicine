@@ -1,5 +1,6 @@
 export const hodMessage = {
   heading: "Head of Department's Message",
+  level_of_access: 1,
   content: [
     {
       metatype: "paragraph",

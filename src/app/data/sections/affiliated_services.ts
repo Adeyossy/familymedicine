@@ -1,5 +1,6 @@
 export const affiliatedServices = {
   heading: "Other Services affiliated to the Department",
+  level_of_access: 2,
   content: [
     {
       metatype: "subheading",

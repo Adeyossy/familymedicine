@@ -1,5 +1,6 @@
 export const curriculum = {
   heading: "Curriculum",
+  level_of_access: 2,
   content: [
     {
       metatype: "paragraph",

@@ -1,5 +1,6 @@
 export const dissertations = {
   heading: "Past Dissertation Arranged according to approved Area of Special Interest",
+  level_of_access: 3,
   content: [
     {
       metatype: "paragraph",

@@ -1,5 +1,6 @@
 export const welcome = {
   heading: "Welcome to the Family Medicine Programme in UCH Ibadan.",
+  level_of_access: 2,
   content: [
     {
       metatype: "paragraph",

@@ -1,5 +1,6 @@
 export const tasks = {
   heading: "The Resident Doctor’s Tasks in the department of Family Medicine",
+  level_of_access: 2,
   content: [
     {
       metatype: "paragraph",

@@ -1,5 +1,6 @@
 export const collaborative = {
   heading: "Collaborating Units in The Department of Family Medicine, UCH",
+  level_of_access: 2,
   content: [
     {
       metatype: "groups",

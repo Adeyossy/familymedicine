@@ -1,5 +1,6 @@
 export const tutelage = {
   heading: "Tutelage in Family Practice:",
+  level_of_access: 2,
   content: [
     {
       metatype: "paragraph",

@@ -1,5 +1,6 @@
 export const senior = {
   heading: "The Senior/Part II/Fellowship Training Programme",
+  level_of_access: 2,
   content: [
     {
       metatype: "paragraph",

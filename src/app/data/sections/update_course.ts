@@ -1,5 +1,6 @@
 export const updateCourse = {
   heading: "College Organised Update and Revision Courses",
+  level_of_access: 2,
   content: [
     {
       metatype: "paragraph",

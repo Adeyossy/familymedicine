@@ -2,8 +2,25 @@
     <h1 class="fm-title">Create Your Account</h1>
     <p class="fm-subtitle">Gain access to more content when you create an account.</p>
     <br><br>
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-6">
+                <label for="firstname">Firstname</label>
+                <input type="text" name="firstname" id="firstname" placeholder="e.g John or Jane" [ngModel]="firstname"
+                    (ngModelChange)="onNameChange($event, true)" required>
+            </div>
+            <div class="col-lg-6">
+                <label for="lastname">Lastname</label>
+                <input type="text" name="lastname" id="lastname" placeholder="e.g Smith" [ngModel]="lastname"
+                    (ngModelChange)="onNameChange($event, false)" required>
+            </div>
+        </div>
+    </div>
     <app-email-password (emailEmitter)="setEmail($event)" (passwordEmitter)="setPassword($event)"></app-email-password>
-    <button [disabled]="!email || !password" (click)="createAccount()" class="fm-auth-button">Submit</button>
+    <label for="repeatPassword">Repeat Password</label>
+    <input type="password" name="repeatPassword" id="repeatPassword" [ngModel]="repeatPassword" (ngModelChange)="setRepeatPassword($event)"
+        required class="d-block">
+    <button [disabled]="!firstname || !lastname || !email || !password || password !== repeatPassword" (click)="createAccount()" class="fm-auth-button">Submit</button>
     <br><br>
     <p class="fm-subtitle">Already have an account? Login</p>
     <app-notifications [notification]="notification" *ngIf="showNotification"></app-notifications>

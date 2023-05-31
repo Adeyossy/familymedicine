@@ -13,11 +13,13 @@ export class SignupComponent implements OnInit {
   email = '';
   password = '';
   repeatPassword = '';
+  firstname = '';
+  lastname = '';
   showNotification = false;
   user: User | null = null
 
-  notification: Notification = { 
-    message: '', length: '', actionable: false, severity: 'green' 
+  notification: Notification = {
+    message: '', length: '', actionable: false, severity: 'green'
   };
 
   firebaseConfig: FirebaseOptions = {}
@@ -28,23 +30,22 @@ export class SignupComponent implements OnInit {
   }
 
   async createAccount(): Promise<void> {
-    console.log("config => ", this.authService.getFirebaseConfig());
-    
     try {
-      const userCredential = await createUserWithEmailAndPassword(this.authService
-        .getFirebaseAuth() as Auth, this.email, this.password)
-      
-      this.user = userCredential.user;
-      this.showNotification = true;
-      this.notification = {
-        message: 'Account created successfully',
-        length: 'short',
-        actionable: false,
-        severity: 'green'
-      }
+      const response = await this.authService.createAccount(this.email.trim(), this.password, 
+        this.firstname.trim() + " " + this.lastname.trim());
 
+      if (response) {
+        this.showNotification = true;
+        this.notification = {
+          message: 'Account created successfully',
+          length: 'short',
+          actionable: false,
+          severity: 'green'
+        }
+      }
     } catch(error) {
       const authError = error as AuthError;
+
       if (authError.code === 'auth/email-already-exists') {
         this.showNotification = true;
         this.notification = {
@@ -64,49 +65,16 @@ export class SignupComponent implements OnInit {
           severity: "red"
         }
       }
+
+      this.showNotification = true;
+      this.notification = {
+        message: "Sorry, an error occurred",
+        length: "long",
+        actionable: false,
+        severity: "red"
+      }
     }
   }
-
-  // signup(): void {
-  //   this.authService.signup(this.email, this.password).subscribe({
-  //     next: (response) => {
-        
-  //       if (response) {
-  //         const user = response;
-  //         // const user = resBody['user'] as UserDetails;
-
-  //         if (user.emailVerified) {
-  //           // Proceed to app
-  //           this.notification = 'user email has been verified'
-  //         } else {
-  //           this.authService.verifyEmail({user}).subscribe({
-  //             next: (res) => {
-  //               if (res.statusCode === 200) {
-  //                 // Verification Email has been sent
-  //                 this.notification = 'Verification Email has been sent';
-  //               } else {
-  //                 // An error occurred with verification
-  //                 this.notification = 'An error occurred with verification';
-  //               }
-  //             },
-  //             error: (err) => {
-  //               // An error occurred while trying to verify
-  //               console.log(`An error occurred with verification`);
-  //               console.log(err);
-  //               this.notification = `An error occurred with verification: ${err}`;
-  //             }
-  //           });
-  //         }
-  //       }
-  //     },
-  //     error: (err) => {
-  //       console.log("error => ", err);
-  //     },
-  //     complete: () => {
-  //       console.log("completed");
-  //     }
-  //   });
-  // }
 
   setEmail(email: string): void {
     this.email = email;
@@ -114,6 +82,19 @@ export class SignupComponent implements OnInit {
 
   setPassword(password: string): void {
     this.password = password;
+  }
+
+  setRepeatPassword(repeatPassword: string): void {
+    this.repeatPassword = repeatPassword;
+  }
+
+  onNameChange(name: string, isFirst: boolean): void {
+    name = name.replace(name[0], name[0].toUpperCase());
+    if (isFirst) {
+      this.firstname = name;
+    } else {
+      this.lastname = name;
+    }
   }
 
   // setNotification()

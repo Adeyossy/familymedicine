@@ -2,6 +2,7 @@ import { rotations } from "./rotation";
 
 export const detailsOfRotation = {
   heading: "Details of the Rotations with Duration",
+  level_of_access: 2,
   content: [
     {
       metatype: "paragraph",
