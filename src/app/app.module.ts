@@ -18,6 +18,7 @@ import { EmailPasswordComponent } from './auth/email-password/email-password.com
 import { SlideshowComponent } from './widgets/slideshow/slideshow.component';
 import { AuthComponent } from './auth/auth/auth.component';
 import { NotificationsComponent } from './widgets/notifications/notifications.component';
+import { SetupComponent } from './auth/setup/setup.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NotificationsComponent } from './widgets/notifications/notifications.co
     EmailPasswordComponent,
     SlideshowComponent,
     AuthComponent,
-    NotificationsComponent
+    NotificationsComponent,
+    SetupComponent
   ],
   imports: [
     BrowserModule,

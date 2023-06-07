@@ -16,6 +16,9 @@ export class AppComponent implements OnInit {
   itemsSelectionState: boolean[] = [];
   itemsOpenState: boolean[] = [];
   handbook = handbook;
+  residents_images = ['children_area.jpg', 'consulting.jpeg', 'entrance.jpeg', 'lab.jpeg',
+    'nurses_station.jpeg', 'residents_consulting.jpeg', 'sorting_hall_2.jpeg'];
+  resident_image: string = 'url(../assets/residents/lab.jpeg)';
 
   constructor(private router: Router, private authService: AuthService) {}
 

@@ -39,7 +39,7 @@ p, li, input {
   font-size: 16px;
   letter-spacing: -0.3px;
   /* word-spacing: 0.5px; */
-  color: var(--fm-p-text-color);
+  color: inherit;
 }
 
 p.fm-smaller-text {
@@ -92,6 +92,11 @@ button.fm-auth-button {
   padding: var(--fm-small-padding) var(--fm-large-padding);
 }
 
+.fm-process-button {
+  color: white;
+  animation: glow 3s ease-in-out infinite;
+}
+
 .fm-auth-container {
   padding: var(--fm-large-padding) var(--fm-small-padding);
 }
@@ -135,6 +140,38 @@ input {
   width: 100%;
   padding: 8px;
   margin-bottom: var(--fm-large-padding);
+}
+
+@keyframes glow {
+  from {
+    background-color: var(--fm-primary-color-contrast);
+  }
+
+  to {
+    background-color: var(--fm-accent-color);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    background-size: 75% auto;
+  }
+
+  to {
+    background-size: 100% auto;
+  }
+}
+
+@keyframes transitionIn {
+  from{
+    opacity: 0.5;
+    transform: scaleX(0.95) scaleY(0.98)
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
 }
 
 @media only screen and (min-width: 768px) {  

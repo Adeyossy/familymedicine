@@ -1,9 +1,9 @@
-<div class="fm-notification-container">
+<div class="fm-notification-container" [ngClass]="show ? 'd-block' : 'd-none'">
   <div class="fm-notification-message">
     <p class="fm-subtitle fm-notification-text">{{ notification.message }}</p>
   </div>
-  <div class="fm-notification-buttons">
+  <div class="fm-notification-buttons text-right">
     <!-- <button class="fm-button fm-notification-button" *ngIf="notification.actionable">Action</button> -->
-    <button class="fm-button fm-notification-button">Dismiss</button>
+    <button class="fm-button fm-notification-button" (click)="onDismiss()">Dismiss</button>
   </div>
 </div>

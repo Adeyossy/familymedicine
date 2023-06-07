@@ -1,9 +1,48 @@
 .fm-notification-container {
   position: fixed;
+  width: 80%;
   margin: auto;
   padding: var(--fm-default-padding);
   right: 0; bottom: var(--fm-item-height); left: 0;
   background-color: var(--fm-primary-color-contrast);
   color: var(--fm-icon-color-contrast);
   z-index: 5;
+  animation: slideUp 250ms ease-in;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+button.fm-notification-button {
+  border: none;
+  padding: 2px;
+  color: white;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+button.fm-notification-button:hover {
+  color: var(--fm-accent-color);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .fm-notification-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .fm-notification-container {
+    width: 33%;
+  }
 }

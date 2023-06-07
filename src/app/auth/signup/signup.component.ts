@@ -15,7 +15,8 @@ export class SignupComponent implements OnInit {
   repeatPassword = '';
   firstname = '';
   lastname = '';
-  showNotification = false;
+  showNotification = true;
+  authStarted = false;
   user: User | null = null
 
   notification: Notification = {
@@ -30,11 +31,12 @@ export class SignupComponent implements OnInit {
   }
 
   async createAccount(): Promise<void> {
+    this.authStarted = true;
     try {
-      const response = await this.authService.createAccount(this.email.trim(), this.password, 
+      const user = await this.authService.createAccount(this.email.trim(), this.password,
         this.firstname.trim() + " " + this.lastname.trim());
 
-      if (response) {
+      if (user) {
         this.showNotification = true;
         this.notification = {
           message: 'Account created successfully',
@@ -42,8 +44,32 @@ export class SignupComponent implements OnInit {
           actionable: false,
           severity: 'green'
         }
+
+        try {
+          const outcome = await this.authService.createUserData(
+            {
+              hasPaid: false,
+              hasPaidForAbstract: false,
+              levelOfAccess: 1,
+              userId: user.uid
+            }
+          );
+
+          if (outcome) {
+            this.showNotification = true;
+            this.notification = {
+              message: 'Onboarding successful',
+              length: 'short',
+              actionable: false,
+              severity: 'green'
+            }
+
+            this.authStarted = false;
+          }
+        } catch (error) { }
+
       }
-    } catch(error) {
+    } catch (error) {
       const authError = error as AuthError;
 
       if (authError.code === 'auth/email-already-exists') {
@@ -95,6 +121,10 @@ export class SignupComponent implements OnInit {
     } else {
       this.lastname = name;
     }
+  }
+
+  dismissNotification(status: boolean) {
+    this.showNotification = status;
   }
 
   // setNotification()

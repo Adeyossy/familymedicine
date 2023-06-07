@@ -10,7 +10,7 @@
   </div>
   <div class="container-fluid p-0 fm-details-container">
     <div class="row g-0">
-      <div class="offset-lg-4 col-lg-8 offset-xl-3 col-xl-9 fm-details-group">
+      <div class="offset-lg-4 col-lg-8 offset-xl-3 col-xl-9 fm-details-group" [ngStyle]="{'background-image': resident_image }">
         <router-outlet (activate)="setIndex($event)"></router-outlet>
       </div>
       <div class="fm-toc-fab d-lg-none d-flex justify-content-center align-items-center"

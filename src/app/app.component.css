@@ -30,6 +30,11 @@
   /* background-blend-mode: overlay; */
 }
 
+.fm-details-group {
+  animation: slideIn 250ms ease-in;
+  background-repeat: no-repeat;
+}
+
 .fm-toc-fab {
   width: 64px;
   height: 64px;

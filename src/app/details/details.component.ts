@@ -32,7 +32,7 @@ export class DetailsComponent implements OnInit, OnDestroy, OnChanges {
         setTimeout(() => {
           this.animate = false;
           this.randomizeImage();
-        }, 500);
+        }, 1000);
       },
       complete: () => {
         // this.activate.emit(this.index);

@@ -22,13 +22,12 @@ export class AuthService {
   constructor(private httpClient: HttpClient) {
     this.fetchFirebaseConfig().subscribe({
       next: (config) => {
-        console.log("config fetched => ", config);
+        this.config = config;
         this.firebaseApp = initializeApp(config);
         this.firebaseAuth = getAuth(this.firebaseApp);
         this.firestore = getFirestore(this.firebaseApp);
         
         onAuthStateChanged(this.firebaseAuth, (user) => {
-          console.log("user => ", user);
           this.user = user
         });
       },
@@ -92,7 +91,7 @@ export class AuthService {
   }
 
   async createAccount(email: string, password: string, 
-    displayName: string): Promise<boolean | string> {
+    displayName: string): Promise<User> {
     console.log("config => ", this.config);
     
     try {
@@ -102,12 +101,12 @@ export class AuthService {
       this.user = userCredential.user;
       await updateProfile(userCredential.user, {displayName: displayName});
 
-      return true;
+      return userCredential.user;
 
     } catch(error) {
       const authError = error as AuthError;
-      // throw error;
-      return authError.code;
+      throw error;
+      // return authError.code;
     }
   }
 }

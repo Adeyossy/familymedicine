@@ -20,8 +20,9 @@
     <label for="repeatPassword">Repeat Password</label>
     <input type="password" name="repeatPassword" id="repeatPassword" [ngModel]="repeatPassword" (ngModelChange)="setRepeatPassword($event)"
         required class="d-block">
-    <button [disabled]="!firstname || !lastname || !email || !password || password !== repeatPassword" (click)="createAccount()" class="fm-auth-button">Submit</button>
+    <button [disabled]="!firstname || !lastname || !email || !password || password !== repeatPassword" 
+    (click)="createAccount()" class="fm-auth-button" [ngClass]="authStarted ? 'fm-process-button' : ''">Submit</button>
     <br><br>
     <p class="fm-subtitle">Already have an account? Login</p>
-    <app-notifications [notification]="notification" *ngIf="showNotification"></app-notifications>
+    <app-notifications [notification]="notification" [show]="showNotification"></app-notifications>
 </div>

@@ -35,48 +35,7 @@ export const handbook = [
   editorsNote,
   hodMessage,
   cmac,
-  firstEditor,
-  history,
-  welcome,
-  trainingObjectives,
-  junior,
-  detailsOfRotation,
-  updateCourse,
-  {
-    heading: "Patient Management Report Book (PMR)",
-    level_of_access: 2,
-    content: [
-      {
-        metatype: "banner",
-        content: [
-          {
-            metatype: "src",
-            content: [
-              "/assets/pmr.jpg"
-            ]
-          },
-          {
-            metatype: "caption",
-            content: [
-              "Patient Management Report"
-            ]
-          }
-        ]
-      },
-      {
-        metatype: "paragraph",
-        content: [
-          "Due to the importance placed on patient-centred care (patient management) in Family Medicine the candidate will be required to present a detailed written report on 10 patients which the trainee managed during the residency program which includes completed follow-up."
-        ]
-      },
-      {
-        metatype: "paragraph",
-        content: [
-          "The write up should reflect the family-oriented continuing care unique to the discipline as shown in the 7-step Family Practice Management Guide in appendix 1."
-        ]
-      }
-    ]
-  },
+  organogramUCH,
   {
     heading: "Organogram of UCH Family Medicine Faculty and Trainees",
     level_of_access: 2,
@@ -116,6 +75,49 @@ export const handbook = [
               "Registrars (Family Medicine)"
             ]
           }
+        ]
+      }
+    ]
+  },
+  firstEditor,
+  history,
+  welcome,
+  trainingObjectives,
+  tasks,
+  junior,
+  detailsOfRotation,
+  updateCourse,
+  {
+    heading: "Patient Management Report Book (PMR)",
+    level_of_access: 2,
+    content: [
+      {
+        metatype: "banner",
+        content: [
+          {
+            metatype: "src",
+            content: [
+              "/assets/pmr.jpg"
+            ]
+          },
+          {
+            metatype: "caption",
+            content: [
+              "Patient Management Report"
+            ]
+          }
+        ]
+      },
+      {
+        metatype: "paragraph",
+        content: [
+          "Due to the importance placed on patient-centred care (patient management) in Family Medicine the candidate will be required to present a detailed written report on 10 patients which the trainee managed during the residency program which includes completed follow-up."
+        ]
+      },
+      {
+        metatype: "paragraph",
+        content: [
+          "The write up should reflect the family-oriented continuing care unique to the discipline as shown in the 7-step Family Practice Management Guide in appendix 1."
         ]
       }
     ]
@@ -368,15 +370,13 @@ export const handbook = [
   },
   routineMeetings,
   senior,
+  examinationBodies,
   facilities,
   consultants_staff,
   otherDepartments,
   serviceFunction,
-  tasks,
   affiliatedServices,
   dissertations,
-  organogramUCH,
-  examinationBodies,
   curriculum,
   otherForms,
   logbook,
