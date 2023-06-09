@@ -17,7 +17,7 @@ export class SignupComponent implements OnInit {
   lastname = '';
   showNotification = true;
   authStarted = false;
-  user: User | null = null
+  user: User | null = null;
 
   notification: Notification = {
     message: '', length: '', actionable: false, severity: 'green'

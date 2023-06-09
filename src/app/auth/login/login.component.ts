@@ -12,11 +12,11 @@ import { Notification } from 'src/app/types/handbook_types';
 export class LoginComponent implements OnInit {
   email = '';
   password = '';
-  showNotification = false;
+  showNotification = true;
   user: User | null = null
 
   notification: Notification = { 
-    message: '', length: '', actionable: false, severity: 'green' 
+    message: 'Logging In', length: 'long', actionable: false, severity: 'green' 
   };
 
   firebaseConfig: FirebaseOptions = {}
@@ -56,4 +56,9 @@ export class LoginComponent implements OnInit {
 
     // const user = userCredentials.user;
   }
+  
+  dismissNotification(status: boolean) {
+    this.showNotification = status;
+  }
+
 }

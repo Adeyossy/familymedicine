@@ -6,6 +6,7 @@ import { FirestoreData, UserDetails } from '../types/handbook_types';
 import { Auth, AuthError, User, createUserWithEmailAndPassword, getAuth, initializeAuth, onAuthStateChanged, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { FirebaseApp, FirebaseOptions, initializeApp } from 'firebase/app';
 import { getFirestore, Firestore, addDoc, collection, doc, setDoc } from 'firebase/firestore';
+import { ActivatedRouteSnapshot, Route, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -17,9 +18,11 @@ export class AuthService {
   firebaseAuth: Auth | null = null;
   firestore: Firestore | null = null;
   isSignedIn = false;
-  user: User | null = null
+  user: User | null = null;
+  lastUrl = '';
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient,
+    private router: Router) {
     this.fetchFirebaseConfig().subscribe({
       next: (config) => {
         this.config = config;
@@ -28,7 +31,9 @@ export class AuthService {
         this.firestore = getFirestore(this.firebaseApp);
         
         onAuthStateChanged(this.firebaseAuth, (user) => {
-          this.user = user
+          // console.log(user);
+          this.user = user;
+          router.navigateByUrl(this.lastUrl);
         });
       },
       error: (err) => {
@@ -108,5 +113,9 @@ export class AuthService {
       throw error;
       // return authError.code;
     }
+  }
+
+  setLastUrl(lastUrl: string): void {
+    this.lastUrl = lastUrl;
   }
 }

@@ -26,7 +26,7 @@ export const trainingObjectives = {
         {
           metatype: "src",
           content: [
-            "/assets/residents/residents_consulting.jpeg"
+            "/assets/residents/residents_consulting.jpg"
           ]
         },
         {

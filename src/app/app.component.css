@@ -13,9 +13,9 @@
 }
 
 .fm-toc-group {
-  background: linear-gradient(to bottom, var(--fm-background-color), var(--fm-background-color)),
-    url('../assets/bg1_.jpg');
-  background-blend-mode: soft-light;
+  background: linear-gradient(to bottom, var(--fm-toc-background-color), var(--fm-toc-background-color)),
+    url('../assets/bg_toc.jpg');
+  background-blend-mode: lighten;
   background-position: center;
   background-size: cover;
   animation: fmSlideUp 100ms ease-in 0ms 1;
@@ -31,8 +31,27 @@
 }
 
 .fm-details-group {
-  animation: slideIn 250ms ease-in;
+  position: relative;
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 120% auto;
+  animation: drift 60s ease-in-out infinite alternate forwards;
+}
+
+.fm-details-group.animate {
+  animation: slideIn 500ms ease-in;
+}
+
+.fm-details-scrim {
+  height: 100%;
+  background-color: var(--fm-background-color);
+  position: absolute;
+  margin: auto;
+  right: 0;
+}
+
+.fm-details-scrim.animate {
+  animation: reveal 500ms ease-in forwards;
 }
 
 .fm-toc-fab {

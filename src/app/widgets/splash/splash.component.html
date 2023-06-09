@@ -1,12 +1,14 @@
 <div class="fm-splash">
-  <div class="container-fluid p-0" [hidden]="true">
+  <div class="container-fluid p-0">
     <div class="row g-0">
-      <div class="col-6 col-md-4 col-lg-3 col-xl-3" *ngFor="let image of images">
-        <img src="../../../assets/{{image}}" alt="" class="img-fluid fm-splash-image">
+      <div class="col-6 col-md-4 col-lg-3 col-xl-3 fm-splash-images-group">
+        <div class="fm-splash-images" *ngFor="let image of images">
+          <img src="../../../assets/{{image}}" alt="" class="img-fluid fm-splash-image">
+        </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid fm-splash-hero" [hidden]="true">
+  <div class="container-fluid fm-splash-hero d-none">
     <div class="row g-0">
       <div class="offset-md-3 col-md-6 offset-lg-3 col-lg-6 offset-xl-4 col-xl-4">
         <div class="fm-splash-icon">
@@ -18,15 +20,5 @@
         </div>
       </div>
     </div>
-  </div>  
-  <div class="fm-signin-form container-fluid p-0">
-    <div class="row g-0">
-      <div class="col-lg-8">
-        <app-signup></app-signup>
-      </div>
-      <div class="col-lg-4 d-none d-lg-block">
-        <app-slideshow></app-slideshow>
-      </div>
-    </div>
-  </div>
+  </div> 
 </div>

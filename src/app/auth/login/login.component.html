@@ -3,8 +3,11 @@
     <p class="fm-subtitle">Gain access to more content when you sign in.</p>
     <br><br>
   <app-email-password (emailEmitter)="setEmail($event)" (passwordEmitter)="setPassword($event)"></app-email-password>
-  <button [disabled]="!email || !password" (click)="login()" class="fm-auth-button">Submit</button>
-  <p class="fm-notification-text">{{ notification }}</p>
+  <div class="fm-auth-buttons d-flex justify-conteent-space-between">
+    <button [disabled]="!email || !password" (click)="login()" class="fm-auth-button">Submit</button>
+    <!-- <button [disabled]="!email || !password" (click)="login()" class="fm-auth-button">Logout</button> -->
+  </div>
+  <app-notifications [notification]="notification" [show]="showNotification"></app-notifications>
   <br>
   <p class="fm-subtitle">Don't have an account? Create a new one!</p>
 </div>

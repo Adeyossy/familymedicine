@@ -10,8 +10,8 @@ export class SlideshowComponent implements OnInit {
 
   resident_image = '';
 
-  residents_images = ['children_area.jpg', 'consulting.jpeg', 'entrance.jpeg', 'lab.jpeg',
-    'nurses_station.jpeg', 'residents_consulting.jpeg', 'sorting_hall_2.jpeg'];
+  residents_images = ['children_area.jpg', 'consulting.jpg', 'entrance.jpg', 'lab.jpg',
+    'nurses_station.jpg', 'residents_consulting.jpg', 'sorting_hall_2.jpg'];
   
   constructor() { }
 

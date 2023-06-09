@@ -21,11 +21,13 @@ export class AuthguardGuard implements CanActivate {
       // console.log("route params => ", route.params);
       // console.log("route.params.id => ", id);
       const levelofAccess = handbook[id].level_of_access
+      
+      this.authService.setLastUrl('/'.concat(route.url.join('/')));
       if (levelofAccess > 1) {
         if (this.authService.user) {
           return true;
         } else {
-          return this.router.parseUrl('/account/signup');
+          return this.router.parseUrl('/account/login');
         }
       }
     return true;

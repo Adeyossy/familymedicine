@@ -15,8 +15,8 @@ export class DetailsComponent implements OnInit, OnDestroy, OnChanges {
   handbook = handbook;
   @Output() emitIndex: EventEmitter<number> = new EventEmitter();
   @Output('activate') activate: EventEmitter<number> = new EventEmitter();
-  residents_images = ['children_area.jpg', 'consulting.jpeg', 'entrance.jpeg', 'lab.jpeg',
-    'nurses_station.jpeg', 'residents_consulting.jpeg', 'sorting_hall_2.jpeg'];
+  residents_images = ['children_area.jpg', 'consulting.jpg', 'entrance.jpg', 'lab.jpg',
+    'nurses_station.jpg', 'residents_consulting.jpg', 'sorting_hall_2.jpg'];
   resident_image: string = ''
   animate = false;
   // @Output('attach') attach: EventEmitter<number> = new EventEmitter();

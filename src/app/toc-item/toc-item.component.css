@@ -13,7 +13,7 @@ details[open] {
 }
 
 details[open], details[open] > * {
-  border: 1px solid var(--fm-primary-color-contrast);
+  border: 1px solid var(--fm-accent-color);
   transition: border 500ms linear, height 200ms linear;
 }
 
@@ -54,7 +54,7 @@ i {
   font-size: 16px;
 }
 
-details.active .fm-toc-item-number {
+summary.active .fm-toc-item-number {
   border-color: var(--fm-accent-color);
 }
 

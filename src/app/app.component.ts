@@ -12,15 +12,20 @@ import { AuthService } from './services/auth.service';
 export class AppComponent implements OnInit {
   tableOfContent: Array<TableOfContent> = [];
   index = -1;
+  animate = false;
   showOnMobile = false;
   itemsSelectionState: boolean[] = [];
   itemsOpenState: boolean[] = [];
   handbook = handbook;
-  residents_images = ['children_area.jpg', 'consulting.jpeg', 'entrance.jpeg', 'lab.jpeg',
-    'nurses_station.jpeg', 'residents_consulting.jpeg', 'sorting_hall_2.jpeg'];
-  resident_image: string = 'url(../assets/residents/lab.jpeg)';
+  residents_images = ['Administrative Office','BP Area', 'Children Area', 'Consulting',
+   'Entrance', 'Lab', 'Children Playing', 'Clinical Psychology', 'Consultant', 'Entrance',
+    'Nurses Station', 'Residents Consulting', 'Sorting Hall', 'Hallway', 'HCT Room',
+    'NHIS Clinic', 'Residents', 'Resident Consulting', 'Seminar Room', 'Sorting Hall'];
+  resident_image = 'url(../assets/residents/lab.jpg)';
 
-  constructor(private router: Router, private authService: AuthService) {}
+  constructor(private router: Router, private authService: AuthService) {
+    this.randomizeImage();
+  }
 
   ngOnInit(): void {
     this.tableOfContent = handbook.map(item => {
@@ -66,11 +71,30 @@ export class AppComponent implements OnInit {
   }
 
   setIndex(index: any): void {
+    console.log('index changed in app component');
     this.index = index.index;
+    this.setAnimation();
+  }
+
+  setAnimation(): void {
+    this.animate = true;
+    setTimeout(() => {
+      this.animate = false;
+      this.randomizeImage();
+    }, 2000);
+  }
+
+  randomizeImage() {
+    const rand = Math.random() * (this.residents_images.length - 1);
+    const randInteger = Math.floor(rand);
+    const imageFile = this.residents_images[randInteger].replace(' ', '_').toLowerCase();
+
+    this.resident_image = 'url(../assets/residents/' + imageFile + '.jpg)';
   }
 
   setIndexOnClick(index: number): void {
     this.index = index;
+    this.setAnimation();
 
     const oldState = this.itemsSelectionState[index];
     if (oldState) {
@@ -80,6 +104,7 @@ export class AppComponent implements OnInit {
     this.itemsOpenState = this.itemsOpenState.fill(false);
     this.itemsSelectionState[index] = true;
     this.itemsOpenState[index] = !oldState;
+    this.showOnMobile = false;
   }
 
   showToc(): void {

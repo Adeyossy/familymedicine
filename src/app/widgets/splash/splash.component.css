@@ -2,10 +2,17 @@ img.fm-splash-image {
   /* animation: animateBlur 5s linear 500ms infinite alternate; */
     filter: blur(3px) grayscale(0.5);
     -webkit-filter: blur(3px) grayscale(0.5);
+    opacity: 0;
 }
 
 .fm-splash {
   position: relative;
+  height: 100%;
+}
+
+.fm-splash-images-group {
+  height: 100vh;
+  overflow: hidden;
 }
 
 .fm-splash-hero {
