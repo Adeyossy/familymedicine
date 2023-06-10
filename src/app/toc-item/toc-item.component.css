@@ -55,7 +55,8 @@ i {
 }
 
 summary.active .fm-toc-item-number {
-  border-color: var(--fm-accent-color);
+  border-color: var(--fm-primary-color-light);
+  background-color: var(--fm-accent-color);
 }
 
 .fm-toc-item-number {

@@ -81,12 +81,17 @@ i {
   /* margin-top: var(--fm-large-padding); */
   padding: var(--fm-small-padding);
   z-index: 2;
-  background-color: white;
+  background-color: var(--fm-toc-background-color);
   position: fixed;
   width: 100%;
   margin: auto;
   bottom: 0; right: 0;
   box-shadow: 0px -4px 3px 0px rgba(0, 0, 0, 0.05);
+}
+
+.fm-details-nav i {
+  color: var(--fm-accent-color);
+  font-size: inherit;
 }
 
 @keyframes fmSlideUp {

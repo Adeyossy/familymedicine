@@ -16,6 +16,7 @@ import { history } from "./sections/history";
 import { hodMessage } from "./sections/hod_message";
 import { junior } from "./sections/junior_with_groups";
 import { logbook } from "./sections/logbook";
+import { organogramFM } from "./sections/organogram_fm";
 import { organogramUCH } from "./sections/organogram_uch";
 import { otherDepartments } from "./sections/other_departments";
 import { otherForms } from "./sections/other_forms";
@@ -36,49 +37,7 @@ export const handbook = [
   hodMessage,
   cmac,
   organogramUCH,
-  {
-    heading: "Organogram of UCH Family Medicine Faculty and Trainees",
-    level_of_access: 2,
-    content: [
-      {
-        metatype: "organogram",
-        content: [
-          {
-            metatype: "level",
-            content: [
-              "Director of Training"
-            ]
-          },
-          {
-            metatype: "level",
-            content: [
-              "HOD, Family Medicine"
-            ]
-          },
-          {
-            metatype: "level",
-            content: [
-              "CME Coordinator",
-              "Residency Training Coordinator",
-              "Family Medicine Consultants & Trainers"
-            ]
-          },
-          {
-            metatype: "level",
-            content: [
-              "Chief Resident (Family Medicine)"
-            ]
-          },
-          {
-            metatype: "level",
-            content: [
-              "Registrars (Family Medicine)"
-            ]
-          }
-        ]
-      }
-    ]
-  },
+  organogramFM,
   firstEditor,
   history,
   welcome,

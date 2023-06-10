@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../../../Projects/dev/familymedicine/netlify/functions/index.ts"],
-  "sourceRoot": "C:/Users/adeba/AppData/Local/Temp/tmp-11224-VZMm8iGPFbzM",
+  "sourceRoot": "C:/Users/adeba/AppData/Local/Temp/tmp-10096-hsErMAk4NrSy",
   "sourcesContent": ["import type { Handler, HandlerEvent, HandlerContext } from \"@netlify/functions\";\r\nimport type { Response } from \"@netlify/functions/dist/function/response\";\r\n\r\nconst firebaseConfig = {\r\n  apiKey: process.env['API_KEY'],\r\n  authDomain: process.env['AUTH_DOMAIN'],\r\n  projectId: process.env['PROJECT_ID'],\r\n  storageBucket: process.env['STORAGE_BUCKET'],\r\n  messagingSenderId: process.env['MESSAGING_SENDER_ID'],\r\n  appId: process.env['APP_ID']\r\n};\r\n\r\n// const firebase = initializeApp(firebaseConfig);\r\n\r\n// const auth = getAuth(firebase);\r\n\r\nconst handler: Handler = async (event: HandlerEvent, context: HandlerContext): Promise<Response> => {\r\n\r\n  return {\r\n    statusCode: 200,\r\n    body: JSON.stringify(firebaseConfig)\r\n  }\r\n  \r\n};\r\n\r\n// const handler = middy(baseHandler).use(httpHeaderNormalizer()).use(urlEncodeBodyParser());\r\n\r\nexport { handler };\r\n"],
   "mappings": ";;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAGA,IAAM,iBAAiB;AAAA,EACrB,QAAQ,QAAQ,IAAI;AAAA,EACpB,YAAY,QAAQ,IAAI;AAAA,EACxB,WAAW,QAAQ,IAAI;AAAA,EACvB,eAAe,QAAQ,IAAI;AAAA,EAC3B,mBAAmB,QAAQ,IAAI;AAAA,EAC/B,OAAO,QAAQ,IAAI;AACrB;AAMA,IAAM,UAAmB,OAAO,OAAqB,YAA+C;AAElG,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU,cAAc;AAAA,EACrC;AAEF;",
   "names": []

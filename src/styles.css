@@ -92,7 +92,7 @@ a.fm-link-button:disabled {
 button:hover,
 a.fm-link-button:hover {
   color: white;
-  background-color: var(--fm-primary-color);
+  background-color: var(--fm-primary-color-contrast);
   border-color: var(--fm-accent-color);
 }
 

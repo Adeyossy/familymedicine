@@ -21,10 +21,9 @@ export class AppComponent implements OnInit {
    'Entrance', 'Lab', 'Children Playing', 'Clinical Psychology', 'Consultant', 'Entrance',
     'Nurses Station', 'Residents Consulting', 'Sorting Hall', 'Hallway', 'HCT Room',
     'NHIS Clinic', 'Residents', 'Resident Consulting', 'Seminar Room', 'Sorting Hall'];
-  resident_image = 'url(../assets/residents/lab.jpg)';
+  resident_image = 'url(../assets/residents/residents.jpg)';
 
   constructor(private router: Router, private authService: AuthService) {
-    this.randomizeImage();
   }
 
   ngOnInit(): void {
@@ -71,9 +70,8 @@ export class AppComponent implements OnInit {
   }
 
   setIndex(index: any): void {
-    console.log('index changed in app component');
     this.index = index.index;
-    this.setAnimation();
+    if (this.index) this.setAnimation();
   }
 
   setAnimation(): void {

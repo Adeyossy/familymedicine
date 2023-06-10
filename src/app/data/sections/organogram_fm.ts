@@ -1,5 +1,5 @@
-export const organogramUCH = {
-  heading: "Organogram of UCH, Ibadan",
+export const organogramFM = {
+  heading: "Organogram of Family Medicine Faculty and Trainees",
   level_of_access: 2,
   content: [
     {
@@ -8,13 +8,13 @@ export const organogramUCH = {
         {
           metatype: "src",
           content: [
-            "/assets/organogram_uch.jpg"
+            "/assets/organogram_fm.jpg"
           ]
         },
         {
           metatype: "caption",
           content: [
-            "Organogram of UCH, Ibadan"
+            "Organogram of Family Medicine Faculty and Trainees"
           ]
         }
       ]

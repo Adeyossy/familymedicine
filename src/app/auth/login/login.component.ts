@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   user: User | null = null
 
   notification: Notification = { 
-    message: 'Logging In', length: 'long', actionable: false, severity: 'green' 
+    message: "Checking if you're already logged in", length: 'long', actionable: false, severity: 'green' 
   };
 
   firebaseConfig: FirebaseOptions = {}
