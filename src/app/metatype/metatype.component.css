@@ -73,6 +73,10 @@ img {
   margin: 4px 0;
 }
 
+.fm-fill-space {
+  flex-basis: 75%;
+}
+
 .fm-metatype-project p {
   font-size: 16px;
   padding: 0;

@@ -82,10 +82,10 @@
 <div class="fm-metatype fm-list-container" *ngIf="item.metatype === 'list'">
   <app-metatype *ngFor="let itemContent of itemAsSectionItems()" [item]="itemContent"></app-metatype>
 </div>
-<div class="fm-metatype fm-metatype-project" *ngIf="item.metatype === 'project' || item.metatype === 'group'">
-  <div *ngFor="let itemContent of itemAsSectionItems(), index as i">
+<div class="fm-metatype fm-metatype-project d-flex flex-column" *ngIf="item.metatype === 'project' || item.metatype === 'group'">
+  <div *ngFor="let itemContent of itemAsSectionItems(), index as i" [ngClass]="i == 0 ? 'fm-fill-space' : ''">
+    <div class="fm-heading-divider" *ngIf="i == 1"></div>
     <app-metatype [item]="itemContent"></app-metatype>
-    <div class="fm-heading-divider" *ngIf="i == 0"></div>
   </div>
 </div>
 <div class="fm-metatype fm-section-container container-fluid p-0"
