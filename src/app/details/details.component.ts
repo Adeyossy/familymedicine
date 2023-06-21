@@ -38,8 +38,6 @@ export class DetailsComponent implements OnInit, OnDestroy, OnChanges {
         // this.activate.emit(this.index);
       }
     });
-
-    console.log("proof of reconstruction");
   }
 
   ngOnInit(): void {

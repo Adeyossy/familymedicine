@@ -1,1 +1,35 @@
-<p>setup works!</p>
+<div class="fm-signup fm-auth-container">
+  <h1 class="fm-title">Complete Setting Up Your Account</h1>
+  <p class="fm-subtitle">Fill the following fields:</p>
+  <br><br>
+  <label for="hospital">Hospital</label>
+  <select name="hospital" id="hospital" [(ngModel)]="hospital">
+    <option value="UCH">UCH</option>
+    <option value="OAUTHC">OAUTHC</option>
+    <option value="LUTH">LUTH</option>
+    <option value="ABUTH">ABUTH</option>
+    <option value="UNTH">UNTH</option>
+    <option value="JUTH">JUTH</option>
+    <option value="UBTH">UBTH</option>
+    <option value="UCTH">UCTH</option>
+    <option value="UPTH">UPTH</option>
+    <option value="UMTH">UMTH</option>
+    <option value="OLUYORO">OLUYORO</option>
+    <option value="CHBC">Central Hospital, Benin-city</option>
+    <option value="BOWEN">BOWEN</option>
+    <option value="LASUTH">LASUTH</option>
+  </select>
+  <br><br>
+  <label for="designation">Designation</label>
+  <select name="designation" id="designation" [(ngModel)]="designation">
+    <option value="Consultant">Consultant</option>
+    <option value="Resident">Resident</option>
+  </select>
+  <br><br>
+  <button [disabled]="!hospital|| !designation" (click)="createUserData()" class="fm-auth-button"
+    [ngClass]="authStarted ? 'fm-process-button' : ''">Submit</button>
+  <br><br>
+  <!-- <p class="fm-subtitle">Already have an account? Login</p> -->
+  <app-notifications [notification]="notification" [show]="showNotification"
+    (showEmitter)="showNotification = $event"></app-notifications>
+</div>

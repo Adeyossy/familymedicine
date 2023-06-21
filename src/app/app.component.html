@@ -11,9 +11,12 @@
   <div class="container-fluid p-0 fm-details-container">
     <div class="row g-0">
       <div class="offset-lg-4 col-lg-8 offset-xl-3 col-xl-9 fm-details-group" 
-      [ngStyle]="{'background-image': resident_image }">
+        [ngStyle]="{'background-image': resident_image }">
         <div class="fm-details-scrim" [ngClass]="animate ? 'animate' : ''"></div>
         <router-outlet (activate)="setIndex($event)"></router-outlet>
+      </div>
+      <div class="col-12 d-lg-none p-5">
+        <h1 class="fm-project-header">Postgraduate Handbook</h1>
       </div>
       <div class="fm-toc-fab d-lg-none d-flex justify-content-center align-items-center"
         (click)="showToc()" [ngClass]="showOnMobile ? ' shown' : '' ">

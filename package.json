@@ -24,6 +24,7 @@
     "@middy/http-urlencode-body-parser": "^4.4.3",
     "angular4-paystack": "^3.1.1",
     "firebase": "^9.22.0",
+    "node-fetch": "^3.3.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

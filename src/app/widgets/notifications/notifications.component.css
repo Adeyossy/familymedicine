@@ -14,9 +14,10 @@
 button.fm-notification-button {
   border: none;
   padding: 2px;
-  color: white;
+  color: var(--fm-accent-color);
   background-color: transparent;
   font-size: 14px;
+  font-weight: bold;
 }
 
 button.fm-notification-button:hover {

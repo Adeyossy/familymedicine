@@ -19,6 +19,9 @@ import { SlideshowComponent } from './widgets/slideshow/slideshow.component';
 import { AuthComponent } from './auth/auth/auth.component';
 import { NotificationsComponent } from './widgets/notifications/notifications.component';
 import { SetupComponent } from './auth/setup/setup.component';
+import { PaymentComponent } from './auth/payment/payment.component';
+import { ProfileComponent } from './auth/profile/profile.component';
+import { HeaderComponent } from './widgets/header/header.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { SetupComponent } from './auth/setup/setup.component';
     SlideshowComponent,
     AuthComponent,
     NotificationsComponent,
-    SetupComponent
+    SetupComponent,
+    PaymentComponent,
+    ProfileComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

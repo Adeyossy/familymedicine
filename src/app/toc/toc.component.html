@@ -4,8 +4,11 @@
       <div class="col-1">
         <img src="../../assets/logo.png" alt="Department of Family Medicine logo" class="img-fluid">
       </div>
-      <div class="col-11">
+      <div class="col-9">
         <h1 class="fm-header px-3">Table of Content</h1>
+      </div>
+      <div class="col-2">
+        <button class="fm-button" (click)="logout()">{{ user ? 'Logout' : '' }}</button>
       </div>
     </div>
   </div>

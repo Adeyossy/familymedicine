@@ -2,22 +2,7 @@
   <div class="container-fluid p-0 fm-details-container" [ngClass]="animate ? 'd-none': 'd-block'">
     <div class="row g-0">
       <div class="col-lg-12 fm-details-content">
-        <div class="container-fluid p-0 fm-details-content-letterhead" routerLink="/">
-          <div class="row g-0 justify-content-center align-items-center">
-            <div class="col-2 col-lg-1 p-2">
-              <img src="../../assets/uch_logo.png" alt="University College Hospital, Ibadan logo" class="img-fluid">
-            </div>
-            <div class="col-8 col-lg-10 text-center">
-              <h1 class="fm-project-header">Department of Family Medicine</h1>
-              <h1 class="fm-project-header text-uppercase">Postgraduate Handbook</h1>
-            </div>
-            <div class="col-2 col-lg-1 p-2">
-              <img src="../../assets/logo.png"
-                alt="Department of Family Medicine, University College Hospital, Ibadan logo" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <hr class="m-0">
+        <app-header></app-header>
         <div class="fm-details">
           <h2 class="fm-title">{{ item.heading }}</h2>
           <p class="fm-subtitle pt-1">{{item.author}}</p>

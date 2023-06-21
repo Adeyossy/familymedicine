@@ -64,3 +64,11 @@ summary.active .fm-toc-item-number {
   padding: 2px 8px;
   font-family: 'Jost', sans-serif;
 }
+
+.fm-animate-dropdown::before {
+  animation: dropdown 200ms linear forwards;
+}
+
+.fm-animate-dropdown-reverse::before {
+  animation: dropdownReverse 200ms linear forwards;
+}

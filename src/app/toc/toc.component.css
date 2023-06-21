@@ -25,6 +25,19 @@
   font-size: 16px;
 }
 
+button.fm-button {
+  border: none;
+  padding: 2px;
+  color: var(--fm-primary-color-contrast);
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button.fm-button:hover {
+  color: var(--fm-accent-color);
+}
+
 @media only screen and (min-width: 992px) {
   .fm-toc {
     height: 100vh;

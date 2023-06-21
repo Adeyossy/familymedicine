@@ -17,9 +17,11 @@
         </div>
     </div>
     <app-email-password (emailEmitter)="setEmail($event)" (passwordEmitter)="setPassword($event)"></app-email-password>
+    <br><br>
     <label for="repeatPassword">Repeat Password</label>
     <input type="password" name="repeatPassword" id="repeatPassword" [ngModel]="repeatPassword" (ngModelChange)="setRepeatPassword($event)"
         required class="d-block">
+    <br><br>
     <button [disabled]="!firstname || !lastname || !email || !password || password !== repeatPassword" 
     (click)="createAccount()" class="fm-auth-button" [ngClass]="authStarted ? 'fm-process-button' : ''">Submit</button>
     <br><br>

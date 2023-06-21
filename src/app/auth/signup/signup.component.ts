@@ -49,9 +49,12 @@ export class SignupComponent implements OnInit {
           const outcome = await this.authService.createUserData(
             {
               hasPaid: false,
-              hasPaidForAbstract: false,
+              handbookPayment: {},
+              paidAbstracts: [],
               levelOfAccess: 1,
-              userId: user.uid
+              userId: user.uid,
+              hospital: '',
+              designation: ''
             }
           );
 

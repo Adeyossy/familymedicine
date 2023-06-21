@@ -70,8 +70,8 @@ export class AppComponent implements OnInit {
   }
 
   setIndex(index: any): void {
-    this.index = index.index;
-    if (this.index) this.setAnimation();
+    // this.index = index.index;
+    this.setIndexOnClick(index.index);
   }
 
   setAnimation(): void {
@@ -92,16 +92,19 @@ export class AppComponent implements OnInit {
 
   setIndexOnClick(index: number): void {
     this.index = index;
-    this.setAnimation();
+    if (this.index) this.setAnimation();
 
-    const oldState = this.itemsSelectionState[index];
-    if (oldState) {
-    } else {
-      this.itemsSelectionState = this.itemsSelectionState.fill(false);
-    }
-    this.itemsOpenState = this.itemsOpenState.fill(false);
-    this.itemsSelectionState[index] = true;
-    this.itemsOpenState[index] = !oldState;
+    let openOldState = this.itemsOpenState.slice();
+    const openOldStateForIndex = this.itemsOpenState[index];
+
+    // if (!oldStateForIndex) {
+    // } else {
+    //   this.itemsSelectionState = this.itemsSelectionState.fill(false);
+    //   this.itemsSelectionState[index] = true;
+    // }
+    openOldState = openOldState.fill(false);
+    openOldState[index] = !openOldStateForIndex;
+    this.itemsOpenState = openOldState;
     this.showOnMobile = false;
   }
 

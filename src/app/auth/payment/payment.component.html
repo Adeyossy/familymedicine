@@ -1,0 +1,50 @@
+<div class="fm-signup fm-auth-container">
+  <h1 class="fm-title">Pay for the Handbook</h1>
+  <p class="fm-subtitle">Make payment of <span class="number">{{ 7500 | currency:'NGN':'symbol-narrow' }}</span> to access even more content</p>
+  <div class="fm-heading-divider"></div>
+  <p class="fm-subtitle">This does not include access to past dissertations of the department which is paid separately. 
+    Such payment can be made at the chapter titled "Past Dissertations". After clicking the button, you will be redirected to Paystack's payment portal.</p>
+  <br><br>
+<!-- <label for="cardnumber"><i class="bi bi-credit-card-fill"></i> Card Number</label>
+  <input type="text" name="cardnumber" id="cardnumber" placeholder="4567 XXXX XXXX 1234" #cardnumberModel="ngModel"
+    [ngModel]="cardnumber" (ngModelChange)="updateCardnumber($event)" minlength="18" maxlength="19"
+    [ngClass]="cardnumberModel.valid ? 'border-success outline-success' : 'border-danger outline-danger'" required>
+  <p class="fm-input-feedback" [ngClass]="cardnumberModel.valid ? 'text-success' : 'text-danger'">{{
+    cardnumberModel.valid ? 'Correct' : 'Invalid' }}</p>
+  <br><br>
+  <label for="cardholder_name"><i class="bi bi-credit-card"></i> Cardholder Name</label>
+  <input type="text" name="cardholder_name" id="cardholder_name" placeholder="e.g John Doe" [ngModel]="cardname"
+    (ngModelChange)="onNameChange($event)" #cardnameModel="ngModel" required>
+  <p class="fm-input-feedback" [ngClass]="cardnameModel.valid ? 'text-success' : 'text-danger'">{{ cardnameModel.valid ?
+    'Correct' : 'Invalid' }}</p>
+  <br><br>
+  <label for="expiry"><i class="bi bi-calendar-fill"></i> Expiry Date</label>
+  <input type="text" name="expiry" id="expiry" placeholder="MM/YY" [ngModel]="expiry"
+    #expiryModel="ngModel" required maxlength="5" pattern="\d\d\/\d\d">
+  <p class="fm-input-feedback" [ngClass]="expiryModel.valid ? 'text-success' : 'text-danger'">
+    {{ expiryModel.valid ? 'Correct' : 'Invalid' }}
+  </p>
+  <br><br>
+  <label for="cvv"><i class="bi bi-credit-card-2-back"></i> CVV</label>
+  <input type="number" name="cvv" id="cvv" placeholder="XXX" [(ngModel)]="cvv" #cvvModel="ngModel" required>
+  <p class="fm-input-feedback" [ngClass]="cvvModel.valid ? 'text-success' : 'text-danger'">
+    {{ cvvModel.valid ? 'Correct' : 'Invalid' }}
+  </p>
+  <br><br> -->
+  <button (paymentInit)="onPaymentInit()" (onClose)="onClose()" (callback)="callback($event)" 
+  (click)="initiatePayment()" class="fm-auth-button" [ngClass]="processStarted ? 'fm-process-button' : ''">
+    <i class="bi bi-wallet-fill"></i> Pay with Paystack
+  </button>
+  <!-- <button [disabled]="!cardname || !cardnumber || !cvv || !expiry" angular4-paystack
+    [key]="'pk_test_ec6273f6f15c4a160f75278682b6a964d9916b1e'" [email]="email" [amount]="5000" [ref]="reference"
+    (paymentInit)="onPaymentInit()" (onClose)="onClose()" (callback)="callback($event)" (click)="initiatePayment()"
+    class="fm-auth-button" [ngClass]="processStarted ? 'fm-process-button' : ''">
+    <i class="bi bi-wallet-fill"></i> Pay with Paystack
+  </button> -->
+  <!-- <angular4-paystack [email]="'mailexample@mail.com'" [amount]="5000000" [ref]="reference" [channels]="['bank']"
+    [class]="'btn btn-primary'" (onClose)="onClose()" (callback)="callback($event)">
+    Pay with Paystack
+  </angular4-paystack> -->
+  <br><br>
+  <app-notifications [notification]="notification" [show]="showNotification"></app-notifications>
+</div>

@@ -50,10 +50,35 @@ export type Notification = {
   severity: string; // green, yellow, red
 }
 
+export type PaidAbstracts = {
+  reference: string;
+  amount: number;
+  title: string;
+}
+
 export type FirestoreData = {
   userId: string;
   hasPaid: boolean;
-  hasPaidForAbstract: boolean;
+  handbookPayment: { reference: string; amount: number; } | {};
+  paidAbstracts: PaidAbstracts[];
   levelOfAccess: number;
-  designation?: string;
+  designation: string;
+  hospital: string;
+}
+
+export type PaystackParams = {
+  amount: number;
+  reference: string;
+  email: string;
+  callback_url: string;
+}
+
+export type PaystackResponse = {
+  status: boolean;
+  message: string;
+  data: {
+    authorization_url: string;
+    access_code: string;
+    reference: string;
+  }
 }

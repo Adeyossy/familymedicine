@@ -7,14 +7,19 @@ import { AuthComponent } from './auth/auth/auth.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SetupComponent } from './auth/setup/setup.component';
+import { PaymentComponent } from './auth/payment/payment.component';
+import { ProfileComponent } from './auth/profile/profile.component';
 
 const routes: Routes = [
   { path: "", component:  SplashComponent },
   { path: "content/:id/:contentId", component: DetailsComponent, canActivate: [AuthguardGuard] },
+  { path: "content/:id/:contentId/:abstractTitle", component: DetailsComponent, canActivate: [AuthguardGuard] },
   { path: "account", component: AuthComponent, children: [
     { path: "signup", component: SignupComponent },
     { path: "login", component: LoginComponent },
-    { path: "setup", component: SetupComponent }
+    { path: "setup", component: SetupComponent },
+    { path: "profile", component: ProfileComponent },
+    { path: "payment/:userId/:email", component: PaymentComponent }
   ] }
 ];
 
