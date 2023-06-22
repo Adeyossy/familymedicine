@@ -29,11 +29,11 @@ export class PaymentComponent implements OnInit {
   };
 
   constructor(private authService: AuthService, private activatedRoute: ActivatedRoute) {
-    this.routeSub = this.activatedRoute.paramMap.subscribe({
-      next: (params: ParamMap) => {
+    this.routeSub = this.activatedRoute.queryParams.subscribe({
+      next: (params) => {
         // this.email = params.get('email') as string;
         // this.userId = params.get('userId') as string;
-        this.reference = params.get('reference') as string;
+        this.reference = params['reference'] as string;
         console.log('reference => ', this.reference);
         if (this.reference) {
           this.verifyPayment();
@@ -43,6 +43,8 @@ export class PaymentComponent implements OnInit {
         console.log("error fetching params => ", error);
       }
     });
+
+    // this.activatedRoute.p/
   }
 
   ngOnInit(): void {

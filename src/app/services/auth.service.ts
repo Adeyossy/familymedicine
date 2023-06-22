@@ -136,7 +136,7 @@ export class AuthService {
         }
 
         if (!userData.hasPaid) {
-          return this.router.parseUrl(`/account/payment/`);
+          return this.router.parseUrl(`/account/payment/verify?trxref=39fapioeo3323898&reference=9384390843902`);
         }
         // return urlTree for payment
         return true;

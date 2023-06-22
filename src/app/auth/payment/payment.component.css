@@ -5,7 +5,7 @@
 
 .fm-verify-payment-card {
   width: 100%;
-  min-height: 30vh;
+  min-height: 40vh;
   padding: var(--fm-large-padding) 0px;
   background-color: var(--fm-primary-color-contrast);
   border-radius: 32px;

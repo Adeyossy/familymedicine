@@ -22,7 +22,7 @@ const routes: Routes = [
     { path: "setup", component: SetupComponent },
     { path: "profile", component: ProfileComponent },
     { path: "payment", component: PaymentComponent },
-    { path: "payment/:reference", component: PaymentComponent }
+    { path: "payment/verify", component: PaymentComponent }
   ] }
 ];
 
