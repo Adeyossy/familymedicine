@@ -3,6 +3,7 @@ import httpHeaderNormalizer from "@middy/http-header-normalizer";
 import urlEncodeBodyParser from "@middy/http-urlencode-body-parser";
 import { Handler, HandlerContext, HandlerEvent } from "@netlify/functions";
 import { Response } from "@netlify/functions/dist/function/response";
+import fetch from 'node-fetch';
 
 const sk = process.env['PAYSTACK_TEST_SECRET_KEY'];
 

@@ -73,6 +73,7 @@ export class PaymentComponent implements OnInit {
       next: (response) => {
         console.log('response from server');
         console.log(response);
+        
       },
       error: (err) => {
         console.log('error occurred');
