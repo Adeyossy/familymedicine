@@ -22,6 +22,7 @@ import { SetupComponent } from './auth/setup/setup.component';
 import { PaymentComponent } from './auth/payment/payment.component';
 import { ProfileComponent } from './auth/profile/profile.component';
 import { HeaderComponent } from './widgets/header/header.component';
+import { VerifyemailComponent } from './auth/verifyemail/verifyemail.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { HeaderComponent } from './widgets/header/header.component';
     SetupComponent,
     PaymentComponent,
     ProfileComponent,
-    HeaderComponent
+    HeaderComponent,
+    VerifyemailComponent
   ],
   imports: [
     BrowserModule,

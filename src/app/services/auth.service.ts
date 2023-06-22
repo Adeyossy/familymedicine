@@ -36,7 +36,7 @@ export class AuthService {
         this.firebaseAuth$ = of(this.firebaseAuth);
         this.firestore = getFirestore(this.firebaseApp);
         this.user$ = of(this.firebaseAuth.currentUser);
-        
+
         onAuthStateChanged(this.firebaseAuth, (user) => {
           // console.log(user);
           this.user = user;
@@ -68,7 +68,7 @@ export class AuthService {
   }
 
   async login(email: string, password: string): Promise<User> {
-    const userCredentials = await signInWithEmailAndPassword(this.firebaseAuth as Auth, 
+    const userCredentials = await signInWithEmailAndPassword(this.firebaseAuth as Auth,
       email, password);
 
     this.user = userCredentials.user;
@@ -93,7 +93,7 @@ export class AuthService {
   }
 
   signup(email: string, password: string): Observable<User> {
-    const body = { email, password}
+    const body = { email, password }
     return this.httpClient.post<User>(`${this.backend_url}/signup`, body);
   }
 
@@ -102,7 +102,7 @@ export class AuthService {
   //   return this.httpClient.post<string>(`${this.backend_url}/login`, body);
   // }
 
-  verifyEmail(body: {user: User}) {
+  verifyEmail(body: { user: User }) {
     return this.httpClient.post<Response>(`${this.backend_url}/verify`, body);
   }
 
@@ -131,17 +131,12 @@ export class AuthService {
       if (userDoc.exists()) {
         // const missingInfo: string[] = [];
         const userData = userDoc.data() as FirestoreData;
-
-        if (!user.displayName) {
-          return this.router.parseUrl('/account/profile')
-        }
-        
         if (!userData.hospital || !userData.designation) {
           return this.router.parseUrl('/account/setup');
         }
 
         if (!userData.hasPaid) {
-          return this.router.parseUrl(`/account/payment/${user.uid}/${user.email}`);
+          return this.router.parseUrl(`/account/payment/`);
         }
         // return urlTree for payment
         return true;
@@ -168,20 +163,20 @@ export class AuthService {
     }
   }
 
-  async createAccount(email: string, password: string, 
+  async createAccount(email: string, password: string,
     displayName: string): Promise<User> {
     console.log("config => ", this.config);
-    
+
     try {
       const userCredential = await createUserWithEmailAndPassword(
         this.firebaseAuth as Auth, email, password);
-      
+
       this.user = userCredential.user;
-      await updateProfile(userCredential.user, {displayName: displayName});
+      await updateProfile(userCredential.user, { displayName: displayName });
 
       return userCredential.user;
 
-    } catch(error) {
+    } catch (error) {
       // const authError = error as AuthError;
       throw error;
       // return authError.code;
@@ -190,7 +185,7 @@ export class AuthService {
 
   async updateProfile(displayName: string): Promise<boolean> {
     try {
-      await updateProfile(this.user as User, {displayName: displayName});
+      await updateProfile(this.user as User, { displayName: displayName });
       return true;
     } catch (error) {
       throw error;
@@ -205,8 +200,12 @@ export class AuthService {
     this.router.navigateByUrl(this.lastUrl);
   }
 
+  verifyPayment(reference: string): Observable<object> {
+    return this.httpClient.post(`${this.backend_url}/verifypayment`, {reference: reference});
+  }
+
   payWithPaystack(params: PaystackParams): Observable<object> {
-    params['callback_url'] = this.lastUrl;
+    // params['callback_url'] = this.lastUrl;
     return this.httpClient.post(`${this.backend_url}/pay`, params);
   }
 }

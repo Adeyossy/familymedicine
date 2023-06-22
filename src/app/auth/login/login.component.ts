@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseOptions } from 'firebase/app';
-import { Auth, User, signInWithEmailAndPassword } from 'firebase/auth';
+import { Auth, AuthError, User, signInWithEmailAndPassword } from 'firebase/auth';
 import { AuthService } from 'src/app/services/auth.service';
 import { Notification } from 'src/app/types/handbook_types';
 
@@ -15,8 +15,8 @@ export class LoginComponent implements OnInit {
   showNotification = true;
   user: User | null = null
 
-  notification: Notification = { 
-    message: "Checking if you're already logged in", length: 'long', actionable: false, severity: 'green' 
+  notification: Notification = {
+    message: "Checking if you're already logged in", length: 'long', actionable: false, severity: 'green'
   };
 
   firebaseConfig: FirebaseOptions = {}
@@ -35,28 +35,38 @@ export class LoginComponent implements OnInit {
   }
 
   async login(): Promise<void> {
-    const user = await this.authService.login(this.email, this.password);
-    if (user) {
-      this.showNotification = true;
-      this.notification = {
-        message: "Successfully logged in",
-        length: "long",
-        severity: "green",
-        actionable: false
+    try {
+      const user = await this.authService.login(this.email, this.password);
+      if (user) {
+        this.showNotification = true;
+        this.notification = {
+          message: "Successfully logged in",
+          length: "long",
+          severity: "green",
+          actionable: false
+        }
+      } else {
+        this.notification = {
+          message: "Wrong Username or Password",
+          length: "long",
+          severity: "red",
+          actionable: false
+        }
+        this.showNotification = true;
       }
-    } else {
+    } catch (error) {
+      console.log(error);
       this.showNotification = true;
-      this.notification = {
-        message: "Wrong Username or Password",
-        length: "long",
-        severity: "red",
-        actionable: false
+      if ((error as AuthError).code === 'auth/wrong-password') {
+        this.notification.message = 'Wrong Password';
+      } else {
+        this.notification.message = 'Wrong Username or Password';
       }
     }
 
     // const user = userCredentials.user;
   }
-  
+
   dismissNotification(status: boolean) {
     this.showNotification = status;
   }

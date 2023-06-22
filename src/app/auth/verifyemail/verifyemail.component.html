@@ -1,0 +1,13 @@
+<div class="fm-signup fm-auth-container">
+  <h1 class="fm-title">Verify Your Email</h1>
+  <p class="fm-subtitle">Please verify your email to continue with the registration process.</p>
+  <div class="fm-heading-divider"></div>
+  <p class="fm-subtitle"></p>
+  <br><br>
+  <button class="fm-auth-button" [ngClass]="processStarted ? 'fm-process-button' : ''"
+    (click)="verifyEmail()">
+    <i class="bi bi-envelope-fill"></i> Verify Your Email
+  </button>
+  <br><br>
+  <app-notifications [notification]="notification" [show]="showNotification"></app-notifications>
+</div>

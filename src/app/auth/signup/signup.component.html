@@ -26,5 +26,6 @@
     (click)="createAccount()" class="fm-auth-button" [ngClass]="authStarted ? 'fm-process-button' : ''">Submit</button>
     <br><br>
     <p class="fm-subtitle">Already have an account? Login</p>
-    <app-notifications [notification]="notification" [show]="showNotification"></app-notifications>
+    <app-notifications [notification]="notification" [show]="showNotification"
+    (showEmitter)="showNotification = $event"></app-notifications>
 </div>

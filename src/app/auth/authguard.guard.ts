@@ -25,6 +25,14 @@ export class AuthguardGuard implements CanActivate {
     this.authService.setLastUrl('/'.concat(route.url.join('/')));
     if (levelofAccess > 1) {
       if (this.authService.user) {
+        if (!this.authService.user.emailVerified) {
+          return this.router.parseUrl('/account/verifyemail');
+        }
+    
+        if (!this.authService.user.displayName) {
+          return this.router.parseUrl('/account/profile');
+        }
+    
         return this.authService.completeRegistration(this.authService.user as User);
       } else {
         return this.router.parseUrl('/account/login');

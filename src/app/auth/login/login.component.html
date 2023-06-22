@@ -7,7 +7,8 @@
     <button [disabled]="!email || !password" (click)="login()" class="fm-auth-button">Submit</button>
     <!-- <button [disabled]="!email || !password" (click)="login()" class="fm-auth-button">Logout</button> -->
   </div>
-  <app-notifications [notification]="notification" [show]="showNotification"></app-notifications>
+  <app-notifications [notification]="notification" [show]="showNotification"
+  (showEmitter)="showNotification = $event"></app-notifications>
   <br>
   <!-- <p class="fm-subtitle">Don't have an account? Create a new one!</p> -->
 </div>

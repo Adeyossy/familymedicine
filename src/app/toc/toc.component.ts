@@ -58,7 +58,7 @@ export class TocComponent implements OnInit, DoCheck {
     if (this.user) {
       signOut(getAuth()).then(() => {
         console.log('signed out');
-      })
+      });
     }
   }
 

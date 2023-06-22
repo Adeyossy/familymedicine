@@ -112,7 +112,7 @@ button.fm-auth-button {
 
 .fm-process-button {
   color: white;
-  animation: glow 3s ease-in-out infinite;
+  animation: glow 3s ease-in-out alternate infinite;
 }
 
 .fm-auth-container {
@@ -173,6 +173,18 @@ input, select {
 .number {
   font-family: 'Jost', sans-serif;
   font-weight: bold;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+    border-color: var(--fm-primary-color);
+  }
+
+  to {
+    transform: rotate(360deg);
+    border-color: var(--fm-accent-color);
+  }
 }
 
 @keyframes drift {

@@ -54,12 +54,14 @@ export type PaidAbstracts = {
   reference: string;
   amount: number;
   title: string;
+  timestamp: string;
+  id: string;
 }
 
 export type FirestoreData = {
   userId: string;
   hasPaid: boolean;
-  handbookPayment: { reference: string; amount: number; } | {};
+  handbookPayment: { reference: string; amount: number; timestamp: string; id: string; } | {};
   paidAbstracts: PaidAbstracts[];
   levelOfAccess: number;
   designation: string;

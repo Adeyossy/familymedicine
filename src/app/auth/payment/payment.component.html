@@ -1,4 +1,4 @@
-<div class="fm-signup fm-auth-container">
+<div class="fm-signup fm-auth-container" *ngIf="!reference">
   <h1 class="fm-title">Pay for the Handbook</h1>
   <p class="fm-subtitle">Make payment of <span class="number">{{ 7500 | currency:'NGN':'symbol-narrow' }}</span> to access even more content</p>
   <div class="fm-heading-divider"></div>
@@ -47,4 +47,19 @@
   </angular4-paystack> -->
   <br><br>
   <app-notifications [notification]="notification" [show]="showNotification"></app-notifications>
+</div>
+<div class="fm-verify-payment" *ngIf="reference">
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+        <div class="fm-verify-payment-card d-flex flex-column align-items-center justify-content-between">
+          <div class="fm-verify-payment-card-top"></div>
+          <div class="fm-verify-payment-card-loading">
+            <div class="fm-loading-mask"></div>
+          </div>
+          <p class="fm-subtitle-text text-white fw-bold">Verifying payment</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
