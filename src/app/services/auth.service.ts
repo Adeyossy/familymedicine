@@ -136,7 +136,7 @@ export class AuthService {
         }
 
         if (!userData.hasPaid) {
-          return this.router.parseUrl(`/account/payment/verify?trxref=39fapioeo3323898&reference=9384390843902`);
+          return this.router.parseUrl(`/account/payment`);
         }
         // return urlTree for payment
         return true;
@@ -158,8 +158,7 @@ export class AuthService {
       await setDoc(docRef, data);
       return true;
     } catch (error) {
-      console.log('error occurred => ', error);
-      return false;
+      throw error;
     }
   }
 
@@ -200,7 +199,7 @@ export class AuthService {
     this.router.navigateByUrl(this.lastUrl);
   }
 
-  verifyPayment(reference: string): Observable<object> {
+  verifyPayment(reference: string): Observable<any> {
     return this.httpClient.post(`${this.backend_url}/verifypayment`, {reference: reference});
   }
 

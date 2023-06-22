@@ -75,7 +75,37 @@ export class PaymentComponent implements OnInit {
       next: (response) => {
         console.log('response from server');
         console.log(response);
-        
+        if(response.data.status === 'success') {
+          if (this.userData === null) {
+            this.userData = {
+              designation: '',
+              handbookPayment: {},
+              hasPaid: false,
+              hospital: '',
+              levelOfAccess: 1,
+              paidAbstracts: [],
+              userId: this.userId
+            }
+          }
+          this.userData.hasPaid = true;
+          this.userData.handbookPayment = {
+            amount: response.data.amount,
+            id: response.data.id.toString(),
+            reference: response.data.id,
+            timestamp: response.data.transaction_date
+          }
+
+          this.authService.createUserData(this.userData).then((status) => {
+            if (status) {
+              this.notification.message = 'Payment Successful';
+              this.showNotification = true;
+              setTimeout(this.authService.navigateToLastUrl, 2000);
+            }
+          }).catch((error) => {
+            this.notification.message = 'An error occurred during payment';
+            this.showNotification = true;
+          })
+        }
       },
       error: (err) => {
         console.log('error occurred');

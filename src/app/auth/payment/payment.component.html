@@ -46,7 +46,8 @@
     Pay with Paystack
   </angular4-paystack> -->
   <br><br>
-  <app-notifications [notification]="notification" [show]="showNotification"></app-notifications>
+  <app-notifications [notification]="notification" [show]="showNotification"
+  (showEmitter)="showNotification = $event"></app-notifications>
 </div>
 <div class="fm-verify-payment" *ngIf="reference">
   <div class="container-fluid p-0">
