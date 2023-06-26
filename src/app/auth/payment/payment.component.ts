@@ -22,17 +22,20 @@ export class PaymentComponent implements OnInit {
   userId = '';
   routeSub = new Subscription();
   reference = '';
+  typedReference = '';
   userData: FirestoreData | null = null;
+  isVerified = false;
 
   notification: Notification = {
     message: "Make payment for the handbook", length: 'long', actionable: false, severity: 'green'
   };
 
   constructor(private authService: AuthService, private activatedRoute: ActivatedRoute) {
+  }
+
+  ngOnInit(): void {
     this.routeSub = this.activatedRoute.queryParams.subscribe({
       next: (params) => {
-        // this.email = params.get('email') as string;
-        // this.userId = params.get('userId') as string;
         this.reference = params['reference'] as string;
         if (this.reference) {
           this.verifyPayment();
@@ -43,27 +46,11 @@ export class PaymentComponent implements OnInit {
       }
     });
 
-    // this.activatedRoute.p/
-  }
-
-  ngOnInit(): void {
-    this.authService.fetchFirebaseConfig().subscribe({
-      next: (config) => {
-        onAuthStateChanged(getAuth(initializeApp(config)), (user) => {
-          if (user) {
-            this.email = user.email as string;
-            this.userId = user.uid as string;
-            this.authService.getUserData(user.uid).then((userData) => {
-              if (userData.exists()) {
-                this.userData = userData.data() as FirestoreData;
-              } else {
-                //
-              }
-            });
-          }
-        })
+    this.authService.getFirestoreData().subscribe(data => {
+      if (data) {
+        this.userData = data;
       }
-    })
+    });
   }
 
   verifyPayment() {
@@ -75,13 +62,14 @@ export class PaymentComponent implements OnInit {
         console.log('response from server');
         console.log(response);
         if(response.data.status === 'success') {
+          this.isVerified = true;
           if (this.userData === null) {
             this.userData = {
               designation: '',
               handbookPayment: {},
               hasPaid: false,
               hospital: '',
-              levelOfAccess: 1,
+              levelOfAccess: 2,
               paidAbstracts: [],
               userId: this.userId
             }
@@ -93,12 +81,13 @@ export class PaymentComponent implements OnInit {
             reference: response.data.id,
             timestamp: response.data.transaction_date
           }
+          this.userData.levelOfAccess = 2;
 
           this.authService.createUserData(this.userData).then((status) => {
             if (status) {
               this.notification.message = 'Payment Successful';
               this.showNotification = true;
-              setTimeout(this.authService.navigateToLastUrl, 2000);
+              setTimeout(this.authService.navigateToLastUrl.bind(this), 2000);
             }
           }).catch((error) => {
             console.log(error);
