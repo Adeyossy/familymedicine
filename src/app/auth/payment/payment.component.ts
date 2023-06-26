@@ -34,7 +34,6 @@ export class PaymentComponent implements OnInit {
         // this.email = params.get('email') as string;
         // this.userId = params.get('userId') as string;
         this.reference = params['reference'] as string;
-        console.log('reference => ', this.reference);
         if (this.reference) {
           this.verifyPayment();
         }
@@ -102,6 +101,7 @@ export class PaymentComponent implements OnInit {
               setTimeout(this.authService.navigateToLastUrl, 2000);
             }
           }).catch((error) => {
+            console.log(error);
             this.notification.message = 'An error occurred during payment';
             this.showNotification = true;
           })

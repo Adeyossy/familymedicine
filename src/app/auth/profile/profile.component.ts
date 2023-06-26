@@ -24,7 +24,6 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
     this.authService.getFirebaseUser().subscribe({
       next: (user) => {
-        console.log('user in profile => ', user);
         this.user = user;
         if (user) {
           if (user.displayName) {
@@ -62,6 +61,8 @@ export class ProfileComponent implements OnInit {
       this.showNotification = true;
       this.authService.navigateToLastUrl();
     } catch (error) {
+      this.notification.message = 'Error updating name';
+      this.showNotification = true;
       throw error;
     }
   }

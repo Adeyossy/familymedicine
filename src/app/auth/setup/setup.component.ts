@@ -28,7 +28,6 @@ export class SetupComponent implements OnInit {
     this.authService.fetchFirebaseConfig().subscribe({
       next: (config) => {
         onAuthStateChanged(getAuth(initializeApp(config)), (user) => {
-          console.log('user in setup => ', user);
           this.user = user;
           if (user) {
             this.authService.getUserData(user.uid).then(userData => {

@@ -45,6 +45,7 @@ export class LoginComponent implements OnInit {
           severity: "green",
           actionable: false
         }
+        this.authService.navigateToLastUrl();
       } else {
         this.notification = {
           message: "Wrong Username or Password",

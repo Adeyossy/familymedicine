@@ -22,7 +22,7 @@ export class NotificationsComponent implements OnInit, DoCheck {
     if (this.show) {
       this.timeout = setTimeout(() => {
         this.dismiss();
-      }, 5000);
+      }, 3000);
     }
   }
 

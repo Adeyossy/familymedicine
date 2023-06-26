@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Response } from '@netlify/functions/dist/function/response';
-import { Observable, of } from 'rxjs';
+import { Observable, concatMap, filter, from, map, of } from 'rxjs';
 // import {  } from 'rxjs/operators'
 import { FirestoreData, PaystackParams, UserDetails } from '../types/handbook_types';
 import { Auth, AuthError, User, createUserWithEmailAndPassword, getAuth, initializeAuth, onAuthStateChanged, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
@@ -17,13 +17,13 @@ export class AuthService {
   backend_url = "/.netlify/functions";
   firebaseApp: FirebaseApp | null = null;
   firebaseAuth: Auth | null = null;
-  firebaseAuth$ = new Observable<Auth | null>();
+  firebaseAuth$ = this.getFirebaseAuth();
   firestore: Firestore | null = null;
   firestoreData: FirestoreData | null = null;
   firestoreData$ = new Observable<FirestoreData | null>();
   isSignedIn = false;
   user: User | null = null;
-  user$ = of(this.user);
+  user$ = this.getFirebaseUser();
   lastUrl = '';
 
   constructor(private httpClient: HttpClient,
@@ -49,14 +49,13 @@ export class AuthService {
               }
             });
           }
-          router.navigateByUrl(this.lastUrl);
+          // router.navigateByUrl(this.lastUrl);
         });
       },
       error: (err) => {
         console.log("error fetching config => ", err);
       }
     });
-
   }
 
   fetchFirebaseConfig(): Observable<FirebaseOptions> {
@@ -76,20 +75,44 @@ export class AuthService {
     return userCredentials.user;
   }
 
-  getFirebaseConfig() {
+  getFirebaseConfig(): FirebaseOptions {
+    if (!this.config) {
+      this.fetchFirebaseConfig().subscribe({
+        next: config => {
+          this.config = config;
+          return this.config;
+        }
+      })
+    }
     return this.config;
   }
 
-  getFirebaseAuth() {
-    return this.firebaseAuth$;
+  getFirebaseAuth(): Observable<Auth> {
+    return this.fetchFirebaseConfig().pipe(map(config => getAuth(initializeApp(config))));
   }
 
   getFirebaseUser(): Observable<User | null> {
-    return this.user$;
+    return this.getFirebaseAuth().pipe(concatMap(auth => {
+      return new Observable<User | null>((observer) => {
+        return auth.onAuthStateChanged(
+          user => {
+            // console.log('user in service => ', user);
+            observer.next(user);
+          },
+          error => observer.error(error),
+          () => observer.complete()
+        );
+      });
+    }));
   }
 
   getFirestoreData(): Observable<FirestoreData | null> {
-    return this.firestoreData$;
+    return this.user$.pipe(
+      filter(user => user !== null), 
+      concatMap(user => from(this.getUserData((user as User).uid))),
+      filter(doc => doc.exists()),
+      map(doc => doc.data() as FirestoreData)
+    );
   }
 
   signup(email: string, password: string): Observable<User> {
@@ -177,6 +200,7 @@ export class AuthService {
 
     } catch (error) {
       // const authError = error as AuthError;
+      console.log(error);
       throw error;
       // return authError.code;
     }
@@ -200,7 +224,7 @@ export class AuthService {
   }
 
   verifyPayment(reference: string): Observable<any> {
-    return this.httpClient.post(`${this.backend_url}/verifypayment`, {reference: reference});
+    return this.httpClient.post(`${this.backend_url}/verifypayment`, { reference: reference });
   }
 
   payWithPaystack(params: PaystackParams): Observable<object> {

@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit {
   user: User | null = null;
 
   notification: Notification = {
-    message: '', length: '', actionable: false, severity: 'green'
+    message: 'Create Your Account', length: '', actionable: false, severity: 'green'
   };
 
   firebaseConfig: FirebaseOptions = {}
@@ -37,13 +37,8 @@ export class SignupComponent implements OnInit {
         this.firstname.trim() + " " + this.lastname.trim());
 
       if (user) {
+        this.notification.message = 'Account created successfully'
         this.showNotification = true;
-        this.notification = {
-          message: 'Account created successfully',
-          length: 'short',
-          actionable: false,
-          severity: 'green'
-        }
 
         try {
           const outcome = await this.authService.createUserData(
@@ -59,49 +54,31 @@ export class SignupComponent implements OnInit {
           );
 
           if (outcome) {
+            this.notification.message = 'Onboarding successful';
             this.showNotification = true;
-            this.notification = {
-              message: 'Onboarding successful',
-              length: 'short',
-              actionable: false,
-              severity: 'green'
-            }
 
             this.authStarted = false;
           }
-        } catch (error) { }
+        } catch (error) {
+          throw error;
+        }
 
       }
     } catch (error) {
       const authError = error as AuthError;
 
       if (authError.code === 'auth/email-already-exists') {
+        this.notification.message = "Sorry, this email already exists";
         this.showNotification = true;
-        this.notification = {
-          message: "Sorry, this email already exists",
-          length: "long",
-          actionable: false,
-          severity: "yellow"
-        }
       }
 
       if (authError.code === 'auth/invalid-email') {
+        this.notification.message = "Sorry, your email is invalid";
         this.showNotification = true;
-        this.notification = {
-          message: "Sorry, your email is invalid",
-          length: "long",
-          actionable: false,
-          severity: "red"
-        }
       }
 
+      this.notification.message = "Sorry, an error occurred";
       this.showNotification = true;
-      this.notification = {
-        message: "Sorry, an error occurred",
-        length: "long",
-        actionable: false,
-        severity: "red"
-      }
     }
   }
 

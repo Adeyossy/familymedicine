@@ -16,8 +16,8 @@
             </div>
         </div>
     </div>
-    <app-email-password (emailEmitter)="setEmail($event)" (passwordEmitter)="setPassword($event)"></app-email-password>
     <br><br>
+    <app-email-password (emailEmitter)="setEmail($event)" (passwordEmitter)="setPassword($event)"></app-email-password>
     <label for="repeatPassword">Repeat Password</label>
     <input type="password" name="repeatPassword" id="repeatPassword" [ngModel]="repeatPassword" (ngModelChange)="setRepeatPassword($event)"
         required class="d-block">
@@ -25,7 +25,7 @@
     <button [disabled]="!firstname || !lastname || !email || !password || password !== repeatPassword" 
     (click)="createAccount()" class="fm-auth-button" [ngClass]="authStarted ? 'fm-process-button' : ''">Submit</button>
     <br><br>
-    <p class="fm-subtitle">Already have an account? Login</p>
+    <a class="h6" routerLink="/account/login">Already have an account? Login</a>
     <app-notifications [notification]="notification" [show]="showNotification"
     (showEmitter)="showNotification = $event"></app-notifications>
 </div>
