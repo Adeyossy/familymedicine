@@ -84,3 +84,8 @@ export type PaystackResponse = {
     reference: string;
   }
 }
+
+export const abstract: Section = {
+  metatype: "",
+  content: []
+}

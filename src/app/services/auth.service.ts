@@ -3,11 +3,11 @@ import { Injectable } from '@angular/core';
 import { Response } from '@netlify/functions/dist/function/response';
 import { Observable, concatMap, filter, from, map, of } from 'rxjs';
 // import {  } from 'rxjs/operators'
-import { FirestoreData, PaystackParams, UserDetails } from '../types/handbook_types';
-import { Auth, AuthError, User, createUserWithEmailAndPassword, getAuth, initializeAuth, onAuthStateChanged, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
+import { FirestoreData, PaystackParams } from '../types/handbook_types';
+import { Auth, User, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { FirebaseApp, FirebaseOptions, initializeApp } from 'firebase/app';
-import { getFirestore, Firestore, addDoc, collection, doc, setDoc, getDoc, DocumentSnapshot } from 'firebase/firestore';
-import { ActivatedRouteSnapshot, Route, Router, UrlTree } from '@angular/router';
+import { getFirestore, Firestore, doc, setDoc, getDoc, DocumentSnapshot } from 'firebase/firestore';
+import { Router, UrlTree } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +21,7 @@ export class AuthService {
   firestore: Firestore | null = null;
   firestoreData: FirestoreData | null = null;
   firestoreData$ = new Observable<FirestoreData | null>();
+  firestoreEmails$ = new Observable<string[]>();
   isSignedIn = false;
   user: User | null = null;
   user$ = this.getFirebaseUser();
@@ -115,6 +116,15 @@ export class AuthService {
     );
   }
 
+  getFirestoreEmails(): Observable<string[]> {
+    return this.user$.pipe(
+      filter(user => user !== null),
+      concatMap(user => from(this.getEmails())),
+      filter(emailsDoc => emailsDoc.exists()),
+      map(emails => emails.data() as string[])
+    )
+  }
+
   signup(email: string, password: string): Observable<User> {
     const body = { email, password }
     return this.httpClient.post<User>(`${this.backend_url}/signup`, body);
@@ -139,6 +149,16 @@ export class AuthService {
     }
   }
 
+  async getEmails(): Promise<DocumentSnapshot> {
+    const docRef = doc(this.firestore as Firestore, 'free/kzq16tH9EISHyBxestGP');
+    try {
+      const emailDoc = await getDoc(docRef);
+      return emailDoc;
+    } catch (error) {
+      throw error;
+    }
+  }
+
   async checkUserExists(userId: string): Promise<boolean> {
     try {
       const userDoc = await this.getUserData(userId);
@@ -151,6 +171,8 @@ export class AuthService {
   async completeRegistration(user: User): Promise<boolean | UrlTree> {
     try {
       const userDoc = await this.getUserData(user.uid);
+      const emailsDoc = await this.getEmails();
+      const emails = emailsDoc.data() as { emails: string };
       if (userDoc.exists()) {
         // const missingInfo: string[] = [];
         const userData = userDoc.data() as FirestoreData;
@@ -158,7 +180,7 @@ export class AuthService {
           return this.router.parseUrl('/account/setup');
         }
 
-        if (!userData.hasPaid) {
+        if (!userData.hasPaid && !emails.emails.includes(user.email as string)) {
           return this.router.parseUrl(`/account/payment`);
         }
         // return urlTree for payment

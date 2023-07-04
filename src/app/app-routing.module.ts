@@ -11,16 +11,21 @@ import { PaymentComponent } from './auth/payment/payment.component';
 import { ProfileComponent } from './auth/profile/profile.component';
 import { VerifyemailComponent } from './auth/verifyemail/verifyemail.component';
 import { AuthGuard } from './auth/auth.guard';
+import { ResetComponent } from './auth/reset/reset.component';
+import { AbstractComponent } from './abstract/abstract.component';
 
 const routes: Routes = [
   { path: "", component:  SplashComponent },
   { path: "content/:id/:contentId", component: DetailsComponent, canActivate: [AuthguardGuard] },
-  { path: "content/:id/:contentId/:abstractTitle", component: DetailsComponent, canActivate: [AuthguardGuard] },
+  { path: "content/:id/:contentId/:abstractId/:abstractTitle", 
+  component: AbstractComponent, canActivate: [AuthguardGuard] },
   { path: "account", component: AuthComponent, children: [
     { path: "signup", component: SignupComponent, 
       title: 'Sign Up to use the Handbook'},
     { path: "login", component: LoginComponent,
       title: 'Login | Residency Handbook'},
+    { path: "reset", component: ResetComponent,
+      title: 'Reset Password | Residency Handbook'},
     { path: "verifyemail", component: VerifyemailComponent, 
       title: 'Verify Your Email | Residency Handbook', canActivate: [AuthGuard] },
     { path: "setup", component: SetupComponent,

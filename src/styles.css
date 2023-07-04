@@ -15,6 +15,7 @@
   --fm-large-padding: 54px;
   --fm-xl-padding: 108px;
   --fm-p-text-color: rgba(0, 0, 0, 0.8);
+  --fm-input-valid: rgba(199, 255, 199, 0.99);
 }
 
 @font-face {
@@ -165,6 +166,11 @@ input, select {
   font-family: 'Jost', sans-serif;
 }
 
+input:valid {
+  background-color: var(--fm-input-valid);
+  border-color: var(--fm-primary-color);
+}
+
 .fm-input-feedback {
   font-size: 12px;
   font-weight: bold;
@@ -173,6 +179,14 @@ input, select {
 .number {
   font-family: 'Jost', sans-serif;
   font-weight: bold;
+}
+
+.small-link {
+  font-size: 16px;
+}
+
+.small-link:hover {
+  color: var(--fm-accent-color);
 }
 
 @keyframes loading {

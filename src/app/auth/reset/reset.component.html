@@ -1,0 +1,19 @@
+<div class="fm-login fm-auth-container">
+  <h1 class="fm-title">Reset Your Password</h1>
+  <p class="fm-subtitle">The password reset link will be sent to your email.</p>
+  <br><br>
+  <label for="email"><i class="bi bi-envelope-fill"></i> Email</label>
+  <input type="email" name="email" id="email" [(ngModel)]="email" required class="d-block"
+    #emailModel="ngModel"
+    pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$">
+  <br><br>
+  <div class="fm-auth-buttons d-flex justify-content-between">
+    <button [disabled]="emailModel.invalid" (click)="resetPassword()" 
+      class="fm-auth-button">Reset Password</button>
+  </div>
+  <app-notifications [notification]="notification" [show]="showNotification"
+    (showEmitter)="showNotification = $event"></app-notifications>
+  <br>
+  <a class="small-link" routerLink="/account/signup">
+    Don't have an account? Create a new one!</a>
+</div>

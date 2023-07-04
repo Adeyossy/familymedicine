@@ -23,6 +23,8 @@ import { PaymentComponent } from './auth/payment/payment.component';
 import { ProfileComponent } from './auth/profile/profile.component';
 import { HeaderComponent } from './widgets/header/header.component';
 import { VerifyemailComponent } from './auth/verifyemail/verifyemail.component';
+import { ResetComponent } from './auth/reset/reset.component';
+import { AbstractComponent } from './abstract/abstract.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { VerifyemailComponent } from './auth/verifyemail/verifyemail.component';
     PaymentComponent,
     ProfileComponent,
     HeaderComponent,
-    VerifyemailComponent
+    VerifyemailComponent,
+    ResetComponent,
+    AbstractComponent
   ],
   imports: [
     BrowserModule,
