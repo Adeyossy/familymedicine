@@ -33,7 +33,7 @@
   <br><br> -->
   <button (paymentInit)="onPaymentInit()" (onClose)="onClose()" (callback)="callback($event)" 
   (click)="initiatePayment()" class="fm-auth-button" [ngClass]="processStarted ? 'fm-process-button' : ''">
-    <i class="bi bi-wallet-fill"></i> Pay with Paystack
+    <i class="bi bi-wallet-fill" disabled></i> Pay with Paystack
   </button>
   <br><br>
   <div class="fm-heading-divider"></div>
@@ -48,7 +48,7 @@
    #referenceModel="ngModel" minlength="10" required>
   <br><br>
   <button routerLink="./verify?trxref={{typedReference}}&reference={{typedReference}}" class="fm-auth-button" 
-    [ngClass]="processStarted ? 'fm-process-button' : ''" [disabled]="referenceModel.invalid">
+    [ngClass]="processStarted ? 'fm-process-button' : ''" [disabled]="referenceModel.invalid" hidden>
     <i class="bi bi-key-fill"></i> Verify Payment
   </button>
   <br><br>

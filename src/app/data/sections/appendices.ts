@@ -17,7 +17,7 @@ export const appendices = {
                         {
                             metatype: "caption",
                             content: [
-                                "Appendix I: The 7-Step Family Practice Patient Management Guide (FP-PMG7)"
+                                "Appendix I: The 7-Step Family Medicine - Patient Management Report (FM-PMR) Guide"
                             ]
                         },
                         {
@@ -86,7 +86,7 @@ export const appendices = {
                         {
                             metatype: "caption",
                             content: [
-                                "Appendix IVa: Mentor Mentee Interaction Form"
+                                "Appendix IVa: Education Meeting Form"
                             ]
                         },
                         {
@@ -116,6 +116,29 @@ export const appendices = {
                             metatype: "download_link",
                             content: [
                                 "/assets/Appendices/appendix_4b.pdf"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    metatype: "appendix",
+                    content: [
+                        {
+                            metatype: "src",
+                            content: [
+                                "/assets/Appendices/appendix_4c.png"
+                            ]
+                        },
+                        {
+                            metatype: "caption",
+                            content: [
+                                "Appendix IVc: Mentor-Mentee Interaction Form"
+                            ]
+                        },
+                        {
+                            metatype: "download_link",
+                            content: [
+                                "/assets/Appendices/appendix_4c.pdf"
                             ]
                         }
                     ]
