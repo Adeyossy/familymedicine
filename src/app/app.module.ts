@@ -25,6 +25,8 @@ import { HeaderComponent } from './widgets/header/header.component';
 import { VerifyemailComponent } from './auth/verifyemail/verifyemail.component';
 import { ResetComponent } from './auth/reset/reset.component';
 import { AbstractComponent } from './abstract/abstract.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,13 @@ import { AbstractComponent } from './abstract/abstract.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
