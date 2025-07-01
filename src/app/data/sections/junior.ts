@@ -51,14 +51,28 @@ export const junior = {
             {
               metatype: "tr",
               content: [
-                "Dr E Achiaka Irabor",
-                "The History of Family Medicine/Tenets of Family Medicine"
+                "Dr. A. E. Irabor / Dr. Salam",
+                "The History of Family Medicine/Tenets of Family Medicine/Core Principles of Family Medicine"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr. O.O.Olowookere",
+                "Dr. A. E. Irabor",
+                "Patient Centered Clinical Methods (PCCM Modules 1-3)"
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                "Dr. A. M. Olorunsola",
+                "Patient Centered Clinical Methods (PCCM Modules 4-6)"
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                "Dr. O.O. Olowookere / Dr. Olalemi",
                 "Evidenced-based Medicine (3 session)"
               ]
             },
@@ -66,112 +80,119 @@ export const junior = {
               metatype: "tr",
               content: [
                 "Dr. Abimbola M Olorunsola",
-                "Introduction to Clinical Statistics (2 session)"
+                "Introduction to Clinical Statistics (2 sessions)"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr E Achiaka Irabor",
-                "Patient Centred Clinical Methods (PCCM Modules 1-3)"
+                "Dr O. E. Olalemi",
+                "Clinical Clerkship (3 sessions)"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr. S. A. Muyibi",
-                "Patient Centred Clinical Methods (PCCM Modules 4-6)"
+                "Dr. O. O. Okuyelu",
+                "X-Ray Review Session"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr Oluwatoyin E Olalemi",
-                "Clinical Clerkship (3 session)"
-              ]
-            },
-            {
-              metatype: "tr",
-              content: [
-                "Dr Olusola A Mosuro",
+                "Dr. A. A. Adetunji",
                 "Clinician Assessment tools: Mini CEX, DOPs, 360suposup Feedback"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr 'Tope Ilori",
+                "Dr. A. E. Irabor",
+                "Family Medicine Portfolio"
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                "Dr. Jite",
                 "Basic Communication skills"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr AA Adetunji",
+                "Dr. A.A. Adetunji / Dr. Awoonidanla",
                 "Truth telling and breaking bad news"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr L.A Adebusoye",
-                "Continuing Professional Development for 1º care physicians"
+                "Dr. L.A. Adebusoye / Dr. Obimakinde",
+                "Continuing Professional Development for Primary Care Physicians"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr B. Abodunde",
-                "Learning opportunities for primary care surgery"
+                "Dr. M. O. Olawuyi / Dr. B. Abodunde",
+                "Learning Opportunities for Primary Care Surgery"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr Taiwo O. Soyinka",
-                "Enhancing Inter-professional collaboration and team spirit"
+                "Dr. Taiwo O. Soyinka",
+                "Enhancing Inter-Personal Professional Collaboration and Team Spirit"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr O. Abimbola Obimakinde",
-                "Undergraduate Family Medicine: An overview"
+                "Dr. O. Abimbola Obimakinde",
+                "Undergraduate Family Medicine: An Overview"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr K. Adigun",
-                "Medical Certification of Fitness at the GOP clinic, UCH"
+                "Dr. K. Adigun",
+                "Medical Certification of Fitness at the GOP Clinic, UCH"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr G. Olukolade",
+                "Dr. Olorunsola",
+                "Clinical Skill Demonstration"
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                "Dr. Akin-Odanye",
                 "Introduction to Cognitive Behaviour Therapy"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr Olusola Obadare",
-                "Maximizing pre-Part 1 specialty rotations (WACP/NPMCN)"
+                "Dr. Kolade",
+                "Maximizing Pre-Part 1 Specialty Rotations (WACP/NPMCN)"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Dr Kehinde M Kuti",
-                "Introduction to HIV care, treatment, and support"
+                "Dr. Kehinde M. Kuti",
+                "Introduction to HIV Care, Treatment, and Support"
               ]
             },
             {
               metatype: "tr",
               content: [
-                "Life Resuscitation Society of Nigeria",
-                "Basic Life Support"
+                "Dr. O. F. Folasire",
+                "Nutrition Assessment / Principle in Primary Care"
               ]
             }
           ]
