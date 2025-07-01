@@ -194,6 +194,13 @@ export const junior = {
                 "Dr. O. F. Folasire",
                 "Nutrition Assessment / Principle in Primary Care"
               ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                "Life Resuscitation Society of Nigeria",
+                "Basic Life Support"
+              ]
             }
           ]
         }
