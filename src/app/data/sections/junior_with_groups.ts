@@ -44,13 +44,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr E. Achiaka Irabor"
+                "Dr. A. E. Irabor / Dr. Salam"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "The History of Family Medicine/Tenets of Family Medicine"
+                "The History of Family Medicine/Tenets of Family Medicine/Core Principles of Family Medicine"
               ]
             }
           ]
@@ -61,13 +61,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. O.O. Olowookere"
+                "Dr. A. E. Irabor"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Evidenced-based Medicine (3 session)"
+                "Patient Centered Clinical Methods (PCCM Modules 1-3)"
               ]
             }
           ]
@@ -78,13 +78,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. Abimbola M. Olorunsola"
+                "Dr. A. M. Olorunsola"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Introduction to Clinical Statistics (2 session)"
+                "Patient Centered Clinical Methods (PCCM Modules 4-6)"
               ]
             }
           ]
@@ -95,13 +95,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr E. Achiaka Irabor"
+                "Dr. O.O. Olowookere / Dr. Olalemi"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Patient Centred Clinical Methods (PCCM Modules 1-3)"
+                "Evidenced-based Medicine (3 sessions)"
               ]
             }
           ]
@@ -112,13 +112,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. S.A. Muyibi"
+                "Dr. Abimbola M Olorunsola"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Patient Centred Clinical Methods (PCCM Modules 4-6)"
+                "Introduction to Clinical Statistics (2 sessions)"
               ]
             }
           ]
@@ -129,13 +129,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr Oluwatoyin E Olalemi"
+                "Dr O. E. Olalemi"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Clinical Clerkship (3 session)"
+                "Clinical Clerkship (3 sessions)"
               ]
             }
           ]
@@ -146,13 +146,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr Olusola A Mosuro"
+                "Dr. O. O. Okuyelu"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Clinician Assessment tools: Mini CEX, DOPs, 3600 Feedback"
+                "X-Ray Review Session"
               ]
             }
           ]
@@ -163,7 +163,41 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr 'Tope Ilori"
+                "Dr. A. A. Adetunji"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Clinician Assessment tools: Mini CEX, DOPs, 360suposup Feedback"
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "Dr. A. E. Irabor"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Family Medicine Portfolio"
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "Dr. Jite"
               ]
             },
             {
@@ -180,13 +214,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr A.A. Adetunji"
+                "Dr. A.A. Adetunji / Dr. Awoonidanla"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Truth telling and breaking bad news"
+                "Truth Telling and Breaking Bad News"
               ]
             }
           ]
@@ -197,13 +231,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr L.A Adebusoye"
+                "Dr. L.A. Adebusoye / Dr. Obimakinde"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Continuing Professional Development for 1\u00c2\u00ba care physicians"
+                "Continuing Professional Development for Primary Care Physicians"
               ]
             }
           ]
@@ -214,13 +248,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr B. Abodunde"
+                "Dr. M. O. Olawuyi / Dr. B. Abodunde"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Learning opportunities for primary care surgery"
+                "Learning Opportunities for Primary Care Surgery"
               ]
             }
           ]
@@ -231,13 +265,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr Taiwo O. Soyinka"
+                "Dr. Taiwo O. Soyinka"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Enhancing Inter-professional collaboration and team spirit"
+                "Enhancing Inter-Personal Professional Collaboration and Team Spirit"
               ]
             }
           ]
@@ -248,13 +282,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr O. Abimbola Obimakinde"
+                "Dr. O. Abimbola Obimakinde"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Undergraduate Family Medicine: An overview"
+                "Undergraduate Family Medicine: An Overview"
               ]
             }
           ]
@@ -265,13 +299,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr K. Adigun"
+                "Dr. K. Adigun"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Medical Certification of Fitness at the GOP clinic, UCH"
+                "Medical Certification of Fitness at the GOP Clinic, UCH"
               ]
             }
           ]
@@ -282,7 +316,24 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr G. Olukolade"
+                "Dr. Olorunsola"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Clinical Skill Demonstration"
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "Dr. Akin-Odanye"
               ]
             },
             {
@@ -299,13 +350,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr Olusola Obadare"
+                "Dr. Kolade"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Maximizing pre-Part 1 specialty rotations (WACP/NPMCN)"
+                "Maximizing Pre-Part 1 Specialty Rotations (WACP/NPMCN)"
               ]
             }
           ]
@@ -316,13 +367,30 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr Kehinde M Kuti"
+                "Dr. Kehinde M. Kuti"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Introduction to HIV care, treatment, and support"
+                "Introduction to HIV Care, Treatment, and Support"
+              ]
+            }
+          ]
+        },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "Dr. O. F. Folasire"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Nutrition Assessment / Principle in Primary Care"
               ]
             }
           ]
