@@ -210,7 +210,7 @@ export const handbook = [
               {
                 metatype: "h3",
                 content: [
-                  "GOP NHIS Clinic"
+                  "GOP NHIA Clinic"
                 ]
               },
               {
@@ -262,7 +262,7 @@ export const handbook = [
               {
                 metatype: "paragraph",
                 content: [
-                  "Dr Olushola A. Mosuro"
+                  // "Dr Olushola A. Mosuro"
                 ]
               },
               {
@@ -286,7 +286,7 @@ export const handbook = [
                 metatype: "paragraph",
                 content: [
                   "Dr E. Achiaka Irabor",
-                  "Dr. O. Mosuro",
+                  // "Dr. O. Mosuro",
                   "Dr. T. Ilori",
                   "Dr. A. Obimakinde",
                   "Dr. O. Ayeni"

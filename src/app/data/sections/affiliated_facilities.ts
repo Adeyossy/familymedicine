@@ -63,7 +63,21 @@ export const affilitatedFacilities = {
                 "Comprehensive Health Centre, Sepeteri, Oyo State",
                 "for Rural Outpost Posting"
               ]
-            }
+            },
+            {
+              metatype: "tr",
+              content: [
+                "Airport PHC",
+                ""
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                "Otunba Tunwase",
+                ""
+              ]
+            },
           ]
         }
       ]

@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
   residents_images = ['Administrative Office','BP Area', 'Children Area', 'Consulting',
    'Entrance', 'Lab', 'Children Playing', 'Clinical Psychology', 'Consultant', 'Entrance',
     'Nurses Station', 'Residents Consulting', 'Sorting Hall', 'Hallway', 'HCT Room',
-    'NHIS Clinic', 'Residents', 'Resident Consulting', 'Seminar Room', 'Sorting Hall'];
+    'NHIA Clinic', 'Residents', 'Resident Consulting', 'Seminar Room', 'Sorting Hall'];
   resident_image = 'url(../assets/residents/residents.jpg)';
 
   constructor(private router: Router, private authService: AuthService) {

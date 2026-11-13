@@ -64,7 +64,7 @@ export const affiliatedServices = {
       metatype: "paragraph",
       content: [
         "This laboratory was originally created for teaching of medical students as stated in the history section of this handbook. We are proud of this origin as it underscores it purpose over the years for teaching and now expanded to research as well.",
-        "The laboratory serves the primary National Health Insurance Services (NHIS) and patients who are paying out-of-pocket. Members of staff accessing the Staff Medical Services also access the laboratory through their NHIS package.",
+        "The laboratory serves the primary National Health Insurance Authority (NHIA) and patients who are paying out-of-pocket. Members of staff accessing the Staff Medical Services also access the laboratory through their NHIA package.",
         "Simple point of care tests with short turnaround time are performed there, through a dedicated group of Medical Laboratory Scientists and Technologist. The Laboratory is facilitated by a Consultant Family Physician who supports the Lead Medical Laboratory Scientist with laboratory logistics and supervises training of resident doctors who have their membership/part I posting there.",
         "The laboratory can carry out Full Blood Count, Blood Film for Malaria Parasyte test, Rapid Malaria test, Urine Pregnancy test, Blood grouping and Full Urinalysis. As microbiology and morbid pathology services are not available but required in the family medicine training, our resident doctors are posted to these relevant departments to achieve the required learning.",
         "The laboratory also supports research from our resident doctors and colleagues in other departments, promoting quality assurance and a helpful environment to make research less stressful for our doctors."
@@ -168,14 +168,14 @@ export const affiliatedServices = {
     {
       metatype: "subheading",
       content: [
-        "UCH NHIS Annex; Federal Government Secretariat, Ibadan, Agodi GRA, Ikolaba:"
+        "UCH NHIA Annex; Federal Government Secretariat, Ibadan, Agodi GRA, Ikolaba:"
       ]
     },
     {
       metatype: "paragraph",
       content: [
         "This clinic is situated 1.7 km from the UCH Ibadan https://maps.app.goo.gl/KtkUMXVSsrmMgUUYA?g_st=iw.",
-        "The clinic runs daily from Monday to Friday, 8am to 4pm. Services are largely linked to managed care through the NHIS for Federal Secretariat Staff and their families. Day case admissions are possible.",
+        "The clinic runs daily from Monday to Friday, 8am to 4pm. Services are largely linked to managed care through the NHIA for Federal Secretariat Staff and their families. Day case admissions are possible.",
         "A few walk patients also enjoy the services. All ages are taken care off including immunisation given by the Public Health Nurses.",
         "The clinic is run with support from a Principal Medical Officer with occasional coverage by resident doctors. The managed-care structure provides a good opportunity for learning and equips the resident doctor with the responsibility of making the clinic work in view of required logistic planning and collaboration with the multidisciplinary team."
       ]
@@ -237,8 +237,8 @@ export const affiliatedServices = {
     {
       metatype: "paragraph",
       content: [
-        "Department of Family Medicine, UCH Ibadan has invested in AMCC for over a decade through the gradual development of a primary care model of service delivered by Family Medicine resident doctors who take turns in pairs to do two-months posting at the facility with emphasis on day case surgical procedures, care of the elderly, care of the disabled, community outreach and cervical cancer screening, side lab testing, and classification method for primary care encounters.",
-        "The facility has male and female wards (six beds), consulting rooms, an operating room, a side lab room, among other facilities. Over the years, Family Medicine resident doctors posted to AMCC have been significantly influenced by the guidance and mentoring they receive by working alongside Dr. E.A Solanke FWACP, and Ayo Olofin FWACP (one of the quintessential pioneers of Family Medicine training in Ibadan). As a volunteer, Dr. Olofin continues to serve selflessly on the board of AMCC and in the general outpatient clinic."
+        "Department of Family Medicine, UCH Ibadan has invested in AMMC for over a decade through the gradual development of a primary care model of service delivered by Family Medicine resident doctors who take turns in pairs to do two-months posting at the facility with emphasis on day case surgical procedures, care of the elderly, care of the disabled, community outreach and cervical cancer screening, side lab testing, and classification method for primary care encounters.",
+        "The facility has male and female wards (six beds), consulting rooms, an operating room, a side lab room, among other facilities. Over the years, Family Medicine resident doctors posted to AMMC have been significantly influenced by the guidance and mentoring they receive by working alongside Dr. E.A Solanke FWACP, and Ayo Olofin FWACP (one of the quintessential pioneers of Family Medicine training in Ibadan). As a volunteer, Dr. Olofin continues to serve selflessly on the board of AMMC and in the general outpatient clinic."
       ]
     },
     {
@@ -261,7 +261,7 @@ export const affiliatedServices = {
     {
       metatype: "paragraph",
       content: [
-        "The senior residents have carried out various impactful projects targeting at school health due to two secondary situated in the compound, care for special populations, wellness clinics and elderly care. There are also opportunities to run a drug revolving fund, theatre services for day-case surgery and much more. We have also had collaborative research with the University of Liege, mapping specific public health challenges and sources of Antibiotic resistance in the compound, providing vast opportunities to run implementation research and interventions. Ongoing expansion and development projects at AMCC spear-headed by UCH Family Medicine resident doctors include ultrasound scan services, and spadework for introduction of electronic medical records.",
+        "The senior residents have carried out various impactful projects targeting at school health due to two secondary situated in the compound, care for special populations, wellness clinics and elderly care. There are also opportunities to run a drug revolving fund, theatre services for day-case surgery and much more. We have also had collaborative research with the University of Liege, mapping specific public health challenges and sources of Antibiotic resistance in the compound, providing vast opportunities to run implementation research and interventions. Ongoing expansion and development projects at AMMC spear-headed by UCH Family Medicine resident doctors include ultrasound scan services, and spadework for introduction of electronic medical records.",
         "A memorial lecture is held in honour of Alahaja Chief Mrs Sherifat Agbeke Olanbiwonninu Kola-Daisi every year on the 19th of November - her post humous birthday."
       ]
     },

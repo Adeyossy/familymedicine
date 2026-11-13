@@ -307,6 +307,70 @@ export const dissertations = {
                   ]
                 }
               ]
+            },
+            {
+              metatype: "project",
+              content: [
+                {
+                  metatype: "h3",
+                  content: [
+                    "PERCEIVED SOCIAL SUPPORT AND HEALTH LOCUS OF CONTROL IN VISUALLY IMPAIRED ADULTS ATTENDING THE GENERAL OUTPATIENT CLINIC, UNIVERSITY COLLEGE HOSPITAL IBADAN."
+                  ]
+                },
+                {
+                  metatype: "unit",
+                  content: [
+                    "Palliative Medicine (PLM)"
+                  ]
+                },
+                {
+                  metatype: "author",
+                  content: [
+                    "Dr. Anjorin"
+                  ]
+                },
+                {
+                  metatype: "date",
+                  content: [
+                    "October, 2022"
+                  ]
+                },
+                {
+                  metatype: "abstract",
+                  content: [
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "The number of people living with Visual Impairment is on the rise globally due to increased population growth and an aging world population, creating the need for effective long term care. The perceived social support and health locus of control of individuals have been associated with health outcomes in those with chronic conditions. However the association between the perceived social support and health locus of control of visually impaired patients in Nigeria is unknown."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "The aim of this study was to determine the association between the levels of perceived social support and health locus of control of patients with visual impairment attending the General outpatient (GOP) clinic, University College Hospital (UCH) Ibadan."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "The study was a cross sectional study carried out at the GOP clinic, UCH Ibadan, among 395 eligible respondents with visual impairment between March and May 2021. Data collection instrument was a semi-structured questionnaire, The Multidimensional Scale of Perceived Social Support, The Multidimensional Health Locus of Control Scale Form C, The Patient Health Questionnaire 9, and a basic eye examination was done. Perceived Social Support was the outcome variable. Data was analysed using the Statistical Package for Social Sciences Version 21."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        `Most of the participants were aged 65 years and above, 232 (58.7%) were females and majority 222 (56.2%) were married. 334 (84.6%) of respondents demonstrated a high internal locus of control, 326 (82.5%) had high chance locus of control, 394 (99.7%) had high doctor locus of control and 354 (89.6%) had high other people locus of control. Of the respondents, 147 (37.1%) had mild visual impairment and 118 (29.8%) moderate impairment and cataract was the commonest diagnosis 273 (50.2%). Majority of the participants 202 (51.1%) had high perceived social support, followed by 181 (45.8%) moderate perceived social support, with 12 (3.0%) low support being the least. Gender and marital status were significantly associated with perceived social support with female gender and widowhood being independent predictors of low perceived social support. There was no association between perceived social support and health locus of control in this study.`
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This study showed that while there was a high level of perceived social support among respondents, widowhood and the female gender were predictors of low perceived social support. In the care of patients with visual impairment, perceived social support should be routinely evaluated."
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -1133,6 +1197,205 @@ export const dissertations = {
                   ]
                 }
               ]
+            },
+            {
+              metatype: "project",
+              content: [
+                {
+                  metatype: "h3",
+                  content: [
+                    "FACTORS AFFECTING ADHERENCE TO LIFESTYLE MODIFICATIONS AMONG TYPE 2 DIABETIC PATIENTS OF THE GENERAL OUTPATIENT CLINIC OF UNIVERSITY COLLEGE HOSPITAL, IBADAN"
+                  ]
+                },
+                {
+                  metatype: "unit",
+                  content: [
+                    "Lifestyle Medicine (LM)"
+                  ]
+                },
+                {
+                  metatype: "author",
+                  content: [
+                    "Dr. Taiwo Olusa"
+                  ]
+                },
+                {
+                  metatype: "date",
+                  content: [
+                    "April, 2025"
+                  ]
+                },
+                {
+                  metatype: "abstract",
+                  content: [
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "Diabetes mellitus (DM) is a chronic metabolic disease, characterised by prolonged hyperglycaemia and affecting multiple organ systems when not treated. Its development and progression are caused by an interplay of lifestyle and genetic factors. Lifestyle Modifications (LSMs) are crucial in the prevention and management of DM. Adherence to LSMs is necessary in order to achieve its benefits. However, studies have shown a poor adherence rate to recommended LSMs. Adherence to healthy lifestyles can be impeded or facilitated by various individual and environmental factors."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "To identify the factors (barriers and facilitators) affecting adherence to lifestyle modifications among type 2 diabetic patients attending the General Outpatient Clinic of University College Hospital, Ibadan."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "The study was a hospital-based cross-sectional mixed method study (quantitative and in-depth interviews) using convergent design. The quantitative and qualitative parts were conducted among 200 and 10 eligible consenting patients with type 2 diabetes mellitus respectively.  The study took place from February to May, 2023. A systematic sampling method was used to select the participants for the quantitative study. Data was collected using an interviewer-administered questionnaire for the quantitative study and an In-depth Interview guide for the qualitative part. The International Physical Activity Questionnaire-Short Form and the Perceived Dietary Adherence Questionnaire were used to assess the physical activity (PA) and dietary adherence level of the participants respectively. The outcome variable was adherence to LSMs. Data from questionnaires were analysed using Statistical Package for the Social Sciences (SPSS) version 28 at p< 0.05 while thematic analysis of data from IDIs was done. Findings from both parts were integrated."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        `Most, 87.5% and 92.0% had good knowledge about physical activity and healthy dietary intake respectively.  Likewise, 87.5% and 95.5% of the respondents had positive perception on the role of physical activities and healthy dietary intake on their blood glucose control, respectively. However, only 37.5% and 56.5% of the respondents were adherent to physical activities and healthy dietary intake recommendations respectively. 
+From the IDIs, the most emerging sub-themes were financial and time constraints as barriers to LSMs adherence. Social influence was both a barrier and facilitator of LSMs adherence.
+Bivariate analysis showed that lack of knowledge was a significant barrier for both PA (p=0.004) and dietary (p=0.001) adherence. Musculoskeletal pain (p=0.035) was also a significant barrier to PA while poor self-control (p=0.047) was a significant barrier to dietary adherence. Self-motivation (p=0.001), social support (p<0.001) and healthcare providers’ support (p=0.001) were facilitators that were significantly associated to both PA and dietary adherence.
+Logistic regression showed that non-Yoruba respondents were 5.618 times less likely to adhere to healthy dietary intake. Respondents who failed to self-monitor their blood sugar were 2.386 times less likely to adhere to healthy diet. The overweight and obese respondents were 5.355 and 3.968 times respectively more likely to adhere to PA than those with normal body mass index. 
+`
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "Adherence to LSMs was low especially for PA despite the good knowledge and positive perceptions. More of the perceived facilitators had significant association to LSMs adherence compared to barriers, implying emphasis on these facilitators could improve adherence significantly."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              metatype: "project",
+              content: [
+                {
+                  metatype: "h3",
+                  content: [
+                    "Relationship between sleep quality, co-morbidities and QOL of adult patients attending the General Out-patient Clinic, UCH, Ibadan."
+                  ]
+                },
+                {
+                  metatype: "unit",
+                  content: [
+                    "Lifestyle Medicine (LM)"
+                  ]
+                },
+                {
+                  metatype: "author",
+                  content: [
+                    "Dr. F.O. Layiwola"
+                  ]
+                },
+                {
+                  metatype: "date",
+                  content: [
+                    "March, 2024 (WACP)"
+                  ]
+                },
+                {
+                  metatype: "abstract",
+                  content: [
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "Globally, there has been a decrease in the quality of life of adults due to an epidemic of poor sleep quality and morbidities. However, comprehensive data regarding the prevalence of comorbidities, poor sleep quality and their effect on quality of life of adults in primary care are scarce. The Family Physician is at the forefront of management of adults at all levels of care."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "To determine the relationship between sleep quality, co-morbidities and QOL of adult patients attending the General Out-patient Clinic, UCH, Ibadan."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "The study was a cross sectional study design over a period of three months, and 350 consenting adult patients were recruited between 1st November 2021 and 31st January 2022. Interviewer-administered questionnaires were applied to consenting patients presenting at the General Out-patient Clinic, UCH, who were selected by systematic random sampling technique until the 350-sample population was attained. The questionnaires obtained information on socio-demographics, comorbidities, sleep quality and quality of life. The Pittsburgh Sleep Quality Index Questionnaire was used to assess sleep quality. The Hospital Anxiety and Depression Scale assessed anxiety and depression while the World Health Organization Quality of Life Brief Version (WHO QOL Bref) was used to assess quality of life. The Body Mass Index (BMI) was calculated. The blood pressure and Random Blood Glucose were checked."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        `Less than half of participants had good sleep quality (46.3%) while a higher number of participants (53.7%) had poor sleep quality. More than half of participants had poor quality of life (50.6%). Participants had the highest QOL in the social domain and the lowest QOL in the psychological domain. The factors which negatively affected sleep quality were older age-group, lower education level, lack of income or low income, alcohol consumption, smoking, stimulant use, living close to religious houses and busy roads, diabetes, anxiety and depression.
+Poor sleep quality was a negative predictor of the QOL domains except the environmental domain.
+Female gender, Yoruba and Igbo tribes, anxiety and depression were negative predictors of overall QOL. Skilled and unskilled manual workers, Yoruba and Igbo tribes, lack of income, DM and anxiety were negative predictors of the General Health QOL.  Age, anxiety and depression were negative predictors of Physical QOL. Female gender, hypertension, anxiety and depression were negative predictors of psychological QOL. Igbo and being overweight were positive predictors of psychological QOL. Depression was the only negative predictor of the social QOL. Living close to a religious house and depression were negative predictors of environmental QOL.
+`
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "More than half of adults in this environment had poor quality of life and poor sleep quality. There was a significant relationship between sleep quality and the domains of quality of life among except in the environmental domain. Co-morbidities had a negative relationship with the sleep quality and quality of life of adults. The Family Physician is uniquely positioned to improve the quality of life of their patients by identifying and managing adult patients with co-morbidities and poor sleep quality."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              metatype: "project",
+              content: [
+                {
+                  metatype: "h3",
+                  content: [
+                    "Association between chronic illnesses and sleep quality among adult patients attending the General Outpatient Clinic, University College Hospital, Ibadan."
+                  ]
+                },
+                {
+                  metatype: "unit",
+                  content: [
+                    "Lifestyle Medicine (LM)"
+                  ]
+                },
+                {
+                  metatype: "author",
+                  content: [
+                    "Dr. F.O. Layiwola"
+                  ]
+                },
+                {
+                  metatype: "date",
+                  content: [
+                    "March, 2026 (NPMCN)"
+                  ]
+                },
+                {
+                  metatype: "abstract",
+                  content: [
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "Sleep is an essential biological process which is necessary for physical, mental, and emotional well-being. Poor sleep has become a global health issue of concern particularly in people with chronic illnesses. Although there is an increasing prevalence of chronic diseases in Nigeria, there is paucity of research on the relationship between chronic diseases and the quality of sleep in outpatient populations. Understanding these associated factors is crucial for improving patient centred care."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "To determine the association between chronic illnesses and sleep quality among adult patients attending the General Outpatient Clinic, University College Hospital, Ibadan."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This was a cross-sectional study of 398 adult patients attending the General Outpatient Clinic, University College Hospital, Ibadan. Data was collected via an interviewer-administered questionnaire, and included socio-demographic information, clinical history, the Hospital Anxiety and Depression Scale (HADS) and the Pittsburgh Sleep Quality Index (PSQI) Questionnaire. Statistical analysis of data collected was done using the Statistical Package for Social Sciences Version 27. Descriptive statistics were displayed using frequency tables, charts and graphs. Chi square test was used to test associations between categorical variables such as sociodemographic data, factors affecting sleep quality and chronic illnesses. Logistic regression was used to determine the predictors of sleep quality. Statistical significance was set at p less than or equal to 0.05."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        `The mean age of participants was 47.24 ± 9.97 years, with a higher percentage being female (52.5%) and majority of the participants were married (86.2%). The prevalence of poor sleep quality among patients with chronic illnesses was 53.3%. There was a statistically significant association between marital status (χ² = 7.980, p = 0.005), educational status (χ² = 17.247, p < 0.001), living close to a religious house (χ² = 7.036, p = 0.008), and living close to a busy road (χ² = 12.827, p < 0.001) with poor sleep quality.  Diabetes Mellitus was the only chronic illness that had a significant association with poor sleep quality (χ² = 5.878, p = 0.015), 95% CI: 1.070). Logistic regression showed that lack of formal education (OR = 5.378), primary education (OR = 2.299), living close to a busy road (OR=2.002) were predictors of poor sleep quality.`
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This study showed a high prevalence of poor sleep quality among adult patients attending the General Outpatient Clinic, UCH Ibadan. Poor sleep was significantly associated with educational status, living close to a busy road and Diabetes Mellitus. These findings buttress the need for routine screening for poor sleep quality in outpatient settings, education of patients on sleep hygiene and advocacy on environmental health interventions. Integrating sleep health into primary care practice would improve overall quality of life (QOL) and clinical outcomes in patients with chronic illnesses in Nigeria."
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -1277,7 +1540,71 @@ export const dissertations = {
                   ]
                 }
               ]
-            }
+            },
+            {
+              metatype: "project",
+              content: [
+                {
+                  metatype: "h3",
+                  content: [
+                    "Illness Perception and Quality of Life Among Informal Caregivers of Children with Cerebral Palsy in a Tertiary Hospital in Southwest Nigeria."
+                  ]
+                },
+                {
+                  metatype: "unit",
+                  content: [
+                    "Generational Medicine (GMC)"
+                  ]
+                },
+                {
+                  metatype: "author",
+                  content: [
+                    "Dr. Oluwande E. Dada"
+                  ]
+                },
+                {
+                  metatype: "date",
+                  content: [
+                    "March, 2026"
+                  ]
+                },
+                {
+                  metatype: "abstract",
+                  content: [
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "Cerebral Palsy (CP) is a lifelong neurodevelopmental disorder associated with considerable physical, emotional, and socioeconomic burden on affected children and their caregivers. Illness perception may influence caregivers’ coping strategies and overall quality of life (QoL)."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This study assessed how illness perception determined the overall QoL of informal caregivers of children with cerebral palsy attending the Paediatric Neurology Clinic of University College Hospital."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This hospital-based cross-sectional study was conducted among 207 informal caregivers of children with CP using consecutive sampling over six months. QoL was assessed using the World Health Organization Quality of Life-BREF questionnaire, while illness perception was evaluated using the Brief Illness Perception Questionnaire. Data were analysed using SPSS version 23. Associations between variables were tested using chi-square analysis, while logistic regression identified predictors of good QoL. Statistical significance was set at p < 0.05."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        `Overall, 53.1% of caregivers had negative illness perception, while 75.8% reported good overall QoL. Illness perception was significantly associated with all four domains of QoL (p < 0.001). Income, marital status, caregivers’ knowledge of CP, and presence of child comorbidities were also significantly associated with QoL (p < 0.05). Caregivers with positive illness perception were approximately five times more likely to report good QoL.`
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "Negative illness perception was associated with poorer quality of life among caregivers. This study showed a basis for interventions targeting caregiver education, psychosocial support, and coping strategies with hope to improve caregiver well-being and resilience."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
           ]
         }
       ]
@@ -1975,7 +2302,73 @@ export const dissertations = {
                   ]
                 }
               ]
-            }
+            },
+            {
+              metatype: "project",
+              content: [
+                {
+                  metatype: "h3",
+                  content: [
+                    "MEDICATION ADHERENCE AND ITS CORRELATES AMONG ELDERLY PATIENTS WITH DIABETES MELLITUS ATTENDING THE GERIATRIC CLINIC, UNIVERSITY COLLEGE HOSPITAL, IBADAN"
+                  ]
+                },
+                {
+                  metatype: "unit",
+                  content: [
+                    "Generational Medicine (GMC)"
+                  ]
+                },
+                {
+                  metatype: "author",
+                  content: [
+                    "Dr. O.O. Aderinto"
+                  ]
+                },
+                {
+                  metatype: "date",
+                  content: [
+                    "October, 2023"
+                  ]
+                },
+                {
+                  metatype: "abstract",
+                  content: [
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "Advances in medicine have significantly improved life expectancy worldwide. A downside to this development is the increasing incidence of concurrent chronic illnesses in the elderly, one of which is Diabetes Mellitus (DM). These multi-morbidities require long-term and often complicated medication regimens, a risk factor for medication non-adherence and subsequent suboptimal therapeutic outcomes. Therefore, it is imperative to identify factors that enable medication adherence in the elderly."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This study aimed to assess medication adherence and its correlates among elderly patients with DM attending the Geriatric Clinic, University College Hospital (UCH) to improve their adherence to their medication and overall care. The level of medication adherence, glycaemic control, and factors such as sociodemographic characteristics, anthropometric measurements, comorbidities, and family functionality, among elderly patients with DM were assessed. Also, the association between medication adherence and glycaemic control was assessed."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This study was a hospital-based cross-sectional study conducted among 237 elderly patients with DM attending the Geriatric Clinic, UCH, Ibadan, between January 1st and March 31st, 2021. Data were collected with a semi-structured interviewer-administered questionnaire using the Medication Compliance Questionnaire (MCQ) for medication adherence and the Family APGAR for family functionality. Their glycaemic control was determined with their glycated haemoglobin (HbAIC) level. The dependent variables were medication adherence and glycaemic control. Data were analysed using Statistical Package for the Social Sciences (SPSS) version-23, and the level of significance was set at 5%."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        `The mean age of the respondents was 70.4±6.8 years (63.6-77.2years), with a preponderance of 191 (80.6%) female respondents. The majority, 161 (68.0%) of the respondents, were adherent to their medications, and 164 (69.2%) had good glycaemic control. Earning a monthly income of ≥30,000 Naira (p=0.012), using a private means of transportation to the clinic (p=0.014), having health insurance (p=0.003), self-reported adherence to DM medications (p=0.001), having no history of osteoarthritis (p=0.030) or previous complications of DM (p=0.039), and having a functional family (p=0.001) were significantly associated with good medication adherence. The respondents who used a private means of transportation to the clinic (p=0.041), who engaged in both the lifestyle modifications and oral hypoglycaemic agents (p=0.001), without a history of DM-related hospital admission (p=0.008), and without complications of DM (p=0.008) or dyslipidemia (p=0.038) had good glycaemic control. There was a statistical association between good medication adherence and good glycaemic control (p=0.001).
+The predictors of good medication adherence were having a functional family (OR=2.71, 95% CI:3.22–70.27), having health insurance (OR=1.52, 95% CI:1.01-20.69), self-reported adherence to DM medications (OR=1.29, 95% CI:1.142-11.57) and using a private mean of transportation to the clinic (OR=0.69, 95% CI:1.06-3.75). While the predictors of good glycaemic control were using a private means of transportation to the clinic (OR=1.82, 95% CI:1.01-3.29) and employing lifestyle modifications and oral hypoglycaemic agents to manage their DM (OR=4.07, 95% CI:1.87-8.89)
+`
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This study showed a high level of good medication adherence and glycaemic control among the elderly with DM. Assessing their socioeconomic, family functionality, and involvement in lifestyle modifications would improve the care of the elderly with DM."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
           ]
         }
       ]
@@ -2710,7 +3103,216 @@ export const dissertations = {
           content: [
             {
               metatype: "project",
-              content: []
+              content: [
+                {
+                  metatype: "h3",
+                  content: [
+                    "ILLNESS SEVERITY, QUALITY OF REFERRALS AND WAIT TIMES OF PATIENTS WITH NON-COMMUNICABLE DISEASES REFERRED TO SPECIALIST CLINICS OF THE UNIVERSITY COLLEGE HOSPITAL (UCH), IBADAN"
+                  ]
+                },
+                {
+                  metatype: "unit",
+                  content: [
+                    "Acute Care Medicine (ACM)"
+                  ]
+                },
+                {
+                  metatype: "author",
+                  content: [
+                    "Dr. Onaopemipo Kolade"
+                  ]
+                },
+                {
+                  metatype: "date",
+                  content: [
+                    "March, 2024 (WACP)"
+                  ]
+                },
+                {
+                  metatype: "abstract",
+                  content: [
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "Wait times to see health care specialists are non-negotiable due to demand-supply imbalances. It is however crucial, for equity, that individualized patients’ needs reflected by illness severity impact on wait times. The referral letter, being the main communication channel between referring healthcare providers and specialists, is a crucial tool in the triage process. The interplay between illness severity, referral quality, and specialist appointment wait times therefore holds significant implications for both patient outcomes and healthcare system efficiency."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This study aimed to determine the relationship between illness severity, quality of referrals and wait times of patients with Non-communicable Diseases (NCDs) referred to Specialist clinics of UCH, Ibadan."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This was a cross-sectional study of 310 patients (aged 18 years and above) with NCDs requiring referrals from the General Outpatient (GOP) Clinic to the Medical Outpatient (MOP), Surgical Outpatient (SOP) and Psychiatry clinics of the UCH, Ibadan. Patients’ illness severities were assessed with the Duke Severity of Illness (DUSOI)/WONCA Checklist. Referral letter quality was assessed with the Consultation and Referral Request Letter Assessment tool. The participants were followed-up on phone to obtain their specialist appointment dates. Data was analysed using the Statistical Package for Social Sciences (SPSS) Version 28 and the level of significance set at 5%."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        `The mean age of the respondents was 43.5 ± 17.4 years. One hundred and fifty-six (50.3%) participants were male and 49.7% female - a ratio of about 1:1.  The majority (48%) of the patients had intermediate level of illness severity followed by 40% with high level illness severity, 9.7% with low illness severity and about 2.3% had maximum illness severity level.
+Two-thirds (60.6%) of the referral letters were fairly informative, 23.9% were helpful informative, and 15.5% were deemed unhelpful. Overall referral letter quality was not significantly associated with patients’ illness severity (p-value 0.228).
+Median wait time of respondents before specialist appointment was 27 days, with inter-quartile range of 8 to 68 days. Minimum wait time was 0 day, and the maximum was 150 days. 
+Correlation between illness severity and wait times was positive (r = 0.098, p-value 0.086) while relationship between quality of referrals and wait times followed a negative direction (r = -0.024, p-value 0.674). However, the independent associations were statistically insignificant.
+`
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "There were no statistically significant relationships between wait times and illness severity and wait times and quality of referral letters as were hypothesized. This calls for a critical review of the current referral and triage practices in order to improve wait time experiences of patients."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              metatype: "project",
+              content: [
+                {
+                  metatype: "h3",
+                  content: [
+                    "FACTORS ASSOCIATED WITH MICROALBUMINURIA IN ADULTS WITH HYPERTENSION ATTENDING THE GENERAL OUTPATIENT CLINIC OF THE DEPARTMENT OF FAMILY MEDICINE, UNIVERSITY COLLEGE HOSPITAL, IBADAN"
+                  ]
+                },
+                {
+                  metatype: "unit",
+                  content: [
+                    "Acute Care Medicine (ACM)"
+                  ]
+                },
+                {
+                  metatype: "author",
+                  content: [
+                    "Dr. Onaopemipo Kolade"
+                  ]
+                },
+                {
+                  metatype: "date",
+                  content: [
+                    "October, 2025 (NPMCN)"
+                  ]
+                },
+                {
+                  metatype: "abstract",
+                  content: [
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "Hypertension is a major risk factor for kidney damage, and microalbuminuria serves as an early marker of renal dysfunction and cardiovascular disease in patients with hypertension. Various factors, including increasing age, lifestyle habits, poor blood pressure control, obesity, and dyslipidaemia, have been implicated in the development of microalbuminuria. Understanding these associated factors is crucial for early detection and intervention to prevent progression to chronic kidney disease and related complications."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "To determine the prevalence and correlates of microalbuminuria in adults with hypertension at the General Outpatient clinic of the Department of Family Medicine, University College Hospital, Ibadan, with a view to making recommendations for early detection, prevention and control of microalbuminuria among adults with hypertension."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This was a cross-sectional study of 265 adult patients with hypertension receiving care at the General Outpatient Clinic, Department of Family Medicine, University College Hospital, Ibadan. Data was collected via an interviewer-administered questionnaire. The presence of microalbuminuria was determined using semi-quantitative microalbuminuria strips. Statistical analysis of data collected was done using the Statistical Package for Social Sciences Version 23. Descriptive statistics were displayed using frequency tables, charts and graphs. Chi-square test was used to test associations between categorical variables such as sociodemographic data, family history of hypertension/renal disease, duration since diagnosis of hypertension, medication adherence, antihypertensive therapy, lifestyle habits, blood pressure control, anthropometric measurements, presence or absence of dyslipidaemia and microalbuminuria. The confidence interval was set at 95% and a p-value of less than or equal to 0.05 was considered significant."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        `The mean age of the 265 respondents was 56.3 ± 10.0 years and majority (61.1%) were females. The prevalence of microalbuminuria amongst patients with hypertension at the General Outpatient clinic of the Department of Family Medicine, UCH, Ibadan was 18.1%. There was no statistically significant association between sociodemographic factors, family history of hypertension, medication adherence, lifestyle habits, anthropometric measurements, biochemical indices and microalbuminuria in the study population. There was however a statistically significant relationship between family history of renal disease and microalbuminuria (p = 0.037) and duration of hypertension and microalbuminuria (p = 0.032). The only predictor of microalbuminuria was, however, the family history of renal disease, with such participants having a greater likelihood of having microalbuminuria (O.R = 2.59) compared to those without a family history of renal disease.`
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This study revealed a high prevalence of microalbuminuria in patients with hypertension and highlighted a significant association between family history of kidney disease and microalbuminuria in hypertensive patients, while other conventional risk factors showed no statistical significance. These findings suggest that a broad and universal screening approach be adopted for all patients with hypertension whilst emphasizing family history in risk assessment. This would aid in early detection and timely intervention to prevent kidney disease progression."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+
+          ]
+        }
+      ]
+    },
+    {
+      metatype: "section",
+      content: [
+        {
+          metatype: "subheading",
+          content: [
+            "Social and Behavioural Medicine (SBM)"
+          ]
+        },
+        {
+          metatype: "projects",
+          content: [
+            {
+              metatype: "project",
+              content: [
+                {
+                  metatype: "h3",
+                  content: [
+                    "MEDICATION ADHERENCE AND HEALTHCARE FINANCING AMONG HYPERTENSIVE OUTPATIENTS ATTENDING FAMILY MEDICINE CLINICS, UNIVERSITY COLLEGE HOSPITAL, IBADAN"
+                  ]
+                },
+                {
+                  metatype: "unit",
+                  content: [
+                    "Social and Behavioural Medicine"
+                  ]
+                },
+                {
+                  metatype: "author",
+                  content: [
+                    "Dr. Oluwafolajimi Senjobi"
+                  ]
+                },
+                {
+                  metatype: "date",
+                  content: [
+                    "April, 2025"
+                  ]
+                },
+                {
+                  metatype: "abstract",
+                  content: [
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "Medication adherence refers to the extent to which patients comply with prescribed medications as recommended by their physicians. The problem of medication non-adherence is increasing, particularly among individuals with chronic conditions such as hypertension. This issue is not limited to persons of African descent but is a global concern influenced by a host of factors. The repercussions of this challenge can significantly impact health outcomes and lead to increased healthcare costs. The impact of health insurance in developing countries has only been documented partially. As incomes have risen in emerging economies, there has been a growing move to increase coverage of social insurance programs. However, insurance mandates can be difficult to enforce."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This study assessed the association between antihypertensive medication adherence and the healthcare financing characteristics of adults with hypertension attending Family Medicine Clinics in University College Hospital, Ibadan (UCH), Nigeria, in order to identify the mode of healthcare financing to recommend for utilization and facilitate counselling towards the choice that will enhance medication adherence."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "This cross-sectional study involved 350 adult hypertensive outpatients aged 18 years and above, who were receiving care at the General Outpatient (GOP) Clinic within the Department of Family Medicine at UCH. The participants were selected through systematic random sampling from an estimated pool of 600 patients with hypertension who visited the GOP clinic over a 3-month period. Consenting individuals on at least 6-months antihypertensive medication and consistent healthcare financing were interviewed. Exclusions were made for pregnant hypertensive patients, individuals with critical illnesses, and those with significant morbidity. Data was collected using a semi-structured questionnaire, covering sociodemographic characteristics, health status, and medication adherence levels assessed through the Morisky Medication Adherence Scale (MMAS) and the 12-item Adherence to Refill and Medication Scale (ARMS). Additionally, blood pressure readings were taken. Mean, median and standard deviation for blood pressure measurements were recorded. Chi-square and Fisher exact tests were employed to examine the association between healthcare financing characteristics, medication adherence and blood pressure control and logistic regression was used to identify the predictors of poor medication adherence."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "The mean age of the study participants was 56.37 ± 9.75years with the study having a preponderance of females (62.3%).  Most (70.6%) of the participants had controlled blood pressure and 85.1% and 94.0% showed high adherence on MMAS and ARMS, respectively. Younger people were less likely to adhere to medications than older ones. Those comfortable with clinic visits for drug refill were 4 times more likely to be medication adherent than those who weren't (OR= 4.691, CI= 2.313-9.513, P<0.001). There was no significant relationship between medication adherence, blood pressure and health financing characteristics."
+                      ]
+                    },
+                    {
+                      metatype: "paragraph",
+                      content: [
+                        "The findings from this study shows that there was no significant association between antihypertensive medication adherence and healthcare financing characteristics of adult patients with hypertension. However, Medication adherence was influenced by patient’s age, frequency of clinic visits, comfortability with prescribed regimens by physicians and affordability of medications."
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -3454,7 +4056,7 @@ export const dissertations = {
                   ]
                 }
               ]
-            }
+            },
           ]
         }
       ]

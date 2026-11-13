@@ -62,7 +62,7 @@ export const collaborative = {
             {
               metatype: "h3",
               content: [
-                "GOP NHIS Clinic"
+                "GOP NHIA Clinic"
               ]
             },
             {
@@ -147,7 +147,7 @@ export const collaborative = {
             {
               metatype: "h3",
               content: [
-                "UCH NHIS Clinic Annex Federal Secretariat, Ikolaba"
+                "UCH NHIA Clinic Annex Federal Secretariat, Ikolaba"
               ]
             },
             {

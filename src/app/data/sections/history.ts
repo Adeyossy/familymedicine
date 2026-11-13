@@ -53,7 +53,7 @@ export const history = {
         "The UCH Ibadan, was accredited to train postgraduate resident doctors in General Medical Practice (GMP) in 1980. The General Outpatient Department (GOPD) was the obvious department of choice for training GMP resident doctors.",
         "With the change of specialty name from GMP to Family Medicine at the turn of the millennium, the name of the department was eventually changed to Department of Family Medicine in 2005.  A more patient-centered type of care was instituted to further improve patient satisfaction. The Department of Family Medicine attended to about 60,000 patients annually before the Covid-19 pandemic. The numbers had since dropped and hopefully will pick up again.",
         "Family Medicine is the medical specialty that provides comprehensive and continuing health care for the individual in a holistic manner within the context of his family and environment.  It encompasses all ages, both sexes, and every disease entity, integrating biological, clinical and behavioral sciences.  It provides primary care and in Nigeria, the term “Frontline Doctor” has been adopted.",
-        "Excerpt from the bb1st Head of Department GOPbb (1957-1965) written in the RCGP's College of General Practitioners Research Newsletter now published as the British Journal of General Practice (Aug. 1957) by Dr. Kenneth Mclean Cobban (T.D, B.Sc., M.D.)",
+        "Excerpt from the 1st Head of Department GOP (1957-1965) written in the RCGP's College of General Practitioners Research Newsletter now published as the British Journal of General Practice (Aug. 1957) by Dr. Kenneth Mclean Cobban (T.D, B.Sc., M.D.)",
         " https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2239200/?page=1 "
       ]
     },
@@ -249,7 +249,7 @@ export const history = {
                 "The 4th HoD and the 1st Nigerian one was Dr Alaba Kalejaiye MBBS (Glasgow), Dip. Soc. Med (Edin), FMCGP (Nig), FWACP-FM, flanked by Dr. Lopez-Chico on the left and Dr. Ladipo on the right."
               ]
             }
-        ]
+          ]
         },
         {
           metatype: "paragraph",
@@ -291,7 +291,7 @@ export const history = {
         {
           metatype: "paragraph",
           content: [
-            "Consultant Family Physician, who was the pioneer Family Medicine Resident in U.C.H, was the Head of the from 1996 to 2011. She was a Member of the Faculty Board of General Practice/Family Medicine Faculty of National Postgraduate Medical College of Nigeria and was elected as the Secretary and Chief Exarminer of that Faculty from 1996 to 2004. Dr. Ladipo was elected as the Chief Examiner of the West African College of Physicians from 2005 to 2008. She is the second Fellow by Examination who has been a Chief Examiner for that Faculty. She is an active member of the World Organization of Farnily Physicians (WONCA).",
+            "Consultant Family Physician, who was the pioneer Family Medicine Resident in U.C.H, was the Head of the department from 1996 to 2011. She was a Member of the Faculty Board of General Practice/Family Medicine, Faculty of National Postgraduate Medical College of Nigeria and was elected as the Secretary and Chief Exarminer of that Faculty from 1996 to 2004. Dr. Ladipo was elected as the Chief Examiner of the West African College of Physicians from 2005 to 2008. She is the second Fellow by Examination who has been a Chief Examiner for that Faculty. She is an active member of the World Organization of Farnily Physicians (WONCA).",
             "She was an Associate lecturer in Department of Surgery, College of Medicine, University of Ibadan. This post initiated the Saturday surgery teaching session. Patients with “short-case” pathologies were pooled on Saturdays, for a quick consult and booking for surgery while affording resident doctors in family medicine, surgery and medical students the opportunity of seeing ‘fresh” surgery patients. The postgraduate family medicine curriculun for the UCH was initiated by Dr. Ladipo and the documentation of this curriculum started during her tenure. She became the 1st Senior Lecturer of undergraduate Family Medicine of the University of Ibadan just before her retirement in the University College Hospital, Ibadan. She stayed to guide young consultants even working pro bono for 2 years before her retirement from the College of Medicine in 2022. Dr Ladipo had always been very aware of social ties between the multidisciplinary team and is responsible for engineering an atmosphere of family by creating a system of visiting staff at important family occasions with a departmental gift, having a yearly festive gathering to thank staff, recognise excellence while we feast and are merry. This was funded by the doctors and hence consolidated a sense of benefactory leadership which has served the department through the years. New staff always say “the Department of Family Medicine is truly a family”. This is largely due to Dr Modupe Ladipo. Dr Ladipo accepted the partnership proposed by the CMD, Prof A Illesanmi with the Agbeke Mercy Medical Centre, covered by NYSC doctors - a precursor to great things!"
           ]
         }

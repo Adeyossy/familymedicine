@@ -5,7 +5,7 @@ export const tasks = {
     {
       metatype: "paragraph",
       content: [
-        "The tasks enumerated below are not comprehensive, as learning occurs largely through apprenticeship in medicine. Opportunities abound to acquire additional skills which often create an advantage in the future workforce.",
+        "The tasks enumerated below are not exhaustive, as learning occurs largely through apprenticeship in medicine. Opportunities abound to acquire additional skills which often create an advantage in the future workforce.",
         "The University College Hospital Ibadan being a flagship institution, attracts numerous activities around medicine which can be tapped into by the assiduous resident doctor."
       ]
     },
@@ -65,7 +65,7 @@ export const tasks = {
               content: [
                 "Referral to another unit based on a referral letter in hand. Please read the letter to be sure it is correctly addressed and addresses the patient's complaint. All referrals must be written using the Standard 2-way referral form of the UCH Ibadan with all fields completed. Properly written referrals are a hallmark of family medicine and must convey the urgency of consultation as required for the patient best outcome. All letters must be reviewed by a senior registrar or consultant before the letter exits the department.",
                 "Referral to another unit based on pathognomonic signs and symptoms in which you can wite a consult and get the patient on their way. Remember not to miss learning and teaching opportunities for yourself and others.",
-                "Managed care patients under the National Health Insurance Scheme (NHIS), Department of Defence (DOD- mainly the Nigeria Police) or Private Health Insurance care are referred to our Primary Care Health Insurance Clinic Unit or the Health Insurance Department if the patient came to UCH Ibadan for secondary level health insurance care.",
+                "Managed care patients under the National Health Insurance Authority (NHIA), Department of Defence (DOD- mainly the Nigeria Police) or Private Health Insurance care are referred to our Primary Care Health Insurance Clinic Unit or the Health Insurance Department if the patient came to UCH Ibadan for secondary level health insurance care.",
                 "Patients who have been lost-to-follow-up from other clinics and need a reassessment to ascertain that their previous clinic will fit their current needs. We also give a prescription to carry them until the appointment date they are given.",
                 "Patients with common infective/non-infective problems that require point-of-care-tests and review thereafter. These patients are labelled as non-consultative sorting hall patients and their data is captured in the sorting notebook for female, male and paediatrics.",
                 "Patients who require consultative appointments with the consultant family physician in different areas of special interest such as Adolescent health, Lifestyle clinic, LIFE clinic for men and women's health, Care-Palliative for chronic illnesses in the end of spectrum, newly diagnosed cancer patients and care of home carers with burden, Couples clinic with sexual health problems,",
@@ -90,7 +90,7 @@ export const tasks = {
           metatype: "paragraph",
           content: [
             "Training is your only business in the five to seven years required to become a specialist in family medicine.",
-            "This choice was made by you without duress and doctors who do not apply themselves to training will receive reports to the RTC and HoD as to their incompetence in training."
+            "This choice was made by you without duress and doctors who do not apply themselves to training will receive reports from the RTC and HoD as to their incompetence in training."
           ]
         },
         {

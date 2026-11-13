@@ -248,7 +248,7 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. M. O. Olawuyi / Dr. B. Abodunde"
+                "Dr. M. O. Olawuyi"
               ]
             },
             {
