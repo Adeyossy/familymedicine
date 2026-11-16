@@ -388,7 +388,7 @@ export const handbook = [
               {
                 metatype: "paragraph",
                 content: [
-                  ""
+                  "Mondays and Fridays (12noon)"
                 ]
               }
             ]

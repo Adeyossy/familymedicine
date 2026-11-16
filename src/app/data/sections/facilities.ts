@@ -136,7 +136,7 @@ export const facilities = {
             {
               metatype: "paragraph",
               content: [
-                ""
+                "Rural and remote outpost"
               ]
             }
           ]

@@ -1,5 +1,5 @@
 export const otherDepartments = {
-  heading: "Family Medicine Consultants & Trainers in Other UCH Departments (2019)",
+  heading: "Family Medicine Consultants & Trainers in Other UCH Departments",
   level_of_access: 2,
   content: [
     {
