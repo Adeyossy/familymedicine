@@ -67,7 +67,14 @@ export const affilitatedFacilities = {
             {
               metatype: "tr",
               content: [
-                "Airport PHC",
+                "ALGON PHC, Airport Road",
+                ""
+              ]
+            },
+            {
+              metatype: "tr",
+              content: [
+                "Urban/Remote Outpost",
                 ""
               ]
             },

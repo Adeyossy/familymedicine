@@ -21,6 +21,7 @@ import { organogramUCH } from "./sections/organogram_uch";
 import { otherDepartments } from "./sections/other_departments";
 import { otherForms } from "./sections/other_forms";
 import { others } from "./sections/others";
+import { publications } from "./sections/publications";
 import { rotations } from "./sections/rotation";
 import { routineMeetings } from "./sections/routine_meetings";
 import { senior } from "./sections/senior";
@@ -204,52 +205,52 @@ export const handbook = [
               }
             ]
           },
-          {
-            metatype: "group",
-            content: [
-              {
-                metatype: "h3",
-                content: [
-                  "GOP NHIA Clinic"
-                ]
-              },
-              {
-                metatype: "paragraph",
-                content: [
-                  "Drs. S A Muyibi/O Abodunde"
-                ]
-              },
-              {
-                metatype: "paragraph",
-                content: [
-                  "Monday - Saturday"
-                ]
-              }
-            ]
-          },
-          {
-            metatype: "group",
-            content: [
-              {
-                metatype: "h3",
-                content: [
-                  "Private Suites Outpatient Clinic"
-                ]
-              },
-              {
-                metatype: "paragraph",
-                content: [
-                  "Dr. S. Adebayo"
-                ]
-              },
-              {
-                metatype: "paragraph",
-                content: [
-                  "Monday - Sunday"
-                ]
-              }
-            ]
-          },
+          // {
+          //   metatype: "group",
+          //   content: [
+          //     {
+          //       metatype: "h3",
+          //       content: [
+          //         "GOP NHIA Clinic"
+          //       ]
+          //     },
+          //     {
+          //       metatype: "paragraph",
+          //       content: [
+          //         "Drs. S A Muyibi/O Abodunde"
+          //       ]
+          //     },
+          //     {
+          //       metatype: "paragraph",
+          //       content: [
+          //         "Monday - Saturday"
+          //       ]
+          //     }
+          //   ]
+          // },
+          // {
+          //   metatype: "group",
+          //   content: [
+          //     {
+          //       metatype: "h3",
+          //       content: [
+          //         "Private Suites Outpatient Clinic"
+          //       ]
+          //     },
+          //     {
+          //       metatype: "paragraph",
+          //       content: [
+          //         "Dr. S. Adebayo"
+          //       ]
+          //     },
+          //     {
+          //       metatype: "paragraph",
+          //       content: [
+          //         "Monday - Sunday"
+          //       ]
+          //     }
+          //   ]
+          // },
           {
             metatype: "group",
             content: [
@@ -322,6 +323,98 @@ export const handbook = [
                 ]
               }
             ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Men’s Health Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Dr M.O. Olawuyi / Dr O. O. Senjobi"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Women’s Health Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Dr O. Olalemi"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Travel Medicine Clinic"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Dr K Adigun / Dr T. O. Salam / Dr O. O. Senjobi"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  ""
+                ]
+              }
+            ]
+          },
+          {
+            metatype: "group",
+            content: [
+              {
+                metatype: "h3",
+                content: [
+                  "Acute Care Medicine"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  "Dr A. Olorunsola / Dr O. O. Kolade"
+                ]
+              },
+              {
+                metatype: "paragraph",
+                content: [
+                  ""
+                ]
+              }
+            ]
           }
         ]
       }
@@ -336,6 +429,7 @@ export const handbook = [
   serviceFunction,
   affiliatedServices,
   dissertations,
+  publications,
   curriculum,
   otherForms,
   logbook,

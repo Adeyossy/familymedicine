@@ -5,6 +5,33 @@ export const otherDepartments = {
     {
       metatype: "subheading",
       content: [
+        "Community Medicine, COMUI, Undergraduate Family Medicine"
+      ]
+    },
+    {
+      metatype: "list",
+      content: [
+        {
+          metatype: "leading",
+          content: [
+            ""
+          ]
+        },
+        {
+          metatype: "ul",
+          content: [
+            "Dr. Abimbola Obimakinde, MBBS, MSc., FWACP,PhD",
+            "Dr. Temitope Ilori, MBBS, MSc., FWACP",
+            "Dr. O.O. Senjobi, FWACP(FM), CTMPN.",
+            "Dr. Onaopemipo O. Kolade FWACP (FM), FMCFM",
+            "Dr. Idowu C. Odekunle, FWACP(FM). MSc",
+          ]
+        }
+      ]
+    },
+    {
+      metatype: "subheading",
+      content: [
         "In Chief Tony Anenih Geriatric Centre, UCH Ibadan:"
       ]
     },
@@ -20,8 +47,10 @@ export const otherDepartments = {
         {
           metatype: "ul",
           content: [
-            "Dr. L.A Adebusoye MBBS, MSc, FWACP, FMCFM, Dip. Geriatric Med., MD",
-            "Dr. O.O Olowookere MBChB, DTH, FWACP, Dip. Geriatric Med."
+"Dr. L.A. Adebusoye, MBBS, MSc, FWACP, FMCFM, Dip. Geriatric Med., MD",
+"Dr. O.O Olowookere, MBChB, DTH, FWACP, Dip. Geriatric Med.",
+"Dr. Kehinde Odebunmi, MBBS, FWACP(FM)",
+"Dr. Abimbola Oyewole, FWACP(FM)",
           ]
         }
       ]
@@ -44,12 +73,56 @@ export const otherDepartments = {
         {
           metatype: "ul",
           content: [
-            "Dr. F.A Olaniyan MBBS, MSc., FWACP, FMCGP (Nig.)",
-            "Dr. Taiwo Soyinka MBBS, MSc., FWACP",
-            "Dr. Kehinde Kuti MBBS, MSc., FWACP",
-            "Dr. B. J. Ogunrinde MBBS, FWACP ",
-            "Dr. Funmilayo Badru MBBS, FWACP ",
-            "Dr. Lawretta Mukoru MBBS, FMCFM"
+"Dr. Taiwo Soyinka, MBBS, MSc., FWACP(FM)",
+"Dr. Kehinde Kuti, MBBS, MSc., FWACP(FM)",
+"Dr. Idowu C. Odekunle, FWACP(FM). MSc",
+"Dr. Folasade Layiwola, FWACP(FM), FMCFM",
+          ]
+        }
+      ]
+    },
+    {
+      metatype: "subheading",
+      content: [
+        "Health Insurance Department, UCH, Ibadan"
+      ]
+    },
+    {
+      metatype: "list",
+      content: [
+        {
+          metatype: "leading",
+          content: [
+            ""
+          ]
+        },
+        {
+          metatype: "ul",
+          content: [
+"Dr. Oluwatoyin Olalemi, MBBS, FWACP, MPH",
+          ]
+        }
+      ]
+    },
+    {
+      metatype: "subheading",
+      content: [
+        "Health Policy and Management, COMUI"
+      ]
+    },
+    {
+      metatype: "list",
+      content: [
+        {
+          metatype: "leading",
+          content: [
+            ""
+          ]
+        },
+        {
+          metatype: "ul",
+          content: [
+"Dr. T.O Salam, FWACP (FM), MPH, CTMPN.",
           ]
         }
       ]
@@ -95,7 +168,8 @@ export const otherDepartments = {
         {
           metatype: "ul",
           content: [
-            "Dr. Ayo Olofin MBBS, FWACP, FMCGP  (Retired)"
+"Dr Ayodele Olofin, MBBS, FWACP",
+"Dr. Matthew Olawuyi, MBBS, FWACP, MPH",
           ]
         }
       ]
@@ -103,7 +177,7 @@ export const otherDepartments = {
     {
       metatype: "subheading",
       content: [
-        "In Comprehensive Health Centre, Sepeteri"
+        "Otunba Tunwase National Pediatric Center, Ijebu-Ode"
       ]
     },
     {
@@ -118,11 +192,34 @@ export const otherDepartments = {
         {
           metatype: "ul",
           content: [
-            "Dr. I.A Azeez MBBS, MSc., FWACP"
+            "Dr. Yetunde Fadeyi, MBBS, FWACP(FM), FMCFM"
           ]
         }
       ]
     },
+    // {
+    //   metatype: "subheading",
+    //   content: [
+    //     "In Comprehensive Health Centre, Sepeteri"
+    //   ]
+    // },
+    // {
+    //   metatype: "list",
+    //   content: [
+    //     {
+    //       metatype: "leading",
+    //       content: [
+    //         ""
+    //       ]
+    //     },
+    //     {
+    //       metatype: "ul",
+    //       content: [
+    //         "Dr. I.A Azeez MBBS, MSc., FWACP"
+    //       ]
+    //     }
+    //   ]
+    // },
     {
       metatype: "paragraph",
       content: [
