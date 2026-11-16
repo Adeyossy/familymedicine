@@ -17,7 +17,7 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "Mrs. 'Mubo Olamisigbe"
+                "DDN Olufunmilayo F. Ogunsanwo"
               ]
             }
           ]
@@ -51,7 +51,7 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "Mrs. Abosede Abolade"
+                "Mr Nurudeen Yusuf, PhD"
               ]
             }
           ]
@@ -68,7 +68,7 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "Dr. A.A. Adetunji (Head, Health Insurance Department)"
+                "Dr Oluwatoyin Olalemi ( Head, Health Insurance Department)"
               ]
             }
           ]
@@ -102,7 +102,7 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "Mr L Adesanoye"
+                "Mrs. Oluwatosin Lawal"
               ]
             }
           ]
@@ -119,7 +119,7 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "CNO Samiat Mosobalaje"
+                "ADN Samiat Mosobalaje"
               ]
             }
           ]
@@ -136,7 +136,7 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "Mrs Theresa Akinkunmi"
+                "Mr. Ogunbameru Olalekan"
               ]
             }
           ]
@@ -170,7 +170,7 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "Mrs. Yemisi Anjorin"
+                "Mr Samuel Akintola"
               ]
             }
           ]
@@ -187,28 +187,28 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "Chief Resident (Dr. Oyindamola Aderinto)"
+                "Chief Resident (Dr. Babatunde Olanipekun)"
               ]
             }
           ]
         },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
-                "UCH Private Suites"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Dr S Adebayo"
-              ]
-            }
-          ]
-        },
+        // {
+        //   metatype: "group",
+        //   content: [
+        //     {
+        //       metatype: "h3",
+        //       content: [
+        //         "UCH Private Suites"
+        //       ]
+        //     },
+        //     {
+        //       metatype: "paragraph",
+        //       content: [
+        //         "Dr S Adebayo"
+        //       ]
+        //     }
+        //   ]
+        // },
         {
           metatype: "group",
           content: [
@@ -221,7 +221,7 @@ export const collaborative = {
             {
               metatype: "paragraph",
               content: [
-                "Dr. O Abodunde"
+                "Dr Matthew O. Olawuyi"
               ]
             }
           ]

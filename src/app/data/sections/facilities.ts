@@ -123,7 +123,24 @@ export const facilities = {
               ]
             }
           ]
-        }
+        },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "ALGON PHC, Airport Road, Ibadan"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                ""
+              ]
+            }
+          ]
+        },
       ]
     }
   ]

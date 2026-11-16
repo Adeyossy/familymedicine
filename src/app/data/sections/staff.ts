@@ -18,20 +18,20 @@ export const consultants_staff = {
           metatype: "avatar",
           content: [
             "/assets/ogunbode.jpg",
-            "Dr. Adetola m. Ogunbode MBBS, DTMH, MSc., FWACP",
+            "Dr. Adetola M. Ogunbode MBBS, DTMH, MSc., FWACP, MD",
             "08023293115",
             "tolaogunbode@yahoo.co.uk"
           ]
         },
-        {
-          metatype: "avatar",
-          content: [
-            "/assets/mosuro.jpg",
-            "Dr. Olushola A. Mosuro MBChB, MPP, FWACP", 
-            "08023392746",
-            "olusholamosuro@gmail.com"
-          ]
-        },
+        // {
+        //   metatype: "avatar",
+        //   content: [
+        //     "/assets/mosuro.jpg",
+        //     "Dr. Olushola A. Mosuro MBChB, MPP, FWACP", 
+        //     "08023392746",
+        //     "olusholamosuro@gmail.com"
+        //   ]
+        // },
         {
           metatype: "avatar",
           content: [
@@ -41,20 +41,20 @@ export const consultants_staff = {
             "adedotun_adetunji@yahoo.com"
           ]
         },
-        {
-          metatype: "avatar",
-          content: [
-            "/assets/muyibi.jpg",
-            "Dr. Sufiyan A. Muyibi MBBS, MSc., FWACP",
-            "08030758938",
-            "sufimuibi@yahoo.co.uk"
-          ]
-        },
+        // {
+        //   metatype: "avatar",
+        //   content: [
+        //     "/assets/muyibi.jpg",
+        //     "Dr. Sufiyan A. Muyibi MBBS, MSc., FWACP",
+        //     "08030758938",
+        //     "sufimuibi@yahoo.co.uk"
+        //   ]
+        // },
         {
           metatype: "avatar",
           content: [
             "/assets/folasire.jpg",
-            "Dr. Oluyemisi F. Folasire MBBS, MSc., FWACP",
+            "Dr. Oluyemisi F. Folasire MBBS, MSc., FWACP, PhD",
             "08035140299",
             "adigunkehinde66@gmail.com"
           ]
@@ -68,20 +68,38 @@ export const consultants_staff = {
             "yemisifolasire2011@gmail.com"
           ]
         },
+        // {
+        //   metatype: "avatar",
+        //   content: [
+        //     "/assets/solanke.jpg",
+        //     "Dr. Emmanuel A. Solanke MBBS, FWACP",
+        //     "08027283675",
+        //     "biodun_solanke@yahoo.com"
+        //   ]
+        // },
         {
           metatype: "avatar",
           content: [
-            "/assets/solanke.jpg",
-            "Dr. Emmanuel A. Solanke MBBS, FWACP",
-            "08027283675",
-            "biodun_solanke@yahoo.com"
+            "/assets/obimakinde.jpg",
+            "Dr. Abimbola Obimakinde MBBS, MSc., FWACP, PhD",
+            "08106912778",
+            "tolutammy@yahoo.com"
+          ]
+        },
+        {
+          metatype: "avatar",
+          content: [
+            "/assets/ilori.jpg",
+            "Dr. Temitope Ilori MBBS, MSc., FWACP",
+            "08102723484",
+            "boatop@yahoo.com"
           ]
         },
         {
           metatype: "avatar",
           content: [
             "/assets/jite.jpg",
-            "Dr. Ikechi. E. Jite MBBS, FWACP",
+            "Dr. Emmanuel I. Jite MBBS, FWACP",
             "08062870237",
             "emjitechrist@gmail.com"
           ]
@@ -90,7 +108,7 @@ export const consultants_staff = {
           metatype: "avatar",
           content: [
             "/assets/olalemi.jpg",
-            "Dr. Oluwatoyin E. Olalemi MBBS, FWACP",
+            "Dr. Oluwatoyin Olalemi, MBBS, FWACP, MPH",
             "08023237132",
             "toyinolalemi@vahoo.com"
           ]
@@ -99,7 +117,7 @@ export const consultants_staff = {
           metatype: "avatar",
           content: [
             "/assets/salam.jpg",
-            "Dr. Tawakalitu O. Salam MBBS, FWACP, MPH",
+            "Dr. Olubukola Salam, MBBS, FWACP, MPH, MBA, CTMPN.",
             "08034436746",
             "deotab@yahoo.com"
           ]
@@ -108,7 +126,7 @@ export const consultants_staff = {
           metatype: "avatar",
           content: [
             "/assets/ayeni.jpg",
-            "Dr. Oluwatoyin A. Ayeni MBBS, FMCFM",
+            "Dr. Oluwatoyin Ayeni, MBBS, FMCFM",
             "08030627654",
             "toyinx112@yahoo.com"
           ]
@@ -116,17 +134,8 @@ export const consultants_staff = {
         {
           metatype: "avatar",
           content: [
-            "/assets/awoonidanla.jpg",
-            "Dr. Kemi T. Awoonidanla MBBS, FWACP",
-            "08020679327",
-            "ktawoonidanla@gmail.com"
-          ]
-        },
-        {
-          metatype: "avatar",
-          content: [
             "/assets/olorunsola.jpg",
-            "Dr. Abimbola Olorunsola MBBS, MPH, FWACP",
+            "Dr. Abimbola Olorunsola, MBBS, MSc., FWACP",
             "08030718626",
             "bimoriji@yahoo.com"
           ]
@@ -135,7 +144,7 @@ export const consultants_staff = {
           metatype: "avatar",
           content: [
             "/assets/olawuyi.jpg",
-            "Dr. Mathew O. Olawuyi MBBS, FWACP",
+            "Dr. Matthew O. Olawuyi, MBBS, FWACP, MPH",
             "08030671032",
             "oluwaseunolawuyi@gmail.com"
           ]
@@ -143,12 +152,57 @@ export const consultants_staff = {
         {
           metatype: "avatar",
           content: [
-            "/assets/abodunde.jpg",
-            "Dr. Olubunmi O. Abodunde MBBS, FWACP",
-            "08035034500",
-            "adroitabod@gmail.com"
+            "/assets/awoonidanla.jpg",
+            "Dr. Kemi Awoonidanla, MBBS, FWACP",
+            "08020679327",
+            "ktawoonidanla@gmail.com"
           ]
-        }
+        },
+        {
+          metatype: "avatar",
+          content: [
+            "/assets/aderinto.jpg",
+            "Dr. Oyindamola Aderinto, FWACP(FM)",
+            "08035755750",
+            ""
+          ]
+        },
+        {
+          metatype: "avatar",
+          content: [
+            "/assets/senjobi.jpg",
+            "Dr. Oluwafolajimi O. Senjobi, FWACP(FM), CTMPN.",
+            "08069403802",
+            "senjobifolajimi@gmail.com"
+          ]
+        },
+        {
+          metatype: "avatar",
+          content: [
+            "/assets/kolade.jpg",
+            "Dr. Onaopemipo O. Kolade FWACP (FM), FMCFM",
+            "07066428220",
+            "onaopemipooluwatayo@gmail.com"
+          ]
+        },
+        {
+          metatype: "avatar",
+          content: [
+            "/assets/odekunle.jpg",
+            "Dr. Idowu C. Odekunle, MSc(Epid.), FWACP(FM)",
+            "08060049248",
+            "idodekunle@gmail.com"
+          ]
+        },
+        // {
+        //   metatype: "avatar",
+        //   content: [
+        //     "/assets/abodunde.jpg",
+        //     "Dr. Olubunmi O. Abodunde MBBS, FWACP",
+        //     "08035034500",
+        //     "adroitabod@gmail.com"
+        //   ]
+        // }
       ]
     },
     {
