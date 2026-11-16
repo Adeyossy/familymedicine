@@ -248,7 +248,7 @@ export const consultants_staff = {
               metatype: "avatar",
               content: [
                 "/assets/kolade.jpg",
-                "Dr. Onaopemipo O. Kolade FWACP (FM), FMCFM",
+                "Dr. Onaopemipo O. Kolade MBBS, FWACP (FM), FiSqua, FMCFM",
                 "07066428220",
                 "onaopemipooluwatayo@gmail.com"
               ]
@@ -257,7 +257,7 @@ export const consultants_staff = {
               metatype: "avatar",
               content: [
                 "/assets/odekunle.jpg",
-                "Dr. Idowu C. Odekunle, MSc(Epid.), FWACP(FM)",
+                "Dr. Idowu C. Odekunle, MBBS, MSc(Epid.), FWACP(FM)",
                 "08060049248",
                 "idodekunle@gmail.com"
               ]
