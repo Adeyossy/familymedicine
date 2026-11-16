@@ -44,7 +44,7 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. A. E. Irabor / Dr. Salam"
+                "Dr. A. E. Irabor"
               ]
             },
             {
@@ -61,13 +61,47 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. A. E. Irabor"
+                "Dr. A. E. Irabor / Dr. A.M. Olorunsola"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Patient Centered Clinical Methods (PCCM Modules 1-3)"
+                "Patient Centered Clinical Methods (PCCM Modules 1-4)"
+              ]
+            }
+          ]
+        },
+        // {
+        //   metatype: "group",
+        //   content: [
+        //     {
+        //       metatype: "h3",
+        //       content: [
+        //         "Dr. A. M. Olorunsola"
+        //       ]
+        //     },
+        //     {
+        //       metatype: "paragraph",
+        //       content: [
+        //         "Patient Centered Clinical Methods (PCCM Modules 4-6)"
+        //       ]
+        //     }
+        //   ]
+        // },
+        {
+          metatype: "group",
+          content: [
+            {
+              metatype: "h3",
+              content: [
+                "Dr. O. Olalemi"
+              ]
+            },
+            {
+              metatype: "paragraph",
+              content: [
+                "Evidence-based Medicine (3 sessions)"
               ]
             }
           ]
@@ -78,41 +112,7 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. A. M. Olorunsola"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Patient Centered Clinical Methods (PCCM Modules 4-6)"
-              ]
-            }
-          ]
-        },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
-                "Dr. O.O. Olowookere / Dr. Olalemi"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Evidenced-based Medicine (3 sessions)"
-              ]
-            }
-          ]
-        },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
-                "Dr. Abimbola M Olorunsola"
+                "Dr. Abimbola M. Olorunsola"
               ]
             },
             {
@@ -129,30 +129,47 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr O. E. Olalemi"
+                "Dr. A.M. Ogunbode, Dr. O. Olalemi, Dr. O.O. Kolade"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Clinical Clerkship (3 sessions)"
+                "Clinical Clerkship (6 sessions)"
               ]
             }
           ]
         },
+        // {
+        //   metatype: "group",
+        //   content: [
+        //     {
+        //       metatype: "h3",
+        //       content: [
+        //         "Dr. O. O. Okuyelu"
+        //       ]
+        //     },
+        //     {
+        //       metatype: "paragraph",
+        //       content: [
+        //         "X-Ray Review Session"
+        //       ]
+        //     }
+        //   ]
+        // },
         {
           metatype: "group",
           content: [
             {
               metatype: "h3",
               content: [
-                "Dr. O. O. Okuyelu"
+                "Dr O. Ayeni, Dr. O. O. Senjobi"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "X-Ray Review Session"
+                "Principle of Investigations in Primary Care"
               ]
             }
           ]
@@ -174,19 +191,36 @@ export const junior = {
             }
           ]
         },
+        // {
+        //   metatype: "group",
+        //   content: [
+        //     {
+        //       metatype: "h3",
+        //       content: [
+        //         "Dr. A. E. Irabor"
+        //       ]
+        //     },
+        //     {
+        //       metatype: "paragraph",
+        //       content: [
+        //         "Family Medicine Portfolio"
+        //       ]
+        //     }
+        //   ]
+        // },
         {
           metatype: "group",
           content: [
             {
               metatype: "h3",
               content: [
-                "Dr. A. E. Irabor"
+                "Dr. T. Salam"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Family Medicine Portfolio"
+                "Basic Communication and Interview Skills"
               ]
             }
           ]
@@ -197,24 +231,7 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. Jite"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Basic Communication skills"
-              ]
-            }
-          ]
-        },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
-                "Dr. A.A. Adetunji / Dr. Awoonidanla"
+                "Dr. Awoonidanla"
               ]
             },
             {
@@ -231,7 +248,7 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. L.A. Adebusoye / Dr. Obimakinde"
+                "Dr. L.A. Adebusoye"
               ]
             },
             {
@@ -248,13 +265,13 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. M. O. Olawuyi"
+                "Dr. M. O. Olawuyi / Dr. O. O. Senjobi"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Learning Opportunities for Primary Care Surgery"
+                "Learning Opportunities for Primary Care Surgery and Principles of Safe Surgery"
               ]
             }
           ]
@@ -310,23 +327,23 @@ export const junior = {
             }
           ]
         },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
-                "Dr. Olorunsola"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Clinical Skill Demonstration"
-              ]
-            }
-          ]
-        },
+        // {
+        //   metatype: "group",
+        //   content: [
+        //     {
+        //       metatype: "h3",
+        //       content: [
+        //         "Dr. Olorunsola"
+        //       ]
+        //     },
+        //     {
+        //       metatype: "paragraph",
+        //       content: [
+        //         "Clinical Skill Demonstration"
+        //       ]
+        //     }
+        //   ]
+        // },
         {
           metatype: "group",
           content: [
@@ -350,7 +367,7 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. Kolade"
+                "Dr. A. M. Olorunsola"
               ]
             },
             {
@@ -384,34 +401,51 @@ export const junior = {
             {
               metatype: "h3",
               content: [
-                "Dr. O. F. Folasire"
+                "Dr. O. O. Kolade"
               ]
             },
             {
               metatype: "paragraph",
               content: [
-                "Nutrition Assessment / Principle in Primary Care"
+                "Family Medicine Tools"
               ]
             }
           ]
         },
-        {
-          metatype: "group",
-          content: [
-            {
-              metatype: "h3",
-              content: [
-                "Life Resuscitation Society of Nigeria"
-              ]
-            },
-            {
-              metatype: "paragraph",
-              content: [
-                "Basic Life Support"
-              ]
-            }
-          ]
-        }
+        // {
+        //   metatype: "group",
+        //   content: [
+        //     {
+        //       metatype: "h3",
+        //       content: [
+        //         "Dr. O. F. Folasire"
+        //       ]
+        //     },
+        //     {
+        //       metatype: "paragraph",
+        //       content: [
+        //         "Nutrition Assessment / Principle in Primary Care"
+        //       ]
+        //     }
+        //   ]
+        // },
+        // {
+        //   metatype: "group",
+        //   content: [
+        //     {
+        //       metatype: "h3",
+        //       content: [
+        //         "Life Resuscitation Society of Nigeria"
+        //       ]
+        //     },
+        //     {
+        //       metatype: "paragraph",
+        //       content: [
+        //         "Basic Life Support"
+        //       ]
+        //     }
+        //   ]
+        // }
       ]
     },
     {
