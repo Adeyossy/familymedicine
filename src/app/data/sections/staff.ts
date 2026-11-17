@@ -171,7 +171,7 @@ export const consultants_staff = {
           metatype: "avatar",
           content: [
             "/assets/senjobi.jpg",
-            "Dr. Oluwafolajimi O. Senjobi, FWACP(FM), CTMPN.",
+            "Dr. Oluwafolajimi O. Senjobi, MBChB, FWACP(FM), CTMPN.",
             "08069403802",
             "senjobifolajimi@gmail.com"
           ]
@@ -239,7 +239,7 @@ export const consultants_staff = {
               metatype: "avatar",
               content: [
                 "/assets/senjobi.jpg",
-                "Dr. Oluwafolajimi O. Senjobi, FWACP(FM), CTMPN.",
+                "Dr. Oluwafolajimi O. Senjobi, MBChB, FWACP(FM), CTMPN.",
                 "08069403802",
                 "senjobifolajimi@gmail.com"
               ]
